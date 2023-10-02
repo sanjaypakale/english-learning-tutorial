@@ -1,0 +1,17 @@
+<ul style="text-align: left;color: black;background-color: white;font-size: 16px;">
+    <li style="color: black;">Used to describe habitual actions, general truths, and facts.</li>
+    <li style="color: black;">Formed by using the base form of the verb (e.g., I work, She eats).</li>
+</ul>
+
+<table>
+    <tr>
+        <th>Sl #</th>
+        <th>English Sentence</th>
+        <th>Hindi Meaning</th>
+    </tr>
+    <tr *ngFor="let sentense of jsonData; index as i">
+        <td>{{i+1}}</td>
+        <td>{{sentense.englishSentence}}</td>
+        <td>{{sentense.hindiMeaning}}</td>
+    </tr>
+</table>

@@ -1,0 +1,422 @@
+ [
+    {
+        "englishSentence": "She eats lunch every day.",
+        "hindiMeaning": "वह हर दिन दोपहर का खाना खाती है।"
+    },
+    {
+        "englishSentence": "They play football on weekends.",
+        "hindiMeaning": "वे सप्ताहांत पर फुटबॉल खेलते हैं।"
+    },
+    {
+        "englishSentence": "He works in an office.",
+        "hindiMeaning": "वह एक कार्यालय में काम करता है।"
+    },
+    {
+        "englishSentence": "I love to read books.",
+        "hindiMeaning": "मुझे किताबें पढ़ना पसंद है।"
+    },
+    {
+        "englishSentence": "They live in a big house.",
+        "hindiMeaning": "वे एक बड़े घर में रहते हैं।"
+    },
+    {
+        "englishSentence": "She speaks English fluently.",
+        "hindiMeaning": "वह अंग्रेज़ी बोलती है।"
+    },
+    {
+        "englishSentence": "He drinks tea in the morning.",
+        "hindiMeaning": "वह सुबह चाय पीता है।"
+    },
+    {
+        "englishSentence": "The sun rises in the east.",
+        "hindiMeaning": "सूरज पूर्व में उगता है।"
+    },
+    {
+        "englishSentence": "They watch movies on weekends.",
+        "hindiMeaning": "वे सप्ताहांत पर फिल्में देखते हैं।"
+    },
+    {
+        "englishSentence": "My mother cooks delicious meals.",
+        "hindiMeaning": "मेरी मां स्वादिष्ट खाने बनाती हैं।"
+    },
+    {
+        "englishSentence": "He listens to music in the evening.",
+        "hindiMeaning": "वह शाम में संगीत सुनता है।"
+    },
+    {
+        "englishSentence": "She brushes her teeth twice a day.",
+        "hindiMeaning": "वह अपने दांत दिन में दो बार ब्रश करती है।"
+    },
+    {
+        "englishSentence": "They go to school by bus.",
+        "hindiMeaning": "वे स्कूल बस से जाते हैं।"
+    },
+    {
+        "englishSentence": "I visit my grandparents on weekends.",
+        "hindiMeaning": "मैं सप्ताहांत पर अपने दादी-नानी के पास जाता/जाती हूँ।"
+    },
+    {
+        "englishSentence": "He plays the guitar beautifully.",
+        "hindiMeaning": "वह गिटार खूबसूरती से बजाता है।"
+    },
+    {
+        "englishSentence": "She dances with grace.",
+        "hindiMeaning": "वह श्रृंगार से नृत्य करती है।"
+    },
+    {
+        "englishSentence": "They swim in the pool.",
+        "hindiMeaning": "वे पूल में तैरते हैं।"
+    },
+    {
+        "englishSentence": "I read the newspaper every morning.",
+        "hindiMeaning": "मैं हर सुबह अख़बार पढ़ता/पढ़ती हूँ।"
+    },
+    {
+        "englishSentence": "He plays chess with his friends.",
+        "hindiMeaning": "वह अपने दोस्तों के साथ शतरंज खेलता है।"
+    },
+    {
+        "englishSentence": "She wears a red dress to the party.",
+        "hindiMeaning": "वह पार्टी में लाल ड्रेस पहनती है।"
+    },
+    {
+        "englishSentence": "They speak Hindi fluently.",
+        "hindiMeaning": "वे हिन्दी बोलते हैं।"
+    },
+    {
+        "englishSentence": "I go to the gym every evening.",
+        "hindiMeaning": "मैं हर शाम जिम जाता/जाती हूँ।"
+    },
+    {
+        "englishSentence": "He helps his mother with chores.",
+        "hindiMeaning": "वह अपनी मां के काम में मदद करता है।"
+    },
+    {
+        "englishSentence": "She writes a diary every night.",
+        "hindiMeaning": "वह हर रात एक डायरी लिखती है।"
+    },
+    {
+        "englishSentence": "They visit the park on Sundays.",
+        "hindiMeaning": "वे रविवार को पार्क जाते हैं।"
+    },
+    {
+        "englishSentence": "I clean my room every week.",
+        "hindiMeaning": "मैं हर हफ़्ते अपने कमरे को साफ़ करता/करती हूँ।"
+    },
+    {
+        "englishSentence": "He goes to the library to study.",
+        "hindiMeaning": "वह पढ़ाई करने के लिए पुस्तकालय जाता है।"
+    },
+    {
+        "englishSentence": "She plays the piano beautifully.",
+        "hindiMeaning": "वह पियानो खूबसूरती से बजाती है।"
+    },
+    {
+        "englishSentence": "They clean their car every weekend.",
+        "hindiMeaning": "वे हर सप्ताहांत अपनी कार को साफ़ करते हैं।"
+    },
+    {
+        "englishSentence": "I help my little sister with her homework.",
+        "hindiMeaning": "मैं अपनी छोटी बहन को उसके होमवर्क में मदद करता/करती हूँ।"
+    },
+    {
+        "englishSentence": "He speaks French fluently.",
+        "hindiMeaning": "वह फ़्रेंच बोलता है।"
+    },
+    {
+        "englishSentence": "She goes to the market every Saturday.",
+        "hindiMeaning": "वह हर शनिवार को बाज़ार जाती है।"
+    },
+    {
+        "englishSentence": "They visit their grandparents during the holidays.",
+        "hindiMeaning": "वे अपने अवकाश के दौरान अपने दादी-नानी के पास जाते हैं।"
+    },
+    {
+        "englishSentence": "I drink coffee in the morning.",
+        "hindiMeaning": "मैं सुबह कॉफ़ी पीता/पीती हूँ।"
+    },
+    {
+        "englishSentence": "He watches TV in the evening.",
+        "hindiMeaning": "वह शाम को टेलीविज़न देखता है।"
+    },
+    {
+        "englishSentence": "She writes poems in her notebook.",
+        "hindiMeaning": "वह अपने नोटबुक में कविताएँ लिखती है।"
+    },
+    {
+        "englishSentence": "They visit the beach on weekends.",
+        "hindiMeaning": "वे सप्ताहांत पर समुंदर किनारे जाते हैं।"
+    },
+    {
+        "englishSentence": "I go for a walk in the park every morning.",
+        "hindiMeaning": "मैं हर सुबह पार्क में सैर करने जाता/जाती हूँ।"
+    },
+    {
+        "englishSentence": "He plays with his dog in the backyard.",
+        "hindiMeaning": "वह अपने कुत्ते के साथ पिछले में खेलता है।"
+    },
+    {
+        "englishSentence": "She studies for her exams diligently.",
+        "hindiMeaning": "वह अपनी परीक्षा के लिए मेहनती तरीके से पढ़ती है।"
+    },
+    {
+        "englishSentence": "They go to the movies on Friday nights.",
+        "hindiMeaning": "वे शुक्रवार रात को सिनेमा जाते हैं।"
+    },
+    {
+        "englishSentence": "I visit my friends on weekends.",
+        "hindiMeaning": "मैं सप्ताहांत पर अपने दोस्तों के पास जाता/जाती हूँ।"
+    },
+    {
+        "englishSentence": "He exercises at the gym regularly.",
+        "hindiMeaning": "वह नियमित रूप से जिम में व्यायाम करता है।"
+    },
+    {
+        "englishSentence": "She goes shopping with her mother.",
+        "hindiMeaning": "वह अपनी मां के साथ खरीददारी करती है।"
+    },
+    {
+        "englishSentence": "They visit the museum on Sundays.",
+        "hindiMeaning": "वे रविवार को संग्रहालय जाते हैं।"
+    },
+    {
+        "englishSentence": "I eat breakfast at 7 AM.",
+        "hindiMeaning": "मैं सुबह 7 बजे नाश्ता करता/करती हूँ।"
+    },
+    {
+        "englishSentence": "He reads a book before bedtime.",
+        "hindiMeaning": "वह सोने से पहले एक किताब पढ़ता है।"
+    },
+    {
+        "englishSentence": "She goes to the temple every Sunday.",
+        "hindiMeaning": "वह हर रविवार को मंदिर जाती है।"
+    },
+    {
+        "englishSentence": "They visit their relatives during the holidays.",
+        "hindiMeaning": "वे अपने रिश्तेदारों के पास अवकाश के दौरान जाते हैं।"
+    },
+    {
+        "englishSentence": "I go to bed early.",
+        "hindiMeaning": "मैं जल्दी सोता/सोती हूँ।"
+    },
+    {
+        "englishSentence": "He plays cricket in the park.",
+        "hindiMeaning": "वह पार्क में क्रिकेट खेलता है।"
+    },
+    {
+        "englishSentence": "She helps her brother with his homework.",
+        "hindiMeaning": "वह अपने भाई को उसके होमवर्क में मदद करती है।"
+    },
+    {
+        "englishSentence": "They eat dinner together as a family.",
+        "hindiMeaning": "वे परिवार के रूप में साथ में रात का खाना खाते हैं।"
+    },
+    {
+        "englishSentence": "I drink water throughout the day.",
+        "hindiMeaning": "मैं पूरे दिन पानी पीता/पीती हूँ।"
+    },
+    {
+        "englishSentence": "He visits his grandparents on holidays.",
+        "hindiMeaning": "वह अवकाश पर अपने दादी-नानी के पास जाता है।"
+    },
+    {
+        "englishSentence": "She writes letters to her friends.",
+        "hindiMeaning": "वह अपने दोस्तों को पत्र लिखती है।"
+    },
+    {
+        "englishSentence": "They go for a picnic in the summer.",
+        "hindiMeaning": "वे गर्मी में पिकनिक पर जाते हैं।"
+    },
+    {
+        "englishSentence": "I visit the zoo with my family.",
+        "hindiMeaning": "मैं अपने परिवार के साथ चिड़ियाघर जाता/जाती हूँ।"
+    },
+    {
+        "englishSentence": "He exercises to stay fit.",
+        "hindiMeaning": "वह फिट रहने के लिए व्यायाम करता है।"
+    },
+    {
+        "englishSentence": "She visits her grandparents on weekends.",
+        "hindiMeaning": "वह सप्ताहांत पर अपने दादी-नानी के पास जाती है।"
+    },
+    {
+        "englishSentence": "They help the needy with food and clothing.",
+        "hindiMeaning": "वे गरीबों को खाद्य और वस्त्र सहायता करते हैं।"
+    },
+    {
+        "englishSentence": "I play video games in the evening.",
+        "hindiMeaning": "मैं शाम में वीडियो गेम्स खेलता/खेलती हूँ।"
+    },
+    {
+        "englishSentence": "He goes to the temple on special occasions.",
+        "hindiMeaning": "वह विशेष मौकों पर मंदिर जाता है।"
+    },
+    {
+        "englishSentence": "She practices singing every day.",
+        "hindiMeaning": "वह हर दिन गायन का अभ्यास करती है।"
+    },
+    {
+        "englishSentence": "They eat ice cream in the summer.",
+        "hindiMeaning": "वे गर्मी में आइसक्रीम खाते हैं।"
+    },
+    {
+        "englishSentence": "I go to the gym to stay healthy.",
+        "hindiMeaning": "मैं स्वस्थ रहने के लिए जिम जाता/जाती हूँ।"
+    },
+    {
+        "englishSentence": "He reads the newspaper every morning.",
+        "hindiMeaning": "वह हर सुबह अख़बार पढ़ता है।"
+    },
+    {
+        "englishSentence": "She visits her aunt's house on weekends.",
+        "hindiMeaning": "वह सप्ताहांत पर अपनी चाची के घर जाती है।"
+    },
+    {
+        "englishSentence": "They go for a long walk in the evening.",
+        "hindiMeaning": "वे शाम को लंबी सैर पर जाते हैं।"
+    },
+    {
+        "englishSentence": "I clean my bike every weekend.",
+        "hindiMeaning": "मैं हर सप्ताहांत अपनी बाइक को साफ़ करता/करती हूँ।"
+    },
+    {
+        "englishSentence": "He helps his sister with her studies.",
+        "hindiMeaning": "वह अपनी बहन की पढ़ाई में मदद करता है।"
+    },
+    {
+        "englishSentence": "She sings melodious songs.",
+        "hindiMeaning": "वह सुरीले गाने गाती है।"
+    },
+    {
+        "englishSentence": "They play soccer in the park.",
+        "hindiMeaning": "वे पार्क में सॉकर खेलते हैं।"
+    },
+    {
+        "englishSentence": "I eat fruits every day.",
+        "hindiMeaning": "मैं हर दिन फल खाता/खाती हूँ।"
+    },
+    {
+        "englishSentence": "He goes to the beach in the summer.",
+        "hindiMeaning": "वह गर्मी में समुंदर किनारे जाता है।"
+    },
+    {
+        "englishSentence": "She visits the library to borrow books.",
+        "hindiMeaning": "वह पुस्तकें उधार लेने के लिए पुस्तकालय जाती है।"
+    },
+    {
+        "englishSentence": "They go to the park to play with their friends.",
+        "hindiMeaning": "वे अपने दोस्तों के साथ खेलने के लिए पार्क जाते हैं।"
+    },
+    {
+        "englishSentence": "I watch movies on weekends.",
+        "hindiMeaning": "मैं सप्ताहांत पर फिल्में देखता/देखती हूँ।"
+    },
+    {
+        "englishSentence": "He helps his father with household chores.",
+        "hindiMeaning": "वह अपने पिता के साथ घर के काम में मदद करता है।"
+    },
+    {
+        "englishSentence": "She reads a story to her children before bedtime.",
+        "hindiMeaning": "वह सोने से पहले अपने बच्चों को एक कहानी पढ़ती है।"
+    },
+    {
+        "englishSentence": "They visit the temple on festivals.",
+        "hindiMeaning": "वे त्योहारों पर मंदिर जाते हैं।"
+    },
+    {
+        "englishSentence": "I practice yoga in the morning.",
+        "hindiMeaning": "मैं सुबह योग का अभ्यास करता/करती हूँ।"
+    },
+    {
+        "englishSentence": "He plays the violin beautifully.",
+        "hindiMeaning": "वह वायलिन खूबसूरती से बजाता है।"
+    },
+    {
+        "englishSentence": "She takes care of her plants every day.",
+        "hindiMeaning": "वह हर दिन अपने पौधों की देखभाल करती है।"
+    },
+    {
+        "englishSentence": "They go for a hike in the mountains.",
+        "hindiMeaning": "वे पहाड़ों में हाइक के लिए जाते हैं।"
+    },
+    {
+        "englishSentence": "I help my mother with cooking.",
+        "hindiMeaning": "मैं खाना बनाने में अपनी मां की मदद करता हूँ।"
+    },
+    {
+        "englishSentence": "He goes to the mosque to pray.",
+        "hindiMeaning": "वह नमाज पढ़ने के लिए मस्जिद जाता है।"
+    },
+    {
+        "englishSentence": "She visits her cousins during the holidays.",
+        "hindiMeaning": "वह अपने चचेरे भाइयों-बहनों के पास अवकाश के दौरान जाती है।"
+    },
+    {
+        "englishSentence": "They go swimming in the river.",
+        "hindiMeaning": "वे नदी में तैरते हैं।"
+    },
+    {
+        "englishSentence": "I visit the temple every morning.",
+        "hindiMeaning": "मैं हर सुबह मंदिर जाता/जाती हूँ।"
+    },
+    {
+        "englishSentence": "He watches the sunset in the evening.",
+        "hindiMeaning": "वह शाम में सूर्यास्त देखता है।"
+    },
+    {
+        "englishSentence": "She dances at weddings.",
+        "hindiMeaning": "वह शादियों में नृत्य करती है।"
+    },
+    {
+        "englishSentence": "They go to the gym together.",
+        "hindiMeaning": "वे साथ में जिम जाते हैं।"
+    },
+    {
+        "englishSentence": "I help my grandfather with gardening.",
+        "hindiMeaning": "मैं अपने दादी-नानी की बागवानी में मदद करता हूँ।"
+    },
+    {
+        "englishSentence": "He reads comics in his free time.",
+        "hindiMeaning": "वह अपने फुर्सत के समय कॉमिक्स पढ़ता है।"
+    },
+    {
+        "englishSentence": "She helps her parents with household chores.",
+        "hindiMeaning": "वह अपने माता-पिता के साथ घर के काम में मदद करती है।"
+    },
+    {
+        "englishSentence": "They go for a jog in the park.",
+        "hindiMeaning": "वे पार्क में जॉग करने जाते हैं।"
+    },
+    {
+        "englishSentence": "I eat my meals on time.",
+        "hindiMeaning": "मैं समय पर अपना भोजन करता/करती हूँ।"
+    },
+    {
+        "englishSentence": "He visits historical sites during vacations.",
+        "hindiMeaning": "वह अवकाश के दौरान ऐतिहासिक स्थलों की यात्रा करता है।"
+    },
+    {
+        "englishSentence": "She bakes delicious cakes.",
+        "hindiMeaning": "वह स्वादिष्ट केक बनाती है।"
+    },
+    {
+        "englishSentence": "They go to the forest to explore nature.",
+        "hindiMeaning": "वे प्रकृति की खोज करने के लिए जंगल जाते हैं।"
+    },
+    {
+        "englishSentence": "I visit my favorite cafe on weekends.",
+        "hindiMeaning": "मैं सप्ताहांत पर अपने पसंदीदा कैफ़े के पास जाता/जाती हूँ।"
+    },
+    {
+        "englishSentence": "He practices martial arts every evening.",
+        "hindiMeaning": "वह हर शाम मार्शल आर्ट्स का अभ्यास करता है।"
+    },
+    {
+        "englishSentence": "She helps the homeless by donating food.",
+        "hindiMeaning": "वह भूखे लोगों को खाद्य दान करके मदद करती है।"
+    },
+    {
+        "englishSentence": "They go for a bike ride in the countryside.",
+        "hindiMeaning": "वे गाँव में बाइक पर सवारी करने जाते हैं।"
+    }
+]

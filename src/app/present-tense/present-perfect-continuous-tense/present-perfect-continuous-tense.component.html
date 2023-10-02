@@ -1,0 +1,18 @@
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;">The present perfect continuous tense, also known as the present perfect progressive tense, is a grammatical tense used to describe actions or situations that started in the past and have continued up to the present moment. This tense is used to emphasize the duration or ongoing nature of an action or event, which distinguishes it from the present perfect tense. In English, the present perfect continuous tense is typically formed using the following structure:</p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Affirmative Form:</strong>Subject + have/has + been + present participle (verb + &quot;-ing&quot;)</p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Negative Form:</strong>Subject + have/has + not + been + present participle</p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Interrogative Form:</strong>Have/Has + subject + been + present participle</p>
+
+
+<table>
+    <tr>
+        <th>Sl #</th>
+        <th>English Sentence</th>
+        <th>Hindi Meaning</th>
+    </tr>
+    <tr *ngFor="let sentense of jsonData; index as i">
+        <td>{{i+1}}</td>
+        <td>{{sentense.englishSentence}}</td>
+        <td>{{sentense.hindiMeaning}}</td>
+    </tr>
+</table>

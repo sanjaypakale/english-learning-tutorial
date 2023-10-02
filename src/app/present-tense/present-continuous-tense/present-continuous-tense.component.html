@@ -1,0 +1,20 @@
+<ul style="text-align: left;color: black;background-color: white;font-size: 16px;">
+    <li style="color: black;">Used to describe actions happening at the moment of speaking or temporary actions in
+        progress.</li>
+    <li style="color: black;">Formed with the present tense of the verb &quot;to be&quot; (am, is, are) + the present
+        participle (verb + -ing).</li>
+</ul>
+
+<table>
+    <tr>
+        <th>Sl #</th>
+        <th>English Sentence</th>
+        <th>Hindi Meaning</th>
+    </tr>
+    <tr *ngFor="let sentense of jsonData; index as i">
+        <td>{{i+1}}</td>
+        <td>{{sentense.englishSentence}}</td>
+        <td>{{sentense.hindiMeaning}}</td>
+    </tr>
+
+</table>

@@ -1,0 +1,1566 @@
+[
+    {
+      "englishSentence": "I am reading a book.",
+      "hindiMeaning": "मैं किताब पढ़ रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "She is watching a movie.",
+      "hindiMeaning": "वह एक फिल्म देख रही है।"
+    },
+    {
+      "englishSentence": "They are playing football.",
+      "hindiMeaning": "वे फुटबॉल खेल रहे हैं।"
+    },
+    {
+      "englishSentence": "He is cooking dinner.",
+      "hindiMeaning": "वह रात का खाना बना रहा है।"
+    },
+    {
+      "englishSentence": "She is singing a song.",
+      "hindiMeaning": "वह एक गाना गा रही है।"
+    },
+    {
+      "englishSentence": "I am working on a project.",
+      "hindiMeaning": "मैं एक प्रोजेक्ट पर काम कर रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are dancing at the party.",
+      "hindiMeaning": "वे पार्टी में नृत्य कर रहे हैं।"
+    },
+    {
+      "englishSentence": "He is studying for the exam.",
+      "hindiMeaning": "वह परीक्षा के लिए पढ़ रहा है।"
+    },
+    {
+      "englishSentence": "She is taking a shower.",
+      "hindiMeaning": "वह नहा रही है।"
+    },
+    {
+      "englishSentence": "They are traveling to Europe.",
+      "hindiMeaning": "वे यूरोप यात्रा कर रहे हैं।"
+    },
+    {
+      "englishSentence": "I am speaking with my friend.",
+      "hindiMeaning": "मैं अपने दोस्त के साथ बात कर रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "She is painting a beautiful picture.",
+      "hindiMeaning": "वह एक खूबसूरत चित्र बना रही है।"
+    },
+    {
+      "englishSentence": "They are shopping for clothes.",
+      "hindiMeaning": "वे कपड़े खरीद रहे हैं।"
+    },
+    {
+      "englishSentence": "He is waiting for the bus.",
+      "hindiMeaning": "वह बस का इंतजार कर रहा है।"
+    },
+    {
+      "englishSentence": "She is teaching English.",
+      "hindiMeaning": "वह अंग्रेजी पढ़ा रही है।"
+    },
+    {
+      "englishSentence": "I am listening to music.",
+      "hindiMeaning": "मैं संगीत सुन रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are cleaning the house.",
+      "hindiMeaning": "वे घर की सफाई कर रहे हैं।"
+    },
+    {
+      "englishSentence": "He is driving a car.",
+      "hindiMeaning": "वह गाड़ी चला रहा है।"
+    },
+    {
+      "englishSentence": "She is helping her mother.",
+      "hindiMeaning": "वह अपनी मां की मदद कर रही है।"
+    },
+    {
+      "englishSentence": "I am visiting my grandparents.",
+      "hindiMeaning": "मैं अपने दादी-नानी के पास जा रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are studying in the library.",
+      "hindiMeaning": "वे पुस्तकालय में पढ़ रहे हैं।"
+    },
+    {
+      "englishSentence": "He is playing the guitar.",
+      "hindiMeaning": "वह गिटार बजा रहा है।"
+    },
+    {
+      "englishSentence": "She is writing a letter.",
+      "hindiMeaning": "वह एक पत्र लिख रही है।"
+    },
+    {
+      "englishSentence": "I am cooking dinner for my family.",
+      "hindiMeaning": "मैं अपने परिवार के लिए रात का खाना बना रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are swimming in the pool.",
+      "hindiMeaning": "वे पूल में तैर रहे हैं।"
+    },
+    {
+      "englishSentence": "He is playing with his dog.",
+      "hindiMeaning": "वह अपने कुत्ते के साथ खेल रहा है।"
+    },
+    {
+      "englishSentence": "She is studying mathematics.",
+      "hindiMeaning": "वह गणित पढ़ रही है।"
+    },
+    {
+      "englishSentence": "I am having lunch.",
+      "hindiMeaning": "मैं लंच कर रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are visiting a museum.",
+      "hindiMeaning": "वे एक संग्रहालय देख रहे हैं।"
+    },
+    {
+      "englishSentence": "He is taking a photo.",
+      "hindiMeaning": "वह फोटो खींच रहा है।"
+    },
+    {
+      "englishSentence": "She is practicing yoga.",
+      "hindiMeaning": "वह योग अभ्यास कर रही है।"
+    },
+    {
+      "englishSentence": "I am riding a bike.",
+      "hindiMeaning": "मैं बाइक पर सवारी कर रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are playing chess.",
+      "hindiMeaning": "वे शतरंज खेल रहे हैं।"
+    },
+    {
+      "englishSentence": "He is talking on the phone.",
+      "hindiMeaning": "वह फ़ोन पर बात कर रहा है।"
+    },
+    {
+      "englishSentence": "She is jogging in the park.",
+      "hindiMeaning": "वह पार्क में जॉगिंग कर रही है।"
+    },
+    {
+      "englishSentence": "I am watching TV.",
+      "hindiMeaning": "मैं टीवी देख रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are planting trees.",
+      "hindiMeaning": "वे पेड़ लगा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is fixing his car.",
+      "hindiMeaning": "वह अपनी गाड़ी ठीक कर रहा है।"
+    },
+    {
+      "englishSentence": "She is attending a meeting.",
+      "hindiMeaning": "वह एक मीटिंग में भाग ले रही है।"
+    },
+    {
+      "englishSentence": "I am playing video games.",
+      "hindiMeaning": "मैं वीडियो गेम्स खेल रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are celebrating a birthday.",
+      "hindiMeaning": "वे जन्मदिन मना रहे हैं।"
+    },
+    {
+      "englishSentence": "He is running a marathon.",
+      "hindiMeaning": "वह मैराथन दौड़ रहा है।"
+    },
+    {
+      "englishSentence": "She is baking a cake.",
+      "hindiMeaning": "वह केक बना रही है।"
+    },
+    {
+      "englishSentence": "I am helping my friend with homework.",
+      "hindiMeaning": "मैं अपने दोस्त को होमवर्क करने में मदद कर रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are shopping for groceries.",
+      "hindiMeaning": "वे किराने की खरीदी कर रहे हैं।"
+    },
+    {
+      "englishSentence": "He is playing with his children.",
+      "hindiMeaning": "वह अपने बच्चों के साथ खेल रहा है।"
+    },
+    {
+      "englishSentence": "She is designing a website.",
+      "hindiMeaning": "वह एक वेबसाइट डिज़ाइन कर रही है।"
+    },
+    {
+      "englishSentence": "I am studying for my exams.",
+      "hindiMeaning": "मैं अपनी परीक्षा के लिए पढ़ रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are watching a football match.",
+      "hindiMeaning": "वे एक फुटबॉल मैच देख रहे हैं।"
+    },
+    {
+      "englishSentence": "He is repairing the roof.",
+      "hindiMeaning": "वह छत की मरम्मत कर रहा है।"
+    },
+    {
+      "englishSentence": "She is taking care of her plants.",
+      "hindiMeaning": "वह अपने पौधों की देखभाल कर रही है।"
+    },
+    {
+      "englishSentence": "I am writing a book.",
+      "hindiMeaning": "मैं एक किताब लिख रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are renovating their house.",
+      "hindiMeaning": "वे अपने घर का नवाबनवाब कर रहे हैं।"
+    },
+    {
+      "englishSentence": "He is taking a break.",
+      "hindiMeaning": "वह एक आराम कर रहा है।"
+    },
+    {
+      "englishSentence": "She is learning a new language.",
+      "hindiMeaning": "वह एक नई भाषा सीख रही है।"
+    },
+    {
+      "englishSentence": "I am eating lunch.",
+      "hindiMeaning": "मैं लंच कर रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are taking a vacation.",
+      "hindiMeaning": "वे छुट्टी पर जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is practicing his guitar skills.",
+      "hindiMeaning": "वह अपने गिटार कौशल का अभ्यास कर रहा है।"
+    },
+    {
+      "englishSentence": "She is playing with her toys.",
+      "hindiMeaning": "वह अपने खिलौनों के साथ खेल रही है।"
+    },
+    {
+      "englishSentence": "I am attending a conference.",
+      "hindiMeaning": "मैं एक सम्मेलन में भाग ले रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are going for a walk.",
+      "hindiMeaning": "वे चलने जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is making a cup of tea.",
+      "hindiMeaning": "वह एक कप चाय बना रहा है।"
+    },
+    {
+      "englishSentence": "She is playing tennis.",
+      "hindiMeaning": "वह टेनिस खेल रही है।"
+    },
+    {
+      "englishSentence": "I am doing my homework.",
+      "hindiMeaning": "मैं अपने होमवर्क कर रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are attending a wedding.",
+      "hindiMeaning": "वे एक शादी में शामिल हो रहे हैं।"
+    },
+    {
+      "englishSentence": "He is traveling to New York.",
+      "hindiMeaning": "वह न्यूयॉर्क के लिए यात्रा कर रहा है।"
+    },
+    {
+      "englishSentence": "She is painting her room.",
+      "hindiMeaning": "वह अपने कमरे को पेंट कर रही है।"
+    },
+    {
+      "englishSentence": "I am swimming in the pool.",
+      "hindiMeaning": "मैं पूल में तैर रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are having a picnic.",
+      "hindiMeaning": "वे पिकनिक कर रहे हैं।"
+    },
+    {
+      "englishSentence": "He is taking a nap.",
+      "hindiMeaning": "वह एक नींद ले रहा है।"
+    },
+    {
+      "englishSentence": "She is running errands.",
+      "hindiMeaning": "वह काम-काज कर रही है।"
+    },
+    {
+      "englishSentence": "I am playing soccer.",
+      "hindiMeaning": "मैं सॉकर खेल रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are fishing by the lake.",
+      "hindiMeaning": "वे झील के किनारे में मछली पकड़ रहे हैं।"
+    },
+    {
+      "englishSentence": "He is walking his dog.",
+      "hindiMeaning": "वह अपने कुत्ते को घुमा रहा है।"
+    },
+    {
+      "englishSentence": "She is cleaning her car.",
+      "hindiMeaning": "वह अपनी कार की सफाई कर रही है।"
+    },
+    {
+      "englishSentence": "I am waiting for a friend.",
+      "hindiMeaning": "मैं दोस्त का इंतजार कर रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are enjoying a concert.",
+      "hindiMeaning": "वे कॉन्सर्ट का आनंद ले रहे हैं।"
+    },
+    {
+      "englishSentence": "He is reading a newspaper.",
+      "hindiMeaning": "वह एक अखबार पढ़ रहा है।"
+    },
+    {
+      "englishSentence": "She is playing chess with her brother.",
+      "hindiMeaning": "वह अपने भाई के साथ शतरंज खेल रही है।"
+    },
+    {
+      "englishSentence": "I am making a sandwich.",
+      "hindiMeaning": "मैं एक सैंडविच बना रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are practicing yoga together.",
+      "hindiMeaning": "वे साथ में योग का अभ्यास कर रहे हैं।"
+    },
+    {
+      "englishSentence": "He is fixing a computer.",
+      "hindiMeaning": "वह एक कंप्यूटर ठीक कर रहा है।"
+    },
+    {
+      "englishSentence": "She is having a conversation with her colleague.",
+      "hindiMeaning": "वह अपने सहयोगी के साथ बातचीत कर रही है।"
+    },
+    {
+      "englishSentence": "I am learning a musical instrument.",
+      "hindiMeaning": "मैं एक संगीत वाद्य इंस्ट्रूमेंट सीख रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are exploring a new city.",
+      "hindiMeaning": "वे एक नगर का खोजखबर कर रहे हैं।"
+    },
+    {
+      "englishSentence": "He is helping an elderly person.",
+      "hindiMeaning": "वह एक बड़े व्यक्ति की मदद कर रहा है।"
+    },
+    {
+      "englishSentence": "She is designing a new fashion collection.",
+      "hindiMeaning": "वह एक नई फैशन कलेक्शन डिज़ाइन कर रही है।"
+    },
+    {
+      "englishSentence": "I am cooking breakfast for my family.",
+      "hindiMeaning": "मैं अपने परिवार के लिए सुबह का नाश्ता बना रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are attending a lecture.",
+      "hindiMeaning": "वे एक व्याख्यान में भाग ले रहे हैं।"
+    },
+    {
+      "englishSentence": "He is taking photos of nature.",
+      "hindiMeaning": "वह प्रकृति की फोटो खींच रहा है।"
+    },
+    {
+      "englishSentence": "She is playing the piano.",
+      "hindiMeaning": "वह पियानो बजा रही है।"
+    },
+    {
+      "englishSentence": "I am shopping for clothes.",
+      "hindiMeaning": "मैं कपड़े खरीद रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are enjoying a meal at a restaurant.",
+      "hindiMeaning": "वे एक रेस्टोरेंट में भोजन का आनंद ले रहे हैं।"
+    },
+    {
+      "englishSentence": "He is painting a beautiful landscape.",
+      "hindiMeaning": "वह एक खूबसूरत दृश्य चित्रित कर रहा है।"
+    },
+    {
+      "englishSentence": "She is reading a novel.",
+      "hindiMeaning": "वह एक उपन्यास पढ़ रही है।"
+    },
+    {
+      "englishSentence": "I am playing with my pet dog.",
+      "hindiMeaning": "मैं अपने पालतू कुत्ते के साथ खेल रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are attending a sports event.",
+      "hindiMeaning": "वे खेल कार्यक्रम में भाग ले रहे हैं।"
+    },
+    {
+      "englishSentence": "He is working on a computer program.",
+      "hindiMeaning": "वह एक कंप्यूटर प्रोग्राम पर काम कर रहा है।"
+    },
+    {
+      "englishSentence": "She is having a conversation with her teacher.",
+      "hindiMeaning": "वह अपने शिक्षक के साथ बातचीत कर रही है।"
+    },
+    {
+      "englishSentence": "I am studying history.",
+      "hindiMeaning": "मैं इतिहास पढ़ रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are playing cricket in the park.",
+      "hindiMeaning": "वे पार्क में क्रिकेट खेल रहे हैं।"
+    },
+    {
+      "englishSentence": "He is jogging for fitness.",
+      "hindiMeaning": "वह फिटनेस के लिए जॉगिंग कर रहा है।"
+    },
+    {
+      "englishSentence": "She is watching a documentary.",
+      "hindiMeaning": "वह एक डॉक्यूमेंट्री देख रही है।"
+    },
+    {
+      "englishSentence": "I am taking a taxi to the airport.",
+      "hindiMeaning": "मैं हवाई अड्डे के लिए टैक्सी पकड़ रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are gardening in the backyard.",
+      "hindiMeaning": "वे पिछले बगीचे में बागवानी कर रहे हैं।"
+    },
+    {
+      "englishSentence": "He is listening to a podcast.",
+      "hindiMeaning": "वह एक पॉडकास्ट सुन रहा है।"
+    },
+    {
+      "englishSentence": "She is doing her makeup.",
+      "hindiMeaning": "वह अपना मेकअप कर रही है।"
+    },
+    {
+      "englishSentence": "I am playing basketball with friends.",
+      "hindiMeaning": "मैं दोस्तों के साथ बास्केटबॉल खेल रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are renovating their kitchen.",
+      "hindiMeaning": "वे अपने रसोई का नवाबनवाब कर रहे हैं।"
+    },
+    {
+      "englishSentence": "He is helping his neighbor with gardening.",
+      "hindiMeaning": "वह अपने पड़ोसी की बागवानी में मदद कर रहा है।"
+    },
+    {
+      "englishSentence": "She is attending a dance class.",
+      "hindiMeaning": "वह एक डांस क्लास में भाग ले रही है।"
+    },
+    {
+      "englishSentence": "I am writing a research paper.",
+      "hindiMeaning": "मैं एक अनुसंधान पेपर लिख रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are having a family picnic.",
+      "hindiMeaning": "वे परिवारिक पिकनिक का आयोजन कर रहे हैं।"
+    },
+    {
+      "englishSentence": "He is taking care of his pet cat.",
+      "hindiMeaning": "वह अपने पालतू बिल्ली की देखभाल कर रहा है।"
+    },
+    {
+      "englishSentence": "She is playing the violin.",
+      "hindiMeaning": "वह वायलिन बजा रही है।"
+    },
+    {
+      "englishSentence": "I am doing a science experiment.",
+      "hindiMeaning": "मैं एक विज्ञान प्रयोग कर रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are taking a nature walk.",
+      "hindiMeaning": "वे प्रकृति की सैर पर जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is meditating in the park.",
+      "hindiMeaning": "वह पार्क में ध्यान कर रहा है।"
+    },
+    {
+      "englishSentence": "She is teaching a dance class.",
+      "hindiMeaning": "वह एक डांस क्लास पढ़ा रही है।"
+    },
+    {
+      "englishSentence": "I am practicing my guitar skills.",
+      "hindiMeaning": "मैं अपने गिटार कौशल का अभ्यास कर रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are watching a comedy show.",
+      "hindiMeaning": "वे एक कॉमेडी शो देख रहे हैं।"
+    },
+    {
+      "englishSentence": "He is taking a bike ride.",
+      "hindiMeaning": "वह बाइक पर सवारी कर रहा है।"
+    },
+    {
+      "englishSentence": "She is doing volunteer work.",
+      "hindiMeaning": "वह स्वयंसेवक काम कर रही है।"
+    },
+    {
+      "englishSentence": "I am cooking a special meal for guests.",
+      "hindiMeaning": "मैं मेहमानों के लिए खास खाना बना रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are exploring a new hiking trail.",
+      "hindiMeaning": "वे एक नए हाइकिंग मार्ग की खोज कर रहे हैं।"
+    },
+    {
+      "englishSentence": "He is taking a photography workshop.",
+      "hindiMeaning": "वह एक फोटोग्राफी वर्कशॉप में भाग ले रहा है।"
+    },
+    {
+      "englishSentence": "She is attending a cooking class.",
+      "hindiMeaning": "वह एक कुकिंग क्लास में भाग ले रही है।"
+    },
+    {
+      "englishSentence": "I am taking a road trip with friends.",
+      "hindiMeaning": "मैं दोस्तों के साथ रोड ट्रिप पर जा रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are helping a local charity.",
+      "hindiMeaning": "वे स्थानीय चैरिटी की मदद कर रहे हैं।"
+    },
+    {
+      "englishSentence": "He is organizing a charity event.",
+      "hindiMeaning": "वह एक चैरिटी इवेंट का आयोजन कर रहा है।"
+    },
+    {
+      "englishSentence": "She is participating in a marathon.",
+      "hindiMeaning": "वह एक मैराथन में भाग ले रही है।"
+    },
+    {
+      "englishSentence": "I am attending a photography exhibition.",
+      "hindiMeaning": "मैं एक फोटोग्राफी प्रदर्शन में भाग ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are practicing mindfulness meditation.",
+      "hindiMeaning": "वे माइंडफ़ुलनेस ध्यान का अभ्यास कर रहे हैं।"
+    },
+    {
+      "englishSentence": "He is painting a portrait of his friend.",
+      "hindiMeaning": "वह अपने दोस्त का चित्र बना रहा है।"
+    },
+    {
+      "englishSentence": "She is learning to cook traditional dishes.",
+      "hindiMeaning": "वह पारंपरिक व्यंजन बनाने का सीख रही है।"
+    },
+    {
+      "englishSentence": "I am attending a music concert.",
+      "hindiMeaning": "मैं एक संगीत संगीत कॉन्सर्ट में भाग ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are visiting an art gallery.",
+      "hindiMeaning": "वे एक कला दरबार में जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is practicing martial arts.",
+      "hindiMeaning": "वह मार्शल आर्ट्स का अभ्यास कर रहा है।"
+    },
+    {
+      "englishSentence": "She is taking a dance class.",
+      "hindiMeaning": "वह एक डांस क्लास ले रही है।"
+    },
+    {
+      "englishSentence": "I am doing a home renovation project.",
+      "hindiMeaning": "मैं घर का नवाबनवाब प्रोजेक्ट कर रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going on a hiking trip.",
+      "hindiMeaning": "वे हाइकिंग की यात्रा पर जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is reading a biography.",
+      "hindiMeaning": "वह एक जीवनी पढ़ रहा है।"
+    },
+    {
+      "englishSentence": "She is taking a yoga retreat.",
+      "hindiMeaning": "वह योग आश्रम पर जा रही है।"
+    },
+    {
+      "englishSentence": "I am working on a gardening project.",
+      "hindiMeaning": "मैं एक बागवानी प्रोजेक्ट पर काम कर रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going to a movie.",
+      "hindiMeaning": "वे एक मूवी देखने जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is taking a cooking class.",
+      "hindiMeaning": "वह एक कुकिंग क्लास ले रहा है।"
+    },
+    {
+      "englishSentence": "She is playing a board game.",
+      "hindiMeaning": "वह एक बोर्ड गेम खेल रही है।"
+    },
+    {
+      "englishSentence": "I am going to a photography workshop.",
+      "hindiMeaning": "मैं एक फोटोग्राफी वर्कशॉप जा रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are having a family barbecue.",
+      "hindiMeaning": "वे परिवार के साथ एक बार्बेक्यू का आयोजन कर रहे हैं।"
+    },
+    {
+      "englishSentence": "He is attending a language class.",
+      "hindiMeaning": "वह एक भाषा क्लास में भाग ले रहा है।"
+    },
+    {
+      "englishSentence": "She is taking a dance workshop.",
+      "hindiMeaning": "वह एक डांस वर्कशॉप ले रही है।"
+    },
+    {
+      "englishSentence": "I am practicing my painting skills.",
+      "hindiMeaning": "मैं अपने चित्रकला कौशल का अभ्यास कर रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going on a road trip.",
+      "hindiMeaning": "वे रोड ट्रिप पर जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is helping a charity organization.",
+      "hindiMeaning": "वह एक चैरिटी संगठन की मदद कर रहा है।"
+    },
+    {
+      "englishSentence": "She is practicing meditation.",
+      "hindiMeaning": "वह ध्यान का अभ्यास कर रही है।"
+    },
+    {
+      "englishSentence": "I am learning to play a musical instrument.",
+      "hindiMeaning": "मैं संगीत वाद्य बजाने का सीख रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are taking a cooking class together.",
+      "hindiMeaning": "वे साथ में एक कुकिंग क्लास ले रहे हैं।"
+    },
+    {
+      "englishSentence": "He is attending a photography seminar.",
+      "hindiMeaning": "वह एक फोटोग्राफी सेमिनार में भाग ले रहा है।"
+    },
+    {
+      "englishSentence": "She is doing a home improvement project.",
+      "hindiMeaning": "वह घर की सुधार की परियोजना कर रही है।"
+    },
+    {
+      "englishSentence": "I am taking a vacation with my family.",
+      "hindiMeaning": "मैं अपने परिवार के साथ छुट्टी पर जा रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are going to a music festival.",
+      "hindiMeaning": "वे एक संगीत महोत्सव के लिए जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is taking a dance class.",
+      "hindiMeaning": "वह एक डांस क्लास ले रहा है।"
+    },
+    {
+      "englishSentence": "She is painting a beautiful sunset.",
+      "hindiMeaning": "वह एक खूबसूरत सूर्यास्त चित्रित कर रही है।"
+    },
+    {
+      "englishSentence": "I am going for a walk in the park.",
+      "hindiMeaning": "मैं पार्क में चलने जा रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are having a family dinner.",
+      "hindiMeaning": "वे परिवार के साथ रात का खाना खा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is learning to cook Italian cuisine.",
+      "hindiMeaning": "वह इटैलियन कुख्याति बनाने का सीख रहा है।"
+    },
+    {
+      "englishSentence": "She is attending a fitness class.",
+      "hindiMeaning": "वह फिटनेस क्लास में भाग ले रही है।"
+    },
+    {
+      "englishSentence": "I am taking a photography course.",
+      "hindiMeaning": "मैं एक फोटोग्राफी कोर्स ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going on a camping trip.",
+      "hindiMeaning": "वे कैम्पिंग ट्रिप पर जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is reading a book on philosophy.",
+      "hindiMeaning": "वह दर्शनशास्त्र पर एक किताब पढ़ रहा है।"
+    },
+    {
+      "englishSentence": "She is participating in a charity run.",
+      "hindiMeaning": "वह एक चैरिटी दौड़ में भाग ले रही है।"
+    },
+    {
+      "englishSentence": "I am taking a painting class.",
+      "hindiMeaning": "मैं एक चित्रकला क्लास ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are gardening in their backyard.",
+      "hindiMeaning": "वे अपने पिछले बगीचे में बागवानी कर रहे हैं।"
+    },
+    {
+      "englishSentence": "He is practicing martial arts with his friends.",
+      "hindiMeaning": "वह अपने दोस्तों के साथ मार्शल आर्ट्स का अभ्यास कर रहा है।"
+    },
+    {
+      "englishSentence": "She is learning to play the flute.",
+      "hindiMeaning": "वह फ्लूट बजाने का सीख रही है।"
+    },
+    {
+      "englishSentence": "I am attending a theater performance.",
+      "hindiMeaning": "मैं एक थिएटर प्रदर्शन में भाग ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going to a comedy show.",
+      "hindiMeaning": "वे एक कॉमेडी शो देखने जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is practicing yoga in the morning.",
+      "hindiMeaning": "वह सुबह योग का अभ्यास कर रहा है।"
+    },
+    {
+      "englishSentence": "She is taking a dance workshop.",
+      "hindiMeaning": "वह एक डांस वर्कशॉप ले रही है।"
+    },
+    {
+      "englishSentence": "I am attending a photography exhibition.",
+      "hindiMeaning": "मैं एक फोटोग्राफी प्रदर्शन में भाग ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going on a road trip.",
+      "hindiMeaning": "वे रोड ट्रिप पर जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is helping a charity organization.",
+      "hindiMeaning": "वह एक चैरिटी संगठन की मदद कर रहा है।"
+    },
+    {
+      "englishSentence": "She is practicing meditation.",
+      "hindiMeaning": "वह ध्यान का अभ्यास कर रही है।"
+    },
+    {
+      "englishSentence": "I am learning to play a musical instrument.",
+      "hindiMeaning": "मैं संगीत वाद्य बजाने का सीख रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are taking a cooking class together.",
+      "hindiMeaning": "वे साथ में एक कुकिंग क्लास ले रहे हैं।"
+    },
+    {
+      "englishSentence": "He is attending a photography seminar.",
+      "hindiMeaning": "वह एक फोटोग्राफी सेमिनार में भाग ले रहा है।"
+    },
+    {
+      "englishSentence": "She is doing a home improvement project.",
+      "hindiMeaning": "वह घर की सुधार की परियोजना कर रही है।"
+    },
+    {
+      "englishSentence": "I am taking a vacation with my family.",
+      "hindiMeaning": "मैं अपने परिवार के साथ छुट्टी पर जा रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are going to a music festival.",
+      "hindiMeaning": "वे एक संगीत महोत्सव के लिए जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is taking a dance class.",
+      "hindiMeaning": "वह एक डांस क्लास ले रहा है।"
+    },
+    {
+      "englishSentence": "She is painting a beautiful sunset.",
+      "hindiMeaning": "वह एक खूबसूरत सूर्यास्त चित्रित कर रही है।"
+    },
+    {
+      "englishSentence": "I am going for a walk in the park.",
+      "hindiMeaning": "मैं पार्क में चलने जा रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are having a family dinner.",
+      "hindiMeaning": "वे परिवार के साथ रात का खाना खा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is learning to cook Italian cuisine.",
+      "hindiMeaning": "वह इटैलियन कुख्याति बनाने का सीख रहा है।"
+    },
+    {
+      "englishSentence": "She is attending a fitness class.",
+      "hindiMeaning": "वह फिटनेस क्लास में भाग ले रही है।"
+    },
+    {
+      "englishSentence": "I am taking a photography course.",
+      "hindiMeaning": "मैं एक फोटोग्राफी कोर्स ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going on a camping trip.",
+      "hindiMeaning": "वे कैम्पिंग ट्रिप पर जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is reading a book on philosophy.",
+      "hindiMeaning": "वह दर्शनशास्त्र पर एक किताब पढ़ रहा है।"
+    },
+    {
+      "englishSentence": "She is participating in a charity run.",
+      "hindiMeaning": "वह एक चैरिटी दौड़ में भाग ले रही है।"
+    },
+    {
+      "englishSentence": "I am taking a painting class.",
+      "hindiMeaning": "मैं एक चित्रकला क्लास ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are gardening in their backyard.",
+      "hindiMeaning": "वे अपने पिछले बगीचे में बागवानी कर रहे हैं।"
+    },
+    {
+      "englishSentence": "He is practicing martial arts with his friends.",
+      "hindiMeaning": "वह अपने दोस्तों के साथ मार्शल आर्ट्स का अभ्यास कर रहा है।"
+    },
+    {
+      "englishSentence": "She is learning to play the flute.",
+      "hindiMeaning": "वह फ्लूट बजाने का सीख रही है।"
+    },
+    {
+      "englishSentence": "I am attending a theater performance.",
+      "hindiMeaning": "मैं एक थिएटर प्रदर्शन में भाग ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going to a comedy show.",
+      "hindiMeaning": "वे एक कॉमेडी शो देखने जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is practicing yoga in the morning.",
+      "hindiMeaning": "वह सुबह योग का अभ्यास कर रहा है।"
+    },
+    {
+      "englishSentence": "She is taking a dance workshop.",
+      "hindiMeaning": "वह एक डांस वर्कशॉप ले रही है।"
+    },
+    {
+      "englishSentence": "I am attending a photography exhibition.",
+      "hindiMeaning": "मैं एक फोटोग्राफी प्रदर्शन में भाग ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going on a road trip.",
+      "hindiMeaning": "वे रोड ट्रिप पर जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is helping a charity organization.",
+      "hindiMeaning": "वह एक चैरिटी संगठन की मदद कर रहा है।"
+    },
+    {
+      "englishSentence": "She is practicing meditation.",
+      "hindiMeaning": "वह ध्यान का अभ्यास कर रही है।"
+    },
+    {
+      "englishSentence": "I am learning to play a musical instrument.",
+      "hindiMeaning": "मैं संगीत वाद्य बजाने का सीख रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are taking a cooking class together.",
+      "hindiMeaning": "वे साथ में एक कुकिंग क्लास ले रहे हैं।"
+    },
+    {
+      "englishSentence": "He is attending a photography seminar.",
+      "hindiMeaning": "वह एक फोटोग्राफी सेमिनार में भाग ले रहा है।"
+    },
+    {
+      "englishSentence": "She is doing a home improvement project.",
+      "hindiMeaning": "वह घर की सुधार की परियोजना कर रही है।"
+    },
+    {
+      "englishSentence": "I am taking a vacation with my family.",
+      "hindiMeaning": "मैं अपने परिवार के साथ छुट्टी पर जा रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are going to a music festival.",
+      "hindiMeaning": "वे एक संगीत महोत्सव के लिए जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is taking a dance class.",
+      "hindiMeaning": "वह एक डांस क्लास ले रहा है।"
+    },
+    {
+      "englishSentence": "She is painting a beautiful sunset.",
+      "hindiMeaning": "वह एक खूबसूरत सूर्यास्त चित्रित कर रही है।"
+    },
+    {
+      "englishSentence": "I am going for a walk in the park.",
+      "hindiMeaning": "मैं पार्क में चलने जा रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are having a family dinner.",
+      "hindiMeaning": "वे परिवार के साथ रात का खाना खा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is learning to cook Italian cuisine.",
+      "hindiMeaning": "वह इटैलियन कुख्याति बनाने का सीख रहा है।"
+    },
+    {
+      "englishSentence": "She is attending a fitness class.",
+      "hindiMeaning": "वह फिटनेस क्लास में भाग ले रही है।"
+    },
+    {
+      "englishSentence": "I am taking a photography course.",
+      "hindiMeaning": "मैं एक फोटोग्राफी कोर्स ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going on a camping trip.",
+      "hindiMeaning": "वे कैम्पिंग ट्रिप पर जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is reading a book on philosophy.",
+      "hindiMeaning": "वह दर्शनशास्त्र पर एक किताब पढ़ रहा है।"
+    },
+    {
+      "englishSentence": "She is participating in a charity run.",
+      "hindiMeaning": "वह एक चैरिटी दौड़ में भाग ले रही है।"
+    },
+    {
+      "englishSentence": "I am taking a painting class.",
+      "hindiMeaning": "मैं एक चित्रकला क्लास ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are gardening in their backyard.",
+      "hindiMeaning": "वे अपने पिछले बगीचे में बागवानी कर रहे हैं।"
+    },
+    {
+      "englishSentence": "He is practicing martial arts with his friends.",
+      "hindiMeaning": "वह अपने दोस्तों के साथ मार्शल आर्ट्स का अभ्यास कर रहा है।"
+    },
+    {
+      "englishSentence": "She is learning to play the flute.",
+      "hindiMeaning": "वह फ्लूट बजाने का सीख रही है।"
+    },
+    {
+      "englishSentence": "I am attending a theater performance.",
+      "hindiMeaning": "मैं एक थिएटर प्रदर्शन में भाग ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going to a comedy show.",
+      "hindiMeaning": "वे एक कॉमेडी शो देखने जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is practicing yoga in the morning.",
+      "hindiMeaning": "वह सुबह योग का अभ्यास कर रहा है।"
+    },
+    {
+      "englishSentence": "She is taking a dance workshop.",
+      "hindiMeaning": "वह एक डांस वर्कशॉप ले रही है।"
+    },
+    {
+      "englishSentence": "I am attending a photography exhibition.",
+      "hindiMeaning": "मैं एक फोटोग्राफी प्रदर्शन में भाग ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going on a road trip.",
+      "hindiMeaning": "वे रोड ट्रिप पर जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is helping a charity organization.",
+      "hindiMeaning": "वह एक चैरिटी संगठन की मदद कर रहा है।"
+    },
+    {
+      "englishSentence": "She is practicing meditation.",
+      "hindiMeaning": "वह ध्यान का अभ्यास कर रही है।"
+    },
+    {
+      "englishSentence": "I am learning to play a musical instrument.",
+      "hindiMeaning": "मैं संगीत वाद्य बजाने का सीख रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are taking a cooking class together.",
+      "hindiMeaning": "वे साथ में एक कुकिंग क्लास ले रहे हैं।"
+    },
+    {
+      "englishSentence": "He is attending a photography seminar.",
+      "hindiMeaning": "वह एक फोटोग्राफी सेमिनार में भाग ले रहा है।"
+    },
+    {
+      "englishSentence": "She is doing a home improvement project.",
+      "hindiMeaning": "वह घर की सुधार की परियोजना कर रही है।"
+    },
+    {
+      "englishSentence": "I am taking a vacation with my family.",
+      "hindiMeaning": "मैं अपने परिवार के साथ छुट्टी पर जा रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are going to a music festival.",
+      "hindiMeaning": "वे एक संगीत महोत्सव के लिए जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is taking a dance class.",
+      "hindiMeaning": "वह एक डांस क्लास ले रहा है।"
+    },
+    {
+      "englishSentence": "She is painting a beautiful sunset.",
+      "hindiMeaning": "वह एक खूबसूरत सूर्यास्त चित्रित कर रही है।"
+    },
+    {
+      "englishSentence": "I am going for a walk in the park.",
+      "hindiMeaning": "मैं पार्क में चलने जा रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are having a family dinner.",
+      "hindiMeaning": "वे परिवार के साथ रात का खाना खा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is learning to cook Italian cuisine.",
+      "hindiMeaning": "वह इटैलियन कुख्याति बनाने का सीख रहा है।"
+    },
+    {
+      "englishSentence": "She is attending a fitness class.",
+      "hindiMeaning": "वह फिटनेस क्लास में भाग ले रही है।"
+    },
+    {
+      "englishSentence": "I am taking a photography course.",
+      "hindiMeaning": "मैं एक फोटोग्राफी कोर्स ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going on a camping trip.",
+      "hindiMeaning": "वे कैम्पिंग ट्रिप पर जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is reading a book on philosophy.",
+      "hindiMeaning": "वह दर्शनशास्त्र पर एक किताब पढ़ रहा है।"
+    },
+    {
+      "englishSentence": "She is participating in a charity run.",
+      "hindiMeaning": "वह एक चैरिटी दौड़ में भाग ले रही है।"
+    },
+    {
+      "englishSentence": "I am taking a painting class.",
+      "hindiMeaning": "मैं एक चित्रकला क्लास ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are gardening in their backyard.",
+      "hindiMeaning": "वे अपने पिछले बगीचे में बागवानी कर रहे हैं।"
+    },
+    {
+      "englishSentence": "He is practicing martial arts with his friends.",
+      "hindiMeaning": "वह अपने दोस्तों के साथ मार्शल आर्ट्स का अभ्यास कर रहा है।"
+    },
+    {
+      "englishSentence": "She is learning to play the flute.",
+      "hindiMeaning": "वह फ्लूट बजाने का सीख रही है।"
+    },
+    {
+      "englishSentence": "I am attending a theater performance.",
+      "hindiMeaning": "मैं एक थिएटर प्रदर्शन में भाग ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going to a comedy show.",
+      "hindiMeaning": "वे एक कॉमेडी शो देखने जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is practicing yoga in the morning.",
+      "hindiMeaning": "वह सुबह योग का अभ्यास कर रहा है।"
+    },
+    {
+      "englishSentence": "She is taking a dance workshop.",
+      "hindiMeaning": "वह एक डांस वर्कशॉप ले रही है।"
+    },
+    {
+      "englishSentence": "I am attending a photography exhibition.",
+      "hindiMeaning": "मैं एक फोटोग्राफी प्रदर्शन में भाग ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going on a road trip.",
+      "hindiMeaning": "वे रोड ट्रिप पर जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is helping a charity organization.",
+      "hindiMeaning": "वह एक चैरिटी संगठन की मदद कर रहा है।"
+    },
+    {
+      "englishSentence": "She is practicing meditation.",
+      "hindiMeaning": "वह ध्यान का अभ्यास कर रही है।"
+    },
+    {
+      "englishSentence": "I am learning to play a musical instrument.",
+      "hindiMeaning": "मैं संगीत वाद्य बजाने का सीख रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are taking a cooking class together.",
+      "hindiMeaning": "वे साथ में एक कुकिंग क्लास ले रहे हैं।"
+    },
+    {
+      "englishSentence": "He is attending a photography seminar.",
+      "hindiMeaning": "वह एक फोटोग्राफी सेमिनार में भाग ले रहा है।"
+    },
+    {
+      "englishSentence": "She is doing a home improvement project.",
+      "hindiMeaning": "वह घर की सुधार की परियोजना कर रही है।"
+    },
+    {
+      "englishSentence": "I am taking a vacation with my family.",
+      "hindiMeaning": "मैं अपने परिवार के साथ छुट्टी पर जा रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are going to a music festival.",
+      "hindiMeaning": "वे एक संगीत महोत्सव के लिए जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is taking a dance class.",
+      "hindiMeaning": "वह एक डांस क्लास ले रहा है।"
+    },
+    {
+      "englishSentence": "She is painting a beautiful sunset.",
+      "hindiMeaning": "वह एक खूबसूरत सूर्यास्त चित्रित कर रही है।"
+    },
+    {
+      "englishSentence": "I am going for a walk in the park.",
+      "hindiMeaning": "मैं पार्क में चलने जा रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are having a family dinner.",
+      "hindiMeaning": "वे परिवार के साथ रात का खाना खा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is learning to cook Italian cuisine.",
+      "hindiMeaning": "वह इटैलियन कुख्याति बनाने का सीख रहा है।"
+    },
+    {
+      "englishSentence": "She is attending a fitness class.",
+      "hindiMeaning": "वह फिटनेस क्लास में भाग ले रही है।"
+    },
+    {
+      "englishSentence": "I am taking a photography course.",
+      "hindiMeaning": "मैं एक फोटोग्राफी कोर्स ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going on a camping trip.",
+      "hindiMeaning": "वे कैम्पिंग ट्रिप पर जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is reading a book on philosophy.",
+      "hindiMeaning": "वह दर्शनशास्त्र पर एक किताब पढ़ रहा है।"
+    },
+    {
+      "englishSentence": "She is participating in a charity run.",
+      "hindiMeaning": "वह एक चैरिटी दौड़ में भाग ले रही है।"
+    },
+    {
+      "englishSentence": "I am taking a painting class.",
+      "hindiMeaning": "मैं एक चित्रकला क्लास ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are gardening in their backyard.",
+      "hindiMeaning": "वे अपने पिछले बगीचे में बागवानी कर रहे हैं।"
+    },
+    {
+      "englishSentence": "He is practicing martial arts with his friends.",
+      "hindiMeaning": "वह अपने दोस्तों के साथ मार्शल आर्ट्स का अभ्यास कर रहा है।"
+    },
+    {
+      "englishSentence": "She is learning to play the flute.",
+      "hindiMeaning": "वह फ्लूट बजाने का सीख रही है।"
+    },
+    {
+      "englishSentence": "I am attending a theater performance.",
+      "hindiMeaning": "मैं एक थिएटर प्रदर्शन में भाग ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going to a comedy show.",
+      "hindiMeaning": "वे एक कॉमेडी शो देखने जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is practicing yoga in the morning.",
+      "hindiMeaning": "वह सुबह योग का अभ्यास कर रहा है।"
+    },
+    {
+      "englishSentence": "She is taking a dance workshop.",
+      "hindiMeaning": "वह एक डांस वर्कशॉप ले रही है।"
+    },
+    {
+      "englishSentence": "I am attending a photography exhibition.",
+      "hindiMeaning": "मैं एक फोटोग्राफी प्रदर्शन में भाग ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going on a road trip.",
+      "hindiMeaning": "वे रोड ट्रिप पर जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is helping a charity organization.",
+      "hindiMeaning": "वह एक चैरिटी संगठन की मदद कर रहा है।"
+    },
+    {
+      "englishSentence": "She is practicing meditation.",
+      "hindiMeaning": "वह ध्यान का अभ्यास कर रही है।"
+    },
+    {
+      "englishSentence": "I am learning to play a musical instrument.",
+      "hindiMeaning": "मैं संगीत वाद्य बजाने का सीख रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are taking a cooking class together.",
+      "hindiMeaning": "वे साथ में एक कुकिंग क्लास ले रहे हैं।"
+    },
+    {
+      "englishSentence": "He is attending a photography seminar.",
+      "hindiMeaning": "वह एक फोटोग्राफी सेमिनार में भाग ले रहा है।"
+    },
+    {
+      "englishSentence": "She is doing a home improvement project.",
+      "hindiMeaning": "वह घर की सुधार की परियोजना कर रही है।"
+    },
+    {
+      "englishSentence": "I am taking a vacation with my family.",
+      "hindiMeaning": "मैं अपने परिवार के साथ छुट्टी पर जा रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are going to a music festival.",
+      "hindiMeaning": "वे एक संगीत महोत्सव के लिए जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is taking a dance class.",
+      "hindiMeaning": "वह एक डांस क्लास ले रहा है।"
+    },
+    {
+      "englishSentence": "She is painting a beautiful sunset.",
+      "hindiMeaning": "वह एक खूबसूरत सूर्यास्त चित्रित कर रही है।"
+    },
+    {
+      "englishSentence": "I am going for a walk in the park.",
+      "hindiMeaning": "मैं पार्क में चलने जा रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are having a family dinner.",
+      "hindiMeaning": "वे परिवार के साथ रात का खाना खा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is learning to cook Italian cuisine.",
+      "hindiMeaning": "वह इटैलियन कुख्याति बनाने का सीख रहा है।"
+    },
+    {
+      "englishSentence": "She is attending a fitness class.",
+      "hindiMeaning": "वह फिटनेस क्लास में भाग ले रही है।"
+    },
+    {
+      "englishSentence": "I am taking a photography course.",
+      "hindiMeaning": "मैं एक फोटोग्राफी कोर्स ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going on a camping trip.",
+      "hindiMeaning": "वे कैम्पिंग ट्रिप पर जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is reading a book on philosophy.",
+      "hindiMeaning": "वह दर्शनशास्त्र पर एक किताब पढ़ रहा है।"
+    },
+    {
+      "englishSentence": "She is participating in a charity run.",
+      "hindiMeaning": "वह एक चैरिटी दौड़ में भाग ले रही है।"
+    },
+    {
+      "englishSentence": "I am taking a painting class.",
+      "hindiMeaning": "मैं एक चित्रकला क्लास ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are gardening in their backyard.",
+      "hindiMeaning": "वे अपने पिछले बगीचे में बागवानी कर रहे हैं।"
+    },
+    {
+      "englishSentence": "He is practicing martial arts with his friends.",
+      "hindiMeaning": "वह अपने दोस्तों के साथ मार्शल आर्ट्स का अभ्यास कर रहा है।"
+    },
+    {
+      "englishSentence": "She is learning to play the flute.",
+      "hindiMeaning": "वह फ्लूट बजाने का सीख रही है।"
+    },
+    {
+      "englishSentence": "I am attending a theater performance.",
+      "hindiMeaning": "मैं एक थिएटर प्रदर्शन में भाग ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going to a comedy show.",
+      "hindiMeaning": "वे एक कॉमेडी शो देखने जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is practicing yoga in the morning.",
+      "hindiMeaning": "वह सुबह योग का अभ्यास कर रहा है।"
+    },
+    {
+      "englishSentence": "She is taking a dance workshop.",
+      "hindiMeaning": "वह एक डांस वर्कशॉप ले रही है।"
+    },
+    {
+      "englishSentence": "I am attending a photography exhibition.",
+      "hindiMeaning": "मैं एक फोटोग्राफी प्रदर्शन में भाग ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going on a road trip.",
+      "hindiMeaning": "वे रोड ट्रिप पर जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is helping a charity organization.",
+      "hindiMeaning": "वह एक चैरिटी संगठन की मदद कर रहा है।"
+    },
+    {
+      "englishSentence": "She is practicing meditation.",
+      "hindiMeaning": "वह ध्यान का अभ्यास कर रही है।"
+    },
+    {
+      "englishSentence": "I am learning to play a musical instrument.",
+      "hindiMeaning": "मैं संगीत वाद्य बजाने का सीख रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are taking a cooking class together.",
+      "hindiMeaning": "वे साथ में एक कुकिंग क्लास ले रहे हैं।"
+    },
+    {
+      "englishSentence": "He is attending a photography seminar.",
+      "hindiMeaning": "वह एक फोटोग्राफी सेमिनार में भाग ले रहा है।"
+    },
+    {
+      "englishSentence": "She is doing a home improvement project.",
+      "hindiMeaning": "वह घर की सुधार की परियोजना कर रही है।"
+    },
+    {
+      "englishSentence": "I am taking a vacation with my family.",
+      "hindiMeaning": "मैं अपने परिवार के साथ छुट्टी पर जा रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are going to a music festival.",
+      "hindiMeaning": "वे एक संगीत महोत्सव के लिए जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is taking a dance class.",
+      "hindiMeaning": "वह एक डांस क्लास ले रहा है।"
+    },
+    {
+      "englishSentence": "She is painting a beautiful sunset.",
+      "hindiMeaning": "वह एक खूबसूरत सूर्यास्त चित्रित कर रही है।"
+    },
+    {
+      "englishSentence": "I am going for a walk in the park.",
+      "hindiMeaning": "मैं पार्क में चलने जा रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are having a family dinner.",
+      "hindiMeaning": "वे परिवार के साथ रात का खाना खा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is learning to cook Italian cuisine.",
+      "hindiMeaning": "वह इटैलियन कुख्याति बनाने का सीख रहा है।"
+    },
+    {
+      "englishSentence": "She is attending a fitness class.",
+      "hindiMeaning": "वह फिटनेस क्लास में भाग ले रही है।"
+    },
+    {
+      "englishSentence": "I am taking a photography course.",
+      "hindiMeaning": "मैं एक फोटोग्राफी कोर्स ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going on a camping trip.",
+      "hindiMeaning": "वे कैम्पिंग ट्रिप पर जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is reading a book on philosophy.",
+      "hindiMeaning": "वह दर्शनशास्त्र पर एक किताब पढ़ रहा है।"
+    },
+    {
+      "englishSentence": "She is participating in a charity run.",
+      "hindiMeaning": "वह एक चैरिटी दौड़ में भाग ले रही है।"
+    },
+    {
+      "englishSentence": "I am taking a painting class.",
+      "hindiMeaning": "मैं एक चित्रकला क्लास ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are gardening in their backyard.",
+      "hindiMeaning": "वे अपने पिछले बगीचे में बागवानी कर रहे हैं।"
+    },
+    {
+      "englishSentence": "He is practicing martial arts with his friends.",
+      "hindiMeaning": "वह अपने दोस्तों के साथ मार्शल आर्ट्स का अभ्यास कर रहा है।"
+    },
+    {
+      "englishSentence": "She is learning to play the flute.",
+      "hindiMeaning": "वह फ्लूट बजाने का सीख रही है।"
+    },
+    {
+      "englishSentence": "I am attending a theater performance.",
+      "hindiMeaning": "मैं एक थिएटर प्रदर्शन में भाग ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going to a comedy show.",
+      "hindiMeaning": "वे एक कॉमेडी शो देखने जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is practicing yoga in the morning.",
+      "hindiMeaning": "वह सुबह योग का अभ्यास कर रहा है।"
+    },
+    {
+      "englishSentence": "She is taking a dance workshop.",
+      "hindiMeaning": "वह एक डांस वर्कशॉप ले रही है।"
+    },
+    {
+      "englishSentence": "I am attending a photography exhibition.",
+      "hindiMeaning": "मैं एक फोटोग्राफी प्रदर्शन में भाग ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going on a road trip.",
+      "hindiMeaning": "वे रोड ट्रिप पर जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is helping a charity organization.",
+      "hindiMeaning": "वह एक चैरिटी संगठन की मदद कर रहा है।"
+    },
+    {
+      "englishSentence": "She is practicing meditation.",
+      "hindiMeaning": "वह ध्यान का अभ्यास कर रही है।"
+    },
+    {
+      "englishSentence": "I am learning to play a musical instrument.",
+      "hindiMeaning": "मैं संगीत वाद्य बजाने का सीख रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are taking a cooking class together.",
+      "hindiMeaning": "वे साथ में एक कुकिंग क्लास ले रहे हैं।"
+    },
+    {
+      "englishSentence": "He is attending a photography seminar.",
+      "hindiMeaning": "वह एक फोटोग्राफी सेमिनार में भाग ले रहा है।"
+    },
+    {
+      "englishSentence": "She is doing a home improvement project.",
+      "hindiMeaning": "वह घर की सुधार की परियोजना कर रही है।"
+    },
+    {
+      "englishSentence": "I am taking a vacation with my family.",
+      "hindiMeaning": "मैं अपने परिवार के साथ छुट्टी पर जा रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are going to a music festival.",
+      "hindiMeaning": "वे एक संगीत महोत्सव के लिए जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is taking a dance class.",
+      "hindiMeaning": "वह एक डांस क्लास ले रहा है।"
+    },
+    {
+      "englishSentence": "She is painting a beautiful sunset.",
+      "hindiMeaning": "वह एक खूबसूरत सूर्यास्त चित्रित कर रही है।"
+    },
+    {
+      "englishSentence": "I am going for a walk in the park.",
+      "hindiMeaning": "मैं पार्क में चलने जा रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are having a family dinner.",
+      "hindiMeaning": "वे परिवार के साथ रात का खाना खा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is learning to cook Italian cuisine.",
+      "hindiMeaning": "वह इटैलियन कुख्याति बनाने का सीख रहा है।"
+    },
+    {
+      "englishSentence": "She is attending a fitness class.",
+      "hindiMeaning": "वह फिटनेस क्लास में भाग ले रही है।"
+    },
+    {
+      "englishSentence": "I am taking a photography course.",
+      "hindiMeaning": "मैं एक फोटोग्राफी कोर्स ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going on a camping trip.",
+      "hindiMeaning": "वे कैम्पिंग ट्रिप पर जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is reading a book on philosophy.",
+      "hindiMeaning": "वह दर्शनशास्त्र पर एक किताब पढ़ रहा है।"
+    },
+    {
+      "englishSentence": "She is participating in a charity run.",
+      "hindiMeaning": "वह एक चैरिटी दौड़ में भाग ले रही है।"
+    },
+    {
+      "englishSentence": "I am taking a painting class.",
+      "hindiMeaning": "मैं एक चित्रकला क्लास ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are gardening in their backyard.",
+      "hindiMeaning": "वे अपने पिछले बगीचे में बागवानी कर रहे हैं।"
+    },
+    {
+      "englishSentence": "He is practicing martial arts with his friends.",
+      "hindiMeaning": "वह अपने दोस्तों के साथ मार्शल आर्ट्स का अभ्यास कर रहा है।"
+    },
+    {
+      "englishSentence": "She is learning to play the flute.",
+      "hindiMeaning": "वह फ्लूट बजाने का सीख रही है।"
+    },
+    {
+      "englishSentence": "I am attending a theater performance.",
+      "hindiMeaning": "मैं एक थिएटर प्रदर्शन में भाग ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going to a comedy show.",
+      "hindiMeaning": "वे एक कॉमेडी शो देखने जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is practicing yoga in the morning.",
+      "hindiMeaning": "वह सुबह योग का अभ्यास कर रहा है।"
+    },
+    {
+      "englishSentence": "She is taking a dance workshop.",
+      "hindiMeaning": "वह एक डांस वर्कशॉप ले रही है।"
+    },
+    {
+      "englishSentence": "I am attending a photography exhibition.",
+      "hindiMeaning": "मैं एक फोटोग्राफी प्रदर्शन में भाग ले रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are going on a road trip.",
+      "hindiMeaning": "वे रोड ट्रिप पर जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is helping a charity organization.",
+      "hindiMeaning": "वह एक चैरिटी संगठन की मदद कर रहा है।"
+    },
+    {
+      "englishSentence": "She is practicing meditation.",
+      "hindiMeaning": "वह ध्यान का अभ्यास कर रही है।"
+    },
+    {
+      "englishSentence": "I am learning to play a musical instrument.",
+      "hindiMeaning": "मैं संगीत वाद्य बजाने का सीख रहा हूँ।"
+    },
+    {
+      "englishSentence": "They are taking a cooking class together.",
+      "hindiMeaning": "वे साथ में एक कुकिंग क्लास ले रहे हैं।"
+    },
+    {
+      "englishSentence": "He is attending a photography seminar.",
+      "hindiMeaning": "वह एक फोटोग्राफी सेमिनार में भाग ले रहा है।"
+    },
+    {
+      "englishSentence": "She is doing a home improvement project.",
+      "hindiMeaning": "वह घर की सुधार की परियोजना कर रही है।"
+    },
+    {
+      "englishSentence": "I am taking a vacation with my family.",
+      "hindiMeaning": "मैं अपने परिवार के साथ छुट्टी पर जा रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are going to a music festival.",
+      "hindiMeaning": "वे एक संगीत महोत्सव के लिए जा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is taking a dance class.",
+      "hindiMeaning": "वह एक डांस क्लास ले रहा है।"
+    },
+    {
+      "englishSentence": "She is painting a beautiful sunset.",
+      "hindiMeaning": "वह एक खूबसूरत सूर्यास्त चित्रित कर रही है।"
+    },
+    {
+      "englishSentence": "I am going for a walk in the park.",
+      "hindiMeaning": "मैं पार्क में चलने जा रहा/रही हूँ।"
+    },
+    {
+      "englishSentence": "They are having a family dinner.",
+      "hindiMeaning": "वे परिवार के साथ रात का खाना खा रहे हैं।"
+    },
+    {
+      "englishSentence": "He is learning to cook Italian cuisine.",
+      "hindiMeaning": "वह इटैलियन कुख्याति बनाने का सीख रहा है।"
+    },
+    {
+      "englishSentence": "She is attending a fitness class.",
+      "hindiMeaning": "वह फिटनेस क्लास में भाग ले ."
+    }
+]

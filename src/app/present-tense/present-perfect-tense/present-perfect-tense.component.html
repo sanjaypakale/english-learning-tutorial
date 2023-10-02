@@ -1,0 +1,20 @@
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;">The present perfect tense is a grammatical tense used to describe actions or events that have a connection to the present moment. It is often used to express actions or situations that started in the past and continue into the present, or actions that occurred at an unspecified time in the past but have relevance to the present. In English, the present perfect tense is typically formed using the following structure:</p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Affirmative Form:</strong>Subject + have/has + past participle of the verb</p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Negative Form:</strong>Subject + have/has + not + past participle of the verb</p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Interrogative Form:</strong>Have/Has + subject + past participle of the verb</p>
+
+
+
+<table>
+    <tr>
+        <th>Sl #</th>
+        <th>English Sentence</th>
+        <th>Hindi Meaning</th>
+    </tr>
+    <tr *ngFor="let sentense of jsonData; index as i">
+        <td>{{i+1}}</td>
+        <td>{{sentense.englishSentence}}</td>
+        <td>{{sentense.hindiMeaning}}</td>
+    </tr>
+
+</table>

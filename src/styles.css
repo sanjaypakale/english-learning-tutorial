@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+
+.tutorial-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+.tutorial-container {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Tutorial content */
+.tutorial-content {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Style links within the tutorial content */
+  .tutorial-content a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .tutorial-content a:hover {
+    text-decoration: underline;
+  }
+
+  .horizontal-menu a {
+    color: #fff; /* Text color for menu items */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 15px; /* Add margin between menu items */
+    font-size: 16px; /* Font size */
+    
+    transition: color 0.3s; /* Smooth color transition on hover */
+  }
+  
+  /* Style for menu item hover effect */
+  .horizontal-menu a:hover {
+    color: #ff6600; /* Change text color on hover */
+  }
+
+  /* styles.css (or your component's CSS file) */
+.active {
+    color: blue; /* You can customize the styling as needed */
+    font-weight: bold;
+  }
+  
