@@ -2,63 +2,94 @@
 
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 
 
 .tutorial-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
 .tutorial-container {
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-  /* Tutorial content */
+/* Tutorial content */
 .tutorial-content {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  /* Style links within the tutorial content */
-  .tutorial-content a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .tutorial-content a:hover {
-    text-decoration: underline;
-  }
+  font-size: 16px;
+  line-height: 1.5;
+}
 
-  .horizontal-menu a {
-    color: #fff; /* Text color for menu items */
-    text-decoration: none; /* Remove underline from links */
-    margin: 0 15px; /* Add margin between menu items */
-    font-size: 16px; /* Font size */
-    
-    transition: color 0.3s; /* Smooth color transition on hover */
-  }
-  
-  /* Style for menu item hover effect */
-  .horizontal-menu a:hover {
-    color: #ff6600; /* Change text color on hover */
-  }
+/* Style links within the tutorial content */
+.tutorial-content a {
+  color: #007bff;
+  text-decoration: none;
+}
 
-  /* styles.css (or your component's CSS file) */
+.tutorial-content a:hover {
+  text-decoration: underline;
+}
+
+.horizontal-menu a {
+  color: #fff;
+  /* Text color for menu items */
+  text-decoration: none;
+  /* Remove underline from links */
+  margin: 0 15px;
+  /* Add margin between menu items */
+  font-size: 16px;
+  /* Font size */
+
+  transition: color 0.3s;
+  /* Smooth color transition on hover */
+}
+
+/* Style for menu item hover effect */
+.horizontal-menu a:hover {
+  color: #ff6600;
+  /* Change text color on hover */
+}
+
+/* styles.css (or your component's CSS file) */
 .active {
-    color: blue; /* You can customize the styling as needed */
-    font-weight: bold;
-  }
-  
+  color: blue;
+  /* You can customize the styling as needed */
+  font-weight: bold;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}

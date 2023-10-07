@@ -305,21 +305,18 @@
 <mat-toolbar color="primary">
   <!-- <span>English Learning</span> -->
   <div class="horizontal-menu">
-    <a mat-button [matMenuTriggerFor]="tenseMenu">Tenses</a>
-    <a mat-button routerLink="/about">Verbs</a>
-    <a mat-button routerLink="/contact">Contact</a>
+    <!-- <a mat-button [matMenuTriggerFor]="tenseMenu">Tenses</a> -->
+    <a mat-button routerLink="/tense">Tenses</a>
+    <a mat-button routerLink="/verbs">Verbs</a>
+    <a mat-button routerLink="/sightWords">Sight Words</a>
+    <a mat-button routerLink="/videos">Videos</a>
   </div>
-  <mat-menu #tenseMenu="matMenu">
+  <!-- <mat-menu #tenseMenu="matMenu">
     <a mat-menu-item routerLink="/presenttense">Present Tense</a>
     <button mat-menu-item>Past Tense</button>
     <button mat-menu-item>Future Tense</button>
-  </mat-menu>
-
-
+  </mat-menu> -->
 </mat-toolbar>
-
-
-
 <div class="tutorial-container" role="main">
   <router-outlet></router-outlet>
 

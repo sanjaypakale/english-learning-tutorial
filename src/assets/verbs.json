@@ -1,0 +1,322 @@
+[
+    {
+        "verb": "eat",
+        "hindiMeaning": "खाना",
+        "forms": {
+            "baseForm": "eat",
+            "pastSimple": "ate",
+            "pastParticiple": "eaten",
+            "presentParticiple": "eating"
+        },
+        "sentences": {
+            "baseForm": "I eat lunch at 1 PM every day.",
+            "pastSimple": "Yesterday, I ate a delicious pizza.",
+            "pastParticiple": "He had already eaten when I arrived.",
+            "presentParticiple": "She is eating an apple right now."
+        }
+    },
+    {
+        "verb": "go",
+        "hindiMeaning": "जाना",
+        "forms": {
+            "baseForm": "go",
+            "pastSimple": "went",
+            "pastParticiple": "gone",
+            "presentParticiple": "going"
+        },
+        "sentences": {
+            "baseForm": "I go to school by bus.",
+            "pastSimple": "They went to the park yesterday.",
+            "pastParticiple": "He had already gone home when I called.",
+            "presentParticiple": "We are going on a trip this weekend."
+        }
+    },
+    {
+        "verb": "read",
+        "hindiMeaning": "पढ़ना",
+        "forms": {
+            "baseForm": "read",
+            "pastSimple": "read",
+            "pastParticiple": "read",
+            "presentParticiple": "reading"
+        },
+        "sentences": {
+            "baseForm": "I read books in my free time.",
+            "pastSimple": "She read a great novel last night.",
+            "pastParticiple": "They have already read the entire series.",
+            "presentParticiple": "He is currently reading a magazine."
+        }
+    },
+    {
+        "verb": "write",
+        "hindiMeaning": "लिखना",
+        "forms": {
+            "baseForm": "write",
+            "pastSimple": "wrote",
+            "pastParticiple": "written",
+            "presentParticiple": "writing"
+        },
+        "sentences": {
+            "baseForm": "I write letters to my friends.",
+            "pastSimple": "She wrote a beautiful poem yesterday.",
+            "pastParticiple": "The report has been written by the team.",
+            "presentParticiple": "He is writing an important email now."
+        }
+    },
+    {
+        "verb": "run",
+        "hindiMeaning": "दौड़ना",
+        "forms": {
+            "baseForm": "run",
+            "pastSimple": "ran",
+            "pastParticiple": "run",
+            "presentParticiple": "running"
+        },
+        "sentences": {
+            "baseForm": "I run in the park every morning.",
+            "pastSimple": "He ran a marathon last year.",
+            "pastParticiple": "They have run this race many times.",
+            "presentParticiple": "She is running fast to catch the bus."
+        }
+    },
+    {
+        "verb": "sleep",
+        "hindiMeaning": "सोना",
+        "forms": {
+            "baseForm": "sleep",
+            "pastSimple": "slept",
+            "pastParticiple": "slept",
+            "presentParticiple": "sleeping"
+        },
+        "sentences": {
+            "baseForm": "I sleep for 8 hours every night.",
+            "pastSimple": "She slept soundly after a long day.",
+            "pastParticiple": "I had slept for only a few hours.",
+            "presentParticiple": "He is sleeping on the couch."
+        }
+    },
+    {
+        "verb": "drink",
+        "hindiMeaning": "पीना",
+        "forms": {
+            "baseForm": "drink",
+            "pastSimple": "drank",
+            "pastParticiple": "drunk",
+            "presentParticiple": "drinking"
+        },
+        "sentences": {
+            "baseForm": "I drink water throughout the day.",
+            "pastSimple": "She drank a glass of juice this morning.",
+            "pastParticiple": "They had drunk all the coffee by the time I got there.",
+            "presentParticiple": "He is drinking a cup of tea now."
+        }
+    },
+    {
+        "verb": "sing",
+        "hindiMeaning": "गाना",
+        "forms": {
+            "baseForm": "sing",
+            "pastSimple": "sang",
+            "pastParticiple": "sung",
+            "presentParticiple": "singing"
+        },
+        "sentences": {
+            "baseForm": "I sing songs in the shower.",
+            "pastSimple": "She sang a beautiful melody at the concert.",
+            "pastParticiple": "They have sung this song many times.",
+            "presentParticiple": "He is singing along with the music."
+        }
+    },
+    {
+        "verb": "speak",
+        "hindiMeaning": "बोलना",
+        "forms": {
+            "baseForm": "speak",
+            "pastSimple": "spoke",
+            "pastParticiple": "spoken",
+            "presentParticiple": "speaking"
+        },
+        "sentences": {
+            "baseForm": "I speak English fluently.",
+            "pastSimple": "She spoke with confidence during the presentation.",
+            "pastParticiple": "They had already spoken to the manager.",
+            "presentParticiple": "He is speaking on the phone right now."
+        }
+    },
+    {
+        "verb": "dance",
+        "hindiMeaning": "नृत्य करना",
+        "forms": {
+            "baseForm": "dance",
+            "pastSimple": "danced",
+            "pastParticiple": "danced",
+            "presentParticiple": "dancing"
+        },
+        "sentences": {
+            "baseForm": "I dance to my favorite music.",
+            "pastSimple": "She danced gracefully at the party last night.",
+            "pastParticiple": "They had danced for hours at the wedding.",
+            "presentParticiple": "He is dancing to the rhythm of the song."
+        }
+    },
+    {
+        "verb": "accept",
+        "hindiMeaning": "स्वीकार करना",
+        "forms": {
+            "baseForm": "accept",
+            "pastSimple": "accepted",
+            "pastParticiple": "accepted",
+            "presentParticiple": "accepting"
+        },
+        "sentences": {
+            "baseForm": "She accepts the offer graciously.",
+            "pastSimple": "He accepted the invitation to the party.",
+            "pastParticiple": "They had already accepted the terms of the contract.",
+            "presentParticiple": "I am accepting the responsibility for the project."
+        }
+    },
+    {
+        "verb": "arrive",
+        "hindiMeaning": "आना",
+        "forms": {
+            "baseForm": "arrive",
+            "pastSimple": "arrived",
+            "pastParticiple": "arrived",
+            "presentParticiple": "arriving"
+        },
+        "sentences": {
+            "baseForm": "They arrive at the airport on time.",
+            "pastSimple": "She arrived at the meeting a little late.",
+            "pastParticiple": "I had already arrived when the event started.",
+            "presentParticiple": "He is arriving in the evening."
+        }
+    },
+    {
+        "verb": "breathe",
+        "hindiMeaning": "साँस लेना",
+        "forms": {
+            "baseForm": "breathe",
+            "pastSimple": "breathed",
+            "pastParticiple": "breathed",
+            "presentParticiple": "breathing"
+        },
+        "sentences": {
+            "baseForm": "We breathe to stay alive.",
+            "pastSimple": "He breathed deeply to calm himself.",
+            "pastParticiple": "She had breathed the fresh air of the mountains.",
+            "presentParticiple": "I am breathing slowly to relax."
+        }
+    },
+    {
+        "verb": "create",
+        "hindiMeaning": "बनाना",
+        "forms": {
+            "baseForm": "create",
+            "pastSimple": "created",
+            "pastParticiple": "created",
+            "presentParticiple": "creating"
+        },
+        "sentences": {
+            "baseForm": "Artists create beautiful paintings.",
+            "pastSimple": "He created a unique sculpture for the exhibition.",
+            "pastParticiple": "They had created a masterpiece of literature.",
+            "presentParticiple": "She is creating a new website."
+        }
+    },
+    {
+        "verb": "decide",
+        "hindiMeaning": "निर्णय करना",
+        "forms": {
+            "baseForm": "decide",
+            "pastSimple": "decided",
+            "pastParticiple": "decided",
+            "presentParticiple": "deciding"
+        },
+        "sentences": {
+            "baseForm": "We decide on the best course of action.",
+            "pastSimple": "She decided to take a vacation this summer.",
+            "pastParticiple": "He had already decided on the menu for the party.",
+            "presentParticiple": "I am deciding between two options."
+        }
+    },
+    {
+        "verb": "encourage",
+        "hindiMeaning": "प्रोत्साहित करना",
+        "forms": {
+            "baseForm": "encourage",
+            "pastSimple": "encouraged",
+            "pastParticiple": "encouraged",
+            "presentParticiple": "encouraging"
+        },
+        "sentences": {
+            "baseForm": "Parents encourage their children to do their best.",
+            "pastSimple": "She encouraged her friend to pursue her dreams.",
+            "pastParticiple": "They had encouraged me to take the opportunity.",
+            "presentParticiple": "He is encouraging his team to work harder."
+        }
+    },
+    {
+        "verb": "fall",
+        "hindiMeaning": "गिरना",
+        "forms": {
+            "baseForm": "fall",
+            "pastSimple": "fell",
+            "pastParticiple": "fallen",
+            "presentParticiple": "falling"
+        },
+        "sentences": {
+            "baseForm": "Leaves fall from the trees in autumn.",
+            "pastSimple": "She fell and scraped her knee while running.",
+            "pastParticiple": "I had fallen asleep by the time they arrived.",
+            "presentParticiple": "He is falling in love."
+        }
+    },
+    {
+        "verb": "grow",
+        "hindiMeaning": "बढ़ना",
+        "forms": {
+            "baseForm": "grow",
+            "pastSimple": "grew",
+            "pastParticiple": "grown",
+            "presentParticiple": "growing"
+        },
+        "sentences": {
+            "baseForm": "Plants grow when they receive sunlight and water.",
+            "pastSimple": "He grew taller over the summer.",
+            "pastParticiple": "They had grown their own vegetables in the garden.",
+            "presentParticiple": "She is growing her business successfully."
+        }
+    },
+    {
+        "verb": "help",
+        "hindiMeaning": "मदद करना",
+        "forms": {
+            "baseForm": "help",
+            "pastSimple": "helped",
+            "pastParticiple": "helped",
+            "presentParticiple": "helping"
+        },
+        "sentences": {
+            "baseForm": "Friends help each other in times of need.",
+            "pastSimple": "She helped her neighbor carry groceries.",
+            "pastParticiple": "They had helped me with my project.",
+            "presentParticiple": "I am helping my sister with her homework."
+        }
+    },
+    {
+        "verb": "improve",
+        "hindiMeaning": "सुधारना",
+        "forms": {
+            "baseForm": "improve",
+            "pastSimple": "improved",
+            "pastParticiple": "improved",
+            "presentParticiple": "improving"
+        },
+        "sentences": {
+            "baseForm": "Continuous practice can improve your skills.",
+            "pastSimple": "She improved her grades with hard work.",
+            "pastParticiple": "He had improved the performance of the computer.",
+            "presentParticiple": "They are improving the company's processes."
+        }
+    }
+]

@@ -1,0 +1,49 @@
+<div class="tutorial-content">
+    <table>
+        <thead>
+            <tr>
+                <th>Base Form</th>
+                <th>Hindi Meaning</th>
+                <th>Past Simple</th>
+                <th>Past Participle</th>
+                <th>Present Participle</th>
+                <th>Sentences</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let verb of jsonData.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage)">
+                <td>{{ verb.forms.baseForm }}</td>
+                <td>{{ verb.hindiMeaning }}</td>
+                <td>{{ verb.forms.pastSimple }}</td>
+                <td>{{ verb.forms.pastParticiple }}</td>
+                <td>{{ verb.forms.presentParticiple }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <span style="font-weight: bold;">Base Form:</span> {{ verb.sentences.baseForm }}
+                        </li>
+                        <li>
+                            <span style="font-weight: bold;">Past Simple:</span> {{ verb.sentences.pastSimple }}
+                        </li>
+                        <li>
+                            <span style="font-weight: bold;">Past Participle:</span> {{ verb.sentences.pastParticiple }}
+                        </li>
+                        <li>
+                            <span style="font-weight: bold;">Present Participle:</span> {{
+                            verb.sentences.presentParticiple }}
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="pagination">
+        <button (click)="currentPage = 1">First</button>
+        <button (click)="currentPage = currentPage - 1" [disabled]="currentPage === 1">Previous</button>
+        <span>{{ currentPage }}</span>
+        <button (click)="currentPage = currentPage + 1">Next</button>
+        <button (click)="lastPage()">Last</button>
+    </div>
+
+</div>

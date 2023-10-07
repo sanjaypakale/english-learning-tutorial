@@ -6,14 +6,18 @@ import { AppComponent } from './app.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PresentTenseComponent } from './present-tense/present-tense.component';
-import { SimplePresentTenseComponent } from './present-tense/simple-present-tense/simple-present-tense.component';
-import { PresentContinuousTenseComponent } from './present-tense/present-continuous-tense/present-continuous-tense.component';
-import { PresentPerfectTenseComponent } from './present-tense/present-perfect-tense/present-perfect-tense.component';
-import { PresentPerfectContinuousTenseComponent } from './present-tense/present-perfect-continuous-tense/present-perfect-continuous-tense.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PastTenseComponent } from './tenses/past-tense/past-tense.component';
+import { TensesMainComponent } from './tenses/tenses-main/tenses-main.component';
+import { PresentTenseComponent } from './tenses/present-tense/present-tense.component';
+import { SimplePresentTenseComponent } from './tenses/present-tense/simple-present-tense/simple-present-tense.component';
+import { PresentContinuousTenseComponent } from './tenses/present-tense/present-continuous-tense/present-continuous-tense.component';
+import { PresentPerfectContinuousTenseComponent } from './tenses/present-tense/present-perfect-continuous-tense/present-perfect-continuous-tense.component';
+import { PresentPerfectTenseComponent } from './tenses/present-tense/present-perfect-tense/present-perfect-tense.component';
+import { VideosComponent } from './videos/videos.component';
+import { VerbsComponent } from './verbs/verbs.component';
+import { SightWordsComponent } from './sight-words/sight-words.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { PastTenseComponent } from './tenses/past-tense/past-tense.component';
     PresentPerfectTenseComponent,
     PresentPerfectContinuousTenseComponent,
     DashboardComponent,
-    PastTenseComponent
+    PastTenseComponent,
+    TensesMainComponent,
+    VideosComponent,
+    VerbsComponent,
+    SightWordsComponent
   ],
   imports: [
     BrowserModule,
