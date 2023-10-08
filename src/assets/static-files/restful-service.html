@@ -1,0 +1,128 @@
+<ol style="text-align: start;color: black;background-color: white;font-size: 16px;">
+    <li style="color: black;">
+        <p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Question 1:</strong><em style="color: black;">Scenario: You are tasked with designing a RESTful API for a bookstore. Users should be able to retrieve information about books, add new books, update book details, and delete books. How would you design the API endpoints for this bookstore application?</em></p>
+        <p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Answer:</strong>For the bookstore application, I would design the following RESTful API endpoints:</p>
+        <ul style="text-align: start;color: black;background-color: white;font-size: 16px;">
+            <li style="color: black;">
+                <p style="color: black;">Retrieve all books:</p>
+                <ul style="color: black;">
+                    <li style="color: black;"><code style="color: black;font-size: 0.875em;">GET /api/books</code></li>
+                </ul>
+            </li>
+            <li style="color: black;">
+                <p style="color: black;">Retrieve a specific book by its ID:</p>
+                <ul style="color: black;">
+                    <li style="color: black;"><code style="color: black;font-size: 0.875em;">GET /api/books/{id}</code></li>
+                </ul>
+            </li>
+            <li style="color: black;">
+                <p style="color: black;">Add a new book:</p>
+                <ul style="color: black;">
+                    <li style="color: black;"><code style="color: black;font-size: 0.875em;">POST /api/books</code></li>
+                </ul>
+            </li>
+            <li style="color: black;">
+                <p style="color: black;">Update book details:</p>
+                <ul style="color: black;">
+                    <li style="color: black;"><code style="color: black;font-size: 0.875em;">PUT /api/books/{id}</code></li>
+                </ul>
+            </li>
+            <li style="color: black;">
+                <p style="color: black;">Delete a book by its ID:</p>
+                <ul style="color: black;">
+                    <li style="color: black;"><code style="color: black;font-size: 0.875em;">DELETE /api/books/{id}</code></li>
+                </ul>
+            </li><strong style="color: black;">Question 2:</strong><em style="color: black;">Scenario: You are developing a RESTful API for a weather forecasting application. The API needs to provide weather data for specific locations based on latitude and longitude coordinates. How would you design the API endpoints to retrieve weather information for a given location?</em>
+        </ul>
+        <p style="text-align: start;color: black;background-color: white;font-size: 16px;"></p>
+        <p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Answer:</strong>For the weather forecasting application, I would design the following RESTful API endpoints based on latitude and longitude coordinates:</p>
+        <ul style="text-align: start;color: black;background-color: white;font-size: 16px;">
+            <li style="color: black;">Retrieve weather data for a specific location by latitude and longitude:<ul style="color: black;">
+                    <li style="color: black;"><code style="color: black;font-size: 0.875em;">GET /api/weather?latitude={latitude}&amp;longitude={longitude}</code></li>
+                </ul>
+            </li>The API would accept latitude and longitude as query parameters and return the weather information for the specified location.
+        </ul>
+        <p style="text-align: start;color: black;background-color: white;font-size: 16px;"></p>
+        <p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Question 3:</strong><em style="color: black;">Scenario: You are developing a RESTful API for a music streaming service. Users should be able to create playlists and add songs to them. How would you design the API endpoints to support playlist creation and song addition?</em></p>
+        <p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Answer:</strong>For the music streaming service, I would design the following RESTful API endpoints to support playlist creation and song addition:</p>
+        <ul style="text-align: start;color: black;background-color: white;font-size: 16px;">
+            <li style="color: black;">
+                <p style="color: black;">Create a new playlist:</p>
+                <ul style="color: black;">
+                    <li style="color: black;"><code style="color: black;font-size: 0.875em;">POST /api/playlists</code></li>
+                </ul>
+            </li>
+            <li style="color: black;">
+                <p style="color: black;">Add a song to a playlist:</p>
+                <ul style="color: black;">
+                    <li style="color: black;"><code style="color: black;font-size: 0.875em;">POST /api/playlists/{playlistId}/songs</code></li>
+                </ul>
+            </li>The <code style="color: black;font-size: 0.875em;">POST /api/playlists</code> endpoint would allow users to create a new playlist, and the <code style="color: black;font-size: 0.875em;">POST /api/playlists/{playlistId}/songs</code> endpoint would let users add songs to an existing playlist by specifying the <code style="color: black;font-size: 0.875em;">playlistId</code> in the URL.
+        </ul>
+        <p style="text-align: start;color: black;background-color: white;font-size: 16px;"></p>
+        <p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Question 4:</strong><em style="color: black;">Scenario: You are developing a RESTful API for a user management system. Users can register, log in, update their profiles, and delete their accounts. How would you design the API endpoints for user-related operations?</em></p>
+        <p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Answer:</strong>For the user management system, I would design the following RESTful API endpoints:</p>
+        <ul style="text-align: start;color: black;background-color: white;font-size: 16px;">
+            <li style="color: black;">
+                <p style="color: black;">Register a new user:</p>
+                <ul style="color: black;">
+                    <li style="color: black;"><code style="color: black;font-size: 0.875em;">POST /api/users</code></li>
+                </ul>
+            </li>
+            <li style="color: black;">
+                <p style="color: black;">Log in:</p>
+                <ul style="color: black;">
+                    <li style="color: black;"><code style="color: black;font-size: 0.875em;">POST /api/login</code></li>
+                </ul>
+            </li>
+            <li style="color: black;">
+                <p style="color: black;">Retrieve user profile:</p>
+                <ul style="color: black;">
+                    <li style="color: black;"><code style="color: black;font-size: 0.875em;">GET /api/users/{userId}</code></li>
+                </ul>
+            </li>
+            <li style="color: black;">
+                <p style="color: black;">Update user profile:</p>
+                <ul style="color: black;">
+                    <li style="color: black;"><code style="color: black;font-size: 0.875em;">PUT /api/users/{userId}</code></li>
+                </ul>
+            </li>
+            <li style="color: black;">
+                <p style="color: black;">Delete user account:</p>
+                <ul style="color: black;">
+                    <li style="color: black;"><code style="color: black;font-size: 0.875em;">DELETE /api/users/{userId}</code></li>
+                </ul>
+            </li>The <code style="color: black;font-size: 0.875em;">POST /api/users</code> endpoint would allow users to register, while <code style="color: black;font-size: 0.875em;">POST /api/login</code> would handle the login process. Users can retrieve their profiles, update their information, and delete their accounts using the respective endpoints.
+        </ul>
+        <p style="text-align: start;color: black;background-color: white;font-size: 16px;"></p>
+        <p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Question 5:</strong><em style="color: black;">Scenario: You are building a RESTful API for a car rental service. Users should be able to search for available cars, reserve a car, view their reservations, and cancel reservations. How would you design the API endpoints to support these operations?</em></p>
+        <p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Answer:</strong>For the car rental service, I would design the following RESTful API endpoints:</p>
+        <ul style="text-align: start;color: black;background-color: white;font-size: 16px;">
+            <li style="color: black;">
+                <p style="color: black;">Search for available cars:</p>
+                <ul style="color: black;">
+                    <li style="color: black;"><code style="color: black;font-size: 0.875em;">GET /api/cars?pickupDate={pickupDate}&amp;returnDate={returnDate}</code></li>
+                </ul>
+            </li>
+            <li style="color: black;">
+                <p style="color: black;">Reserve a car:</p>
+                <ul style="color: black;">
+                    <li style="color: black;"><code style="color: black;font-size: 0.875em;">POST /api/reservations</code></li>
+                </ul>
+            </li>
+            <li style="color: black;">
+                <p style="color: black;">View user reservations:</p>
+                <ul style="color: black;">
+                    <li style="color: black;"><code style="color: black;font-size: 0.875em;">GET /api/users/{userId}/reservations</code></li>
+                </ul>
+            </li>
+            <li style="color: black;">
+                <p style="color: black;">Cancel a reservation:</p>
+                <ul style="color: black;">
+                    <li style="color: black;"><code style="color: black;font-size: 0.875em;">DELETE /api/reservations/{reservationId}</code></li>
+                </ul>
+            </li>The <code style="color: black;font-size: 0.875em;">GET /api/cars</code> endpoint would allow users to search for available cars based on pickup and return dates. Users can make reservations using <code style="color: black;font-size: 0.875em;">POST /api/reservations</code>, view their reservations with <code style="color: black;font-size: 0.875em;">GET /api/users/{userId}/reservations</code>, and cancel reservations with <code style="color: black;font-size: 0.875em;">DELETE /api/reservations/{reservationId}</code>.
+        </ul>
+        <p style="text-align: start;color: black;background-color: white;font-size: 16px;"></p>
+    </li>
+</ol>

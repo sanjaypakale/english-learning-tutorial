@@ -1,0 +1,334 @@
+
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Question 1:</strong><em style="color: black;">Scenario: You are tasked with developing a multi-threaded application that simulates a printing process. Each thread represents a printer, and multiple print jobs need to be processed concurrently. How would you implement this using Java&apos;s <code style="color: black;font-size: 0.875em;">Thread</code> class or the <code style="color: black;font-size: 0.875em;">ExecutorService</code> framework?</em></p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Answer:</strong>To simulate a printing process with multiple threads, you can use Java&apos;s <code style="color: black;font-size: 0.875em;">ExecutorService</code> framework for better thread management and resource utilization. Here&apos;s an example:</p>
+<pre style="text-align: start;color: black;background-color: white;font-size: 0.875em;"><div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));"><div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">java</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path></svg>Copy code</button></div><div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">import</span> java.util.concurrent.ExecutorService;
+<span style="color: black;">import</span> java.util.concurrent.Executors;
+
+<span style="color: black;">public</span> <span style="color: black;">class</span> <span style="color: black;">PrinterSimulator</span> {
+    <span style="color: black;">public</span> <span style="color: black;">static</span> <span style="color: black;">void</span> <span style="color: black;">main</span><span style="color: black;">(String[] args)</span> {
+        <span style="color: black;">int</span> <span style="color: black;">numberOfPrinters</span> <span style="color: black;">=</span> <span style="color: black;">5</span>; <span style="color: black;">// Number of printer threads</span>
+
+        <span style="color: black;">// Create an ExecutorService with a fixed thread pool</span>
+        <span style="color: black;">ExecutorService</span> <span style="color: black;">executorService</span> <span style="color: black;">=</span> Executors.newFixedThreadPool(numberOfPrinters);
+
+        <span style="color: black;">for</span> (<span style="color: black;">int</span> <span style="color: black;">i</span> <span style="color: black;">=</span> <span style="color: black;">1</span>; i &lt;= numberOfPrinters; i++) {
+            <span style="color: black;">// Submit print jobs as Runnable tasks to the executor</span>
+            executorService.submit(<span style="color: black;">new</span> <span style="color: black;">Printer</span>(i));
+        }
+
+        <span style="color: black;">// Shutdown the executor when done</span>
+        executorService.shutdown();
+    }
+}
+
+<span style="color: black;">class</span> <span style="color: black;">Printer</span> <span style="color: black;">implements</span> <span style="color: black;">Runnable</span> {
+    <span style="color: black;">private</span> <span style="color: black;">final</span> <span style="color: black;">int</span> printerId;
+
+    <span style="color: black;">public</span> <span style="color: black;">Printer</span><span style="color: black;">(<span style="color: black;">int</span> printerId)</span> {
+        <span style="color: black;">this</span>.printerId = printerId;
+    }
+
+    <span style="color: black;">@Override</span>
+    <span style="color: black;">public</span> <span style="color: black;">void</span> <span style="color: black;">run</span><span style="color: black;">()</span> {
+        System.out.println(<span style="color: black;">&quot;Printer &quot;</span> + printerId + <span style="color: black;">&quot; is processing a print job.&quot;</span>);
+        <span style="color: black;">// Simulate printing process here</span>
+        System.out.println(<span style="color: black;">&quot;Printer &quot;</span> + printerId + <span style="color: black;">&quot; has finished printing.&quot;</span>);
+    }
+}
+</code></div></div></pre>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;">This code creates a pool of printer threads using <code style="color: black;font-size: 0.875em;">ExecutorService</code> and submits print jobs as <code style="color: black;font-size: 0.875em;">Runnable</code> tasks. Each thread represents a printer and processes print jobs concurrently.</p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Question 2:</strong><em style="color: black;">Scenario: You are designing a multithreaded chat application in Java. Users can send and receive messages in real-time. Explain how you would implement the message handling mechanism using Java&apos;s <code style="color: black;font-size: 0.875em;">Thread</code> class and synchronization.</em></p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Answer:</strong>To implement a multithreaded chat application, you can use Java&apos;s <code style="color: black;font-size: 0.875em;">Thread</code> class and synchronization for message handling. Here&apos;s a simplified example:</p>
+<pre style="text-align: start;color: black;background-color: white;font-size: 0.875em;"><div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));"><div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">java</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path></svg>Copy code</button></div><div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">import</span> java.util.ArrayList;
+<span style="color: black;">import</span> java.util.List;
+
+<span style="color: black;">public</span> <span style="color: black;">class</span> <span style="color: black;">ChatApplication</span> {
+    <span style="color: black;">private</span> List&lt;String&gt; chatLog = <span style="color: black;">new</span> <span style="color: black;">ArrayList</span>&lt;&gt;();
+
+    <span style="color: black;">public</span> <span style="color: black;">synchronized</span> <span style="color: black;">void</span> <span style="color: black;">sendMessage</span><span style="color: black;">(String message)</span> {
+        chatLog.add(message);
+    }
+
+    <span style="color: black;">public</span> <span style="color: black;">synchronized</span> List&lt;String&gt; <span style="color: black;">getChatLog</span><span style="color: black;">()</span> {
+        <span style="color: black;">return</span> <span style="color: black;">new</span> <span style="color: black;">ArrayList</span>&lt;&gt;(chatLog); <span style="color: black;">// Return a copy to avoid concurrent modification issues</span>
+    }
+
+    <span style="color: black;">public</span> <span style="color: black;">static</span> <span style="color: black;">void</span> <span style="color: black;">main</span><span style="color: black;">(String[] args)</span> {
+        <span style="color: black;">ChatApplication</span> <span style="color: black;">chatApp</span> <span style="color: black;">=</span> <span style="color: black;">new</span> <span style="color: black;">ChatApplication</span>();
+
+        <span style="color: black;">// Simulate multiple users sending messages concurrently</span>
+        <span style="color: black;">Thread</span> <span style="color: black;">user1</span> <span style="color: black;">=</span> <span style="color: black;">new</span> <span style="color: black;">Thread</span>(() -&gt; {
+            chatApp.sendMessage(<span style="color: black;">&quot;User 1: Hello!&quot;</span>);
+            chatApp.sendMessage(<span style="color: black;">&quot;User 1: How are you?&quot;</span>);
+        });
+
+        <span style="color: black;">Thread</span> <span style="color: black;">user2</span> <span style="color: black;">=</span> <span style="color: black;">new</span> <span style="color: black;">Thread</span>(() -&gt; {
+            chatApp.sendMessage(<span style="color: black;">&quot;User 2: Hi there!&quot;</span>);
+            chatApp.sendMessage(<span style="color: black;">&quot;User 2: I&apos;m good. How about you?&quot;</span>);
+        });
+
+        user1.start();
+        user2.start();
+
+        <span style="color: black;">try</span> {
+            user1.join();
+            user2.join();
+        } <span style="color: black;">catch</span> (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        <span style="color: black;">// Retrieve and display the chat log</span>
+        List&lt;String&gt; chatLog = chatApp.getChatLog();
+        <span style="color: black;">for</span> (String message : chatLog) {
+            System.out.println(message);
+        }
+    }
+}
+</code></div></div></pre>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;">In this example, the <code style="color: black;font-size: 0.875em;">ChatApplication</code> class uses synchronization to handle messages safely. Each user is represented by a separate thread, and they send messages concurrently. The <code style="color: black;font-size: 0.875em;">synchronized</code> methods ensure that messages are added to the chat log in a thread-safe manner.</p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Question 3:</strong><em style="color: black;">Scenario: You are working on a Java application that processes orders from multiple customers concurrently. Each customer&apos;s order is processed by a separate thread. How would you ensure that orders are processed in the correct order, considering the concurrency?</em></p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Answer:</strong>To ensure that orders from multiple customers are processed in the correct order, you can use a <code style="color: black;font-size: 0.875em;">BlockingQueue</code> to maintain the order of incoming orders. Here&apos;s an example:</p>
+<pre style="text-align: start;color: black;background-color: white;font-size: 0.875em;"><div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));"><div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">java</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path></svg>Copy code</button></div><div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">import</span> java.util.concurrent.ArrayBlockingQueue;
+<span style="color: black;">import</span> java.util.concurrent.BlockingQueue;
+
+<span style="color: black;">public</span> <span style="color: black;">class</span> <span style="color: black;">OrderProcessingSystem</span> {
+    <span style="color: black;">private</span> BlockingQueue&lt;Order&gt; orderQueue = <span style="color: black;">new</span> <span style="color: black;">ArrayBlockingQueue</span>&lt;&gt;(<span style="color: black;">100</span>);
+
+    <span style="color: black;">public</span> <span style="color: black;">void</span> <span style="color: black;">placeOrder</span><span style="color: black;">(Order order)</span> <span style="color: black;">throws</span> InterruptedException {
+        orderQueue.put(order); <span style="color: black;">// Add the order to the queue</span>
+    }
+
+    <span style="color: black;">public</span> <span style="color: black;">void</span> <span style="color: black;">processOrders</span><span style="color: black;">()</span> {
+        <span style="color: black;">while</span> (<span style="color: black;">true</span>) {
+            <span style="color: black;">try</span> {
+                <span style="color: black;">Order</span> <span style="color: black;">order</span> <span style="color: black;">=</span> orderQueue.take(); <span style="color: black;">// Get the next order from the queue</span>
+                <span style="color: black;">// Process the order</span>
+                System.out.println(<span style="color: black;">&quot;Processing order: &quot;</span> + order.getOrderNumber());
+            } <span style="color: black;">catch</span> (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                <span style="color: black;">break</span>; <span style="color: black;">// Exit the loop on interruption</span>
+            }
+        }
+    }
+
+    <span style="color: black;">public</span> <span style="color: black;">static</span> <span style="color: black;">void</span> <span style="color: black;">main</span><span style="color: black;">(String[] args)</span> {
+        <span style="color: black;">OrderProcessingSystem</span> <span style="color: black;">orderSystem</span> <span style="color: black;">=</span> <span style="color: black;">new</span> <span style="color: black;">OrderProcessingSystem</span>();
+
+        <span style="color: black;">// Start the order processing thread</span>
+        <span style="color: black;">Thread</span> <span style="color: black;">orderProcessorThread</span> <span style="color: black;">=</span> <span style="color: black;">new</span> <span style="color: black;">Thread</span>(orderSystem::processOrders);
+        orderProcessorThread.start();
+
+        <span style="color: black;">// Simulate customers placing orders</span>
+        <span style="color: black;">for</span> (<span style="color: black;">int</span> <span style="color: black;">i</span> <span style="color: black;">=</span> <span style="color: black;">1</span>; i &lt;= <span style="color: black;">10</span>; i++) {
+            <span style="color: black;">try</span> {
+                <span style="color: black;">Order</span> <span style="color: black;">order</span> <span style="color: black;">=</span> <span style="color: black;">new</span> <span style="color: black;">Order</span>(i);
+                orderSystem.placeOrder(order);
+                Thread.sleep(<span style="color: black;">100</span>); <span style="color: black;">// Simulate some delay between orders</span>
+            } <span style="color: black;">catch</span> (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+        <span style="color: black;">// Interrupt the order processing thread and wait for it to finish</span>
+        orderProcessorThread.interrupt();
+        <span style="color: black;">try</span> {
+            orderProcessorThread.join();
+        } <span style="color: black;">catch</span> (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+<span style="color: black;">class</span> <span style="color: black;">Order</span> {
+    <span style="color: black;">private</span> <span style="color: black;">int</span> orderNumber;
+
+    <span style="color: black;">public</span> <span style="color: black;">Order</span><span style="color: black;">(<span style="color: black;">int</span> orderNumber)</span> {
+        <span style="color: black;">this</span>.orderNumber = orderNumber;
+    }
+
+    <span style="color: black;">public</span> <span style="color: black;">int</span> <span style="color: black;">getOrderNumber</span><span style="color: black;">()</span> {
+        <span style="color: black;">return</span> orderNumber;
+    }
+}
+</code></div></div></pre>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;">In this example, orders are placed by customers and added to a <code style="color: black;font-size: 0.875em;">BlockingQueue</code>. The <code style="color: black;font-size: 0.875em;">processOrders</code> method runs in a separate thread and continuously takes orders from the queue, ensuring that they are processed in the order they were received.</p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;">This approach guarantees that orders are processed sequentially while leveraging concurrency for efficiency.</p>
+
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Question 4:</strong><em style="color: black;">Scenario: You are building a real-time chat application in Java that needs to notify users about new messages as soon as they arrive. Explain how you would implement a multithreaded notification system to achieve real-time message updates for users.</em></p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Answer:</strong>To implement real-time message updates for users in a chat application, you can use a multithreaded notification system along with techniques like long polling or WebSocket. Here&apos;s an overview:</p>
+<ol style="text-align: start;color: black;background-color: white;font-size: 16px;">
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">WebSocket-Based Approach:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">Use a WebSocket library or framework (e.g., Spring WebSocket) to establish bi-directional communication between the server and clients.</li>
+            <li style="color: black;">When a new message arrives, the server pushes the message to the connected clients in real-time.</li>
+            <li style="color: black;">Multiple threads can handle incoming messages and client connections simultaneously.</li>
+            <div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+                <div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">java</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        </svg>Copy code</button></div>
+                <div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">// WebSocket server-side code to notify clients</span><br><span style="color: black;">@Controller</span><br><span style="color: black;">@MessageMapping(&quot;/chat&quot;)</span><br><span style="color: black;">public</span> <span style="color: black;">class</span> <span style="color: black;">ChatController</span> {<br> <span style="color: black;">@Autowired</span><br> <span style="color: black;">private</span> SimpMessagingTemplate messagingTemplate;<br><br> <span style="color: black;">@MessageMapping(&quot;/send&quot;)</span><br> <span style="color: black;">public</span> <span style="color: black;">void</span> <span style="color: black;">sendMessage</span><span style="color: black;">(ChatMessage message)</span> {<br> <span style="color: black;">// Process and store the message</span><br> <span style="color: black;">// ...</span><br><br> <span style="color: black;">// Send the message to all subscribed clients</span><br> messagingTemplate.convertAndSend(<span style="color: black;">&quot;/topic/messages&quot;</span>, message);<br> }<br>}<br></code></div>
+            </div>
+        </ul>
+        <pre style="color: black;font-size: 0.875em;"></pre>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Long Polling-Based Approach:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">Clients periodically send requests to the server, asking if there are new messages.</li>
+            <li style="color: black;">Server-side threads handle these requests and wait until a new message arrives.</li>
+            <li style="color: black;">When a new message arrives, it responds to the waiting clients with the message.</li>
+            <div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+                <div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">java</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        </svg>Copy code</button></div>
+                <div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">// Server-side code for long polling</span><br><span style="color: black;">@RestController</span><br><span style="color: black;">public</span> <span style="color: black;">class</span> <span style="color: black;">ChatController</span> {<br> <span style="color: black;">private</span> <span style="color: black;">final</span> Queue&lt;DeferredResult&lt;ChatMessage&gt;&gt; waitingClients = <span style="color: black;">new</span> <span style="color: black;">LinkedList</span>&lt;&gt;();<br><br> <span style="color: black;">@PostMapping(&quot;/poll&quot;)</span><br> <span style="color: black;">public</span> DeferredResult&lt;ChatMessage&gt; <span style="color: black;">pollForMessages</span><span style="color: black;">()</span> {<br> DeferredResult&lt;ChatMessage&gt; deferredResult = <span style="color: black;">new</span> <span style="color: black;">DeferredResult</span>&lt;&gt;();<br> waitingClients.add(deferredResult);<br> <span style="color: black;">return</span> deferredResult;<br> }<br><br> <span style="color: black;">public</span> <span style="color: black;">void</span> <span style="color: black;">notifyClients</span><span style="color: black;">(ChatMessage message)</span> {<br> <span style="color: black;">// Notify waiting clients with the new message</span><br> DeferredResult&lt;ChatMessage&gt; deferredResult;<br> <span style="color: black;">while</span> ((deferredResult = waitingClients.poll()) != <span style="color: black;">null</span>) {<br> deferredResult.setResult(message);<br> }<br> }<br>}<br></code></div>
+            </div>
+        </ul>
+        <pre style="color: black;font-size: 0.875em;"></pre>
+    </li>
+</ol>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;">In both approaches, multiple threads can handle incoming messages and client connections concurrently, ensuring real-time message updates for users.</p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Question 5:</strong><em style="color: black;">Scenario: You are developing a Java-based web crawler that needs to fetch data from multiple websites simultaneously. How would you design a multithreaded web crawling system that efficiently fetches data from different websites concurrently?</em></p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Answer:</strong>To design a multithreaded web crawling system for fetching data from multiple websites concurrently, you can follow these steps:</p>
+<ol style="text-align: start;color: black;background-color: white;font-size: 16px;">
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Thread Pool:</strong> Use a thread pool (e.g., <code style="color: black;font-size: 0.875em;">ExecutorService</code>) to manage a pool of worker threads.</p>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">URL Queue:</strong> Maintain a queue of website URLs to be crawled.</p>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Fetching Logic:</strong> Each worker thread retrieves URLs from the queue and fetches data from the websites.</p>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Concurrency Control:</strong> Implement synchronization mechanisms (e.g., locks or semaphores) to control access to shared resources like the URL queue and data storage.</p>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Error Handling:</strong> Handle exceptions and errors gracefully to avoid crashing the entire crawler when one thread encounters an issue.</p>
+    </li>
+</ol>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;">Here&apos;s a simplified example:</p>
+<pre style="text-align: start;color: black;background-color: white;font-size: 0.875em;"><div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));"><div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">java</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path></svg>Copy code</button></div><div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">import</span> java.util.concurrent.ExecutorService;
+<span style="color: black;">import</span> java.util.concurrent.Executors;
+<span style="color: black;">import</span> java.util.concurrent.BlockingQueue;
+<span style="color: black;">import</span> java.util.concurrent.LinkedBlockingQueue;
+
+<span style="color: black;">public</span> <span style="color: black;">class</span> <span style="color: black;">WebCrawler</span> {
+    <span style="color: black;">private</span> BlockingQueue&lt;String&gt; urlQueue = <span style="color: black;">new</span> <span style="color: black;">LinkedBlockingQueue</span>&lt;&gt;();
+    <span style="color: black;">private</span> ExecutorService executorService;
+    
+    <span style="color: black;">public</span> <span style="color: black;">WebCrawler</span><span style="color: black;">(<span style="color: black;">int</span> numThreads)</span> {
+        executorService = Executors.newFixedThreadPool(numThreads);
+    }
+    
+    <span style="color: black;">public</span> <span style="color: black;">void</span> <span style="color: black;">addUrl</span><span style="color: black;">(String url)</span> {
+        urlQueue.add(url);
+    }
+    
+    <span style="color: black;">public</span> <span style="color: black;">void</span> <span style="color: black;">startCrawling</span><span style="color: black;">()</span> {
+        <span style="color: black;">for</span> (<span style="color: black;">int</span> <span style="color: black;">i</span> <span style="color: black;">=</span> <span style="color: black;">0</span>; i &lt; urlQueue.size(); i++) {
+            executorService.execute(<span style="color: black;">new</span> <span style="color: black;">CrawlerWorker</span>());
+        }
+        executorService.shutdown();
+    }
+    
+    <span style="color: black;">private</span> <span style="color: black;">class</span> <span style="color: black;">CrawlerWorker</span> <span style="color: black;">implements</span> <span style="color: black;">Runnable</span> {
+        <span style="color: black;">@Override</span>
+        <span style="color: black;">public</span> <span style="color: black;">void</span> <span style="color: black;">run</span><span style="color: black;">()</span> {
+            <span style="color: black;">while</span> (!urlQueue.isEmpty()) {
+                <span style="color: black;">String</span> <span style="color: black;">url</span> <span style="color: black;">=</span> urlQueue.poll();
+                <span style="color: black;">// Fetch data from the website and process it</span>
+                <span style="color: black;">// ...</span>
+            }
+        }
+    }
+    
+    <span style="color: black;">public</span> <span style="color: black;">static</span> <span style="color: black;">void</span> <span style="color: black;">main</span><span style="color: black;">(String[] args)</span> {
+        <span style="color: black;">WebCrawler</span> <span style="color: black;">crawler</span> <span style="color: black;">=</span> <span style="color: black;">new</span> <span style="color: black;">WebCrawler</span>(<span style="color: black;">5</span>); <span style="color: black;">// Use 5 worker threads</span>
+        crawler.addUrl(<span style="color: black;">&quot;https://example.com&quot;</span>);
+        crawler.addUrl(<span style="color: black;">&quot;https://example.org&quot;</span>);
+        crawler.addUrl(<span style="color: black;">&quot;https://example.net&quot;</span>);
+        <span style="color: black;">// Add more URLs as needed</span>
+        
+        crawler.startCrawling();
+    }
+}
+</code></div></div></pre>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;">This design allows you to efficiently fetch data from multiple websites concurrently using a pool of worker threads.</p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Question 6:</strong><em style="color: black;">Scenario: You are developing a real-time multiplayer game server in Java. Multiple players can join a game and interact with each other. Explain how you would manage player interactions and game state using multithreading.</em></p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Answer:</strong>To manage player interactions and game state in a real-time multiplayer game server, you can use multithreading as follows:</p>
+<ol style="text-align: start;color: black;background-color: white;font-size: 16px;">
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Thread Per Player:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">Create a separate thread for each player when they join a game. This allows each player to interact with the game independently.</li>
+        </ul>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Game State:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">Maintain a shared game state that represents the current state of the game (e.g., player positions, scores, game objects).</li>
+            <li style="color: black;">Use synchronization mechanisms like locks or concurrent data structures to protect access to the game state to prevent conflicts.</li>
+        </ul>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Player Interactions:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">Players can send commands or actions to the server.</li>
+            <li style="color: black;">Use thread-safe queues or message queues to receive and process player commands.</li>
+            <li style="color: black;">Worker threads dedicated to each player process their commands and update the game state accordingly.</li>
+        </ul>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Game Loop:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">Implement a game loop that advances the game state at a fixed frame rate.</li>
+            <li style="color: black;">During each frame, update the game state based on player actions and send updates to all players.</li>
+        </ul>
+    </li>
+</ol>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;">Here&apos;s a simplified example:</p>
+<pre style="text-align: start;color: black;background-color: white;font-size: 0.875em;"><div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));"><div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">java</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path></svg>Copy code</button></div><div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">import</span> java.util.concurrent.ConcurrentHashMap;
+
+<span style="color: black;">public</span> <span style="color: black;">class</span> <span style="color: black;">GameServer</span> {
+    <span style="color: black;">private</span> ConcurrentHashMap&lt;String, PlayerThread&gt; players = <span style="color: black;">new</span> <span style="color: black;">ConcurrentHashMap</span>&lt;&gt;();
+    <span style="color: black;">private</span> GameState gameState;
+
+    <span style="color: black;">public</span> <span style="color: black;">void</span> <span style="color: black;">playerJoined</span><span style="color: black;">(String playerName)</span> {
+        <span style="color: black;">PlayerThread</span> <span style="color: black;">playerThread</span> <span style="color: black;">=</span> <span style="color: black;">new</span> <span style="color: black;">PlayerThread</span>(playerName);
+        players.put(playerName, playerThread);
+        playerThread.start();
+    }
+
+    <span style="color: black;">public</span> <span style="color: black;">void</span> <span style="color: black;">playerLeft</span><span style="color: black;">(String playerName)</span> {
+        <span style="color: black;">PlayerThread</span> <span style="color: black;">playerThread</span> <span style="color: black;">=</span> players.get(playerName);
+        <span style="color: black;">if</span> (playerThread != <span style="color: black;">null</span>) {
+            playerThread.interrupt();
+            players.remove(playerName);
+        }
+    }
+
+    <span style="color: black;">private</span> <span style="color: black;">class</span> <span style="color: black;">PlayerThread</span> <span style="color: black;">extends</span> <span style="color: black;">Thread</span> {
+        <span style="color: black;">private</span> <span style="color: black;">final</span> String playerName;
+
+        <span style="color: black;">public</span> <span style="color: black;">PlayerThread</span><span style="color: black;">(String playerName)</span> {
+            <span style="color: black;">this</span>.playerName = playerName;
+        }
+
+        <span style="color: black;">@Override</span>
+        <span style="color: black;">public</span> <span style="color: black;">void</span> <span style="color: black;">run</span><span style="color: black;">()</span> {
+            <span style="color: black;">while</span> (!isInterrupted()) {
+                <span style="color: black;">// Process player actions, update game state</span>
+                <span style="color: black;">// ...</span>
+                <span style="color: black;">try</span> {
+                    Thread.sleep(<span style="color: black;">100</span>); <span style="color: black;">// Simulate game loop frame rate</span>
+                } <span style="color: black;">catch</span> (InterruptedException e) {
+                    <span style="color: black;">break</span>; <span style="color: black;">// Thread interrupted, exit gracefully</span>
+                }
+            }
+        }
+    }
+    
+    <span style="color: black;">// Other methods for handling player interactions, game state updates, etc.</span>
+}</code></div></div></pre>

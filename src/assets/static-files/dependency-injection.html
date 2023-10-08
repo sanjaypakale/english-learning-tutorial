@@ -1,0 +1,271 @@
+<div style="text-align: start;color: white;background-color: white;font-size: 14px;">
+    <div style="color: black;font-size: 1rem;">
+        <div style="color: black;font-size: 1rem;">
+            <div style="color: black;">
+                <div style="color: black;">
+                    <div style="color: black;">
+                        <div style="color: black;font-size: 1rem;">
+                            <p style="color: black;"><strong style="color: black;">Question 1:</strong><em
+                                    style="color: black;">Scenario: You are developing a Spring Boot application for a
+                                    hotel booking system. Explain how you would use Dependency Injection to manage
+                                    dependencies like database connections, service classes, and repositories.</em></p>
+                            <p style="color: black;"><strong style="color: black;">Answer:</strong>In a Spring Boot
+                                application, we can use Dependency Injection to manage dependencies efficiently.
+                                Here&apos;s how we would use DI for the hotel booking system:</p>
+                            <ol style="color: black;">
+                                <li style="color: black;">
+                                    <p style="color: black;"><strong style="color: black;">Database Connection:</strong>
+                                    </p>
+                                    <ul style="color: black;">
+                                        <li style="color: black;">Define a database configuration bean with database
+                                            connection details.</li>
+                                        <li style="color: black;">Use <code
+                                                style="color: black;font-size: 0.875em;">@Autowired</code> or
+                                            constructor-based injection to inject the database configuration into the
+                                            data source.</li>
+                                        <div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+
+                                            <div style="color: black;"><code
+                                                    style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">@Configuration</span><br><span style="color: black;">public</span> <span style="color: black;">class</span> <span style="color: black;">DatabaseConfig</span> {<br> <span style="color: black;">@Value(&quot;${db.url}&quot;)</span><br> <span style="color: black;">private</span> String dbUrl;<br> <span style="color: black;">// ...</span><br>}<br></code>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                    <pre style="color: black;font-size: 0.875em;"></pre>
+                                    <pre style="color: black;font-size: 0.875em;"><div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+                                       <div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">@Service</span>
+<span style="color: black;">public</span> <span style="color: black;">class</span> <span style="color: black;">HotelBookingService</span> {
+    <span style="color: black;">private</span> <span style="color: black;">final</span> DataSource dataSource;
+
+    <span style="color: black;">@Autowired</span>
+    <span style="color: black;">public</span> <span style="color: black;">HotelBookingService</span><span style="color: black;">(DataSource dataSource)</span> {
+        <span style="color: black;">this</span>.dataSource = dataSource;
+    }
+    <span style="color: black;">// ...</span>
+}
+</code></div></div></pre>
+                                </li>
+                                <li style="color: black;">
+                                    <p style="color: black;"><strong style="color: black;">Service Classes:</strong></p>
+                                    <ul style="color: black;">
+                                        <li style="color: black;">Create service classes and annotate them with <code
+                                                style="color: black;font-size: 0.875em;">@Service</code>.</li>
+                                        <li style="color: black;">Use constructor-based injection to inject
+                                            dependencies.</li>
+                                        <div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+                                            <div
+                                                style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;">
+                                                <span style="color: black;">java</span><button
+                                                    style="color: black;font-size: 12px;"><svg fill="none" height="1em"
+                                                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2">
+                                                        </path>
+                                                    </svg>Copy code</button></div>
+                                            <div style="color: black;"><code
+                                                    style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">@Service</span><br><span style="color: black;">public</span> <span style="color: black;">class</span> <span style="color: black;">HotelBookingService</span> {<br> <span style="color: black;">private</span> <span style="color: black;">final</span> HotelRepository hotelRepository;<br><br> <span style="color: black;">@Autowired</span><br> <span style="color: black;">public</span> <span style="color: black;">HotelBookingService</span><span style="color: black;">(HotelRepository hotelRepository)</span> {<br> <span style="color: black;">this</span>.hotelRepository = hotelRepository;<br> }<br> <span style="color: black;">// ...</span><br>}<br></code>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                    <pre style="color: black;font-size: 0.875em;"></pre>
+                                </li>
+                                <li style="color: black;">
+                                    <p style="color: black;"><strong style="color: black;">Repositories:</strong></p>
+                                    <ul style="color: black;">
+                                        <li style="color: black;">Define repository interfaces and extend <code
+                                                style="color: black;font-size: 0.875em;">CrudRepository</code> or <code
+                                                style="color: black;font-size: 0.875em;">JpaRepository</code>.</li>
+                                        <li style="color: black;">Spring Boot provides auto-implementation of repository
+                                            methods.</li>
+                                        <li style="color: black;">Use <code
+                                                style="color: black;font-size: 0.875em;">@Autowired</code> to inject
+                                            repositories into service classes.</li>
+                                        <div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+                                            <div
+                                                style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;">
+                                                <span style="color: black;">java</span><button
+                                                    style="color: black;font-size: 12px;"><svg fill="none" height="1em"
+                                                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2">
+                                                        </path>
+                                                    </svg>Copy code</button></div>
+                                            <div style="color: black;"><code
+                                                    style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">@Repository</span><br><span style="color: black;">public</span> <span style="color: black;">interface</span> <span style="color: black;">HotelRepository</span> <span style="color: black;">extends</span> <span style="color: black;">JpaRepository</span>&lt;Hotel, Long&gt; {<br> <span style="color: black;">// ...</span><br>}<br></code>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                    <pre style="color: black;font-size: 0.875em;"></pre>
+                                </li>
+                            </ol>
+                            <p style="color: black;">By following this approach, Spring Boot will automatically manage
+                                the creation and injection of dependencies, making it easier to write clean and
+                                maintainable code.</p>
+                            <p style="color: black;"><strong style="color: black;">Question 2:</strong><em
+                                    style="color: black;">Scenario: You are building a RESTful API for a bookstore using
+                                    Spring Boot. How would you use Dependency Injection to inject services,
+                                    repositories, and configuration properties into your controllers?</em></p>
+                            <p style="color: black;"><strong style="color: black;">Answer:</strong>In a Spring Boot
+                                application for a bookstore API, we can use Dependency Injection as follows:</p>
+                            <ol style="color: black;">
+                                <li style="color: black;">
+                                    <p style="color: black;"><strong style="color: black;">Inject Services:</strong></p>
+                                    <ul style="color: black;">
+                                        <li style="color: black;">Create service classes for handling business logic and
+                                            annotate them with <code
+                                                style="color: black;font-size: 0.875em;">@Service</code>.</li>
+                                        <li style="color: black;">Inject service classes into the controller using
+                                            constructor-based injection.</li>
+                                        <div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+                                            <div
+                                                style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;">
+                                                <span style="color: black;">java</span><button
+                                                    style="color: black;font-size: 12px;"><svg fill="none" height="1em"
+                                                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2">
+                                                        </path>
+                                                    </svg>Copy code</button></div>
+                                            <div style="color: black;"><code
+                                                    style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">@RestController</span><br><span style="color: black;">public</span> <span style="color: black;">class</span> <span style="color: black;">BookController</span> {<br> <span style="color: black;">private</span> <span style="color: black;">final</span> BookService bookService;<br><br> <span style="color: black;">@Autowired</span><br> <span style="color: black;">public</span> <span style="color: black;">BookController</span><span style="color: black;">(BookService bookService)</span> {<br> <span style="color: black;">this</span>.bookService = bookService;<br> }<br> <span style="color: black;">// ...</span><br>}<br></code>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                    <pre style="color: black;font-size: 0.875em;"></pre>
+                                </li>
+                                <li style="color: black;">
+                                    <p style="color: black;"><strong style="color: black;">Inject Repositories:</strong>
+                                    </p>
+                                    <ul style="color: black;">
+                                        <li style="color: black;">Create repository interfaces for database operations
+                                            and annotate them with <code
+                                                style="color: black;font-size: 0.875em;">@Repository</code>.</li>
+                                        <li style="color: black;">Inject repository interfaces into service classes
+                                            using constructor-based injection.</li>
+                                        <div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+                                            <div
+                                                style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;">
+                                                <span style="color: black;">java</span><button
+                                                    style="color: black;font-size: 12px;"><svg fill="none" height="1em"
+                                                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2">
+                                                        </path>
+                                                    </svg>Copy code</button></div>
+                                            <div style="color: black;"><code
+                                                    style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">@Service</span><br><span style="color: black;">public</span> <span style="color: black;">class</span> <span style="color: black;">BookService</span> {<br> <span style="color: black;">private</span> <span style="color: black;">final</span> BookRepository bookRepository;<br><br> <span style="color: black;">@Autowired</span><br> <span style="color: black;">public</span> <span style="color: black;">BookService</span><span style="color: black;">(BookRepository bookRepository)</span> {<br> <span style="color: black;">this</span>.bookRepository = bookRepository;<br> }<br> <span style="color: black;">// ...</span><br>}<br></code>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                    <pre style="color: black;font-size: 0.875em;"></pre>
+                                </li>
+                                <li style="color: black;">
+                                    <p style="color: black;"><strong style="color: black;">Inject Configuration
+                                            Properties:</strong></p>
+                                    <ul style="color: black;">
+                                        <li style="color: black;">Define a configuration properties class and annotate
+                                            it with <code
+                                                style="color: black;font-size: 0.875em;">@ConfigurationProperties</code>.
+                                        </li>
+                                        <li style="color: black;">Inject configuration properties into the controller or
+                                            service classes.</li>
+                                        <div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+                                            <div
+                                                style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;">
+                                                <span style="color: black;">java</span><button
+                                                    style="color: black;font-size: 12px;"><svg fill="none" height="1em"
+                                                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2">
+                                                        </path>
+                                                    </svg>Copy code</button></div>
+                                            <div style="color: black;"><code
+                                                    style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">@ConfigurationProperties(prefix = &quot;bookstore&quot;)</span><br><span style="color: black;">public</span> <span style="color: black;">class</span> <span style="color: black;">BookstoreProperties</span> {<br> <span style="color: black;">private</span> String apiKey;<br> <span style="color: black;">// ...</span><br>}<br></code>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                    <pre style="color: black;font-size: 0.875em;"></pre>
+                                    <pre style="color: black;font-size: 0.875em;"><div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));"><div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">java</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path></svg>Copy code</button></div><div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">@RestController</span>
+<span style="color: black;">public</span> <span style="color: black;">class</span> <span style="color: black;">BookController</span> {
+    <span style="color: black;">private</span> <span style="color: black;">final</span> BookstoreProperties properties;
+
+    <span style="color: black;">@Autowired</span>
+    <span style="color: black;">public</span> <span style="color: black;">BookController</span><span style="color: black;">(BookstoreProperties properties)</span> {
+        <span style="color: black;">this</span>.properties = properties;
+    }
+    <span style="color: black;">// ...</span>
+}
+</code></div></div></pre>
+                                </li>
+                            </ol>
+                            <p style="color: black;">By using constructor-based injection and appropriate annotations,
+                                we ensure that Spring Boot manages the dependencies and provides the necessary
+                                components for our controllers, services, and repositories.</p>
+                            <p style="color: black;"><strong style="color: black;">Question 3:</strong><em
+                                    style="color: black;">Scenario: You are working on a Spring Boot application that
+                                    requires external service integration. Explain how you would use Dependency
+                                    Injection to inject HTTP clients or REST templates for making HTTP requests.</em>
+                            </p>
+                            <p style="color: black;"><strong style="color: black;">Answer:</strong>In a Spring Boot
+                                application that requires external service integration, we can use Dependency Injection
+                                for HTTP clients or REST templates as follows:</p>
+                            <ol style="color: black;">
+                                <li style="color: black;">
+                                    <p style="color: black;"><strong style="color: black;">Create HTTP Client or REST
+                                            Template Beans:</strong></p>
+                                    <ul style="color: black;">
+                                        <li style="color: black;">Define a bean for the HTTP client or REST template in
+                                            a configuration class.</li>
+                                        <li style="color: black;">Configure the HTTP client or REST template with
+                                            properties, authentication, or other settings.</li>
+                                        <div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+                                            <div
+                                                style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;">
+                                                <span style="color: black;">java</span><button
+                                                    style="color: black;font-size: 12px;"><svg fill="none" height="1em"
+                                                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2">
+                                                        </path>
+                                                    </svg>Copy code</button></div>
+                                            <div style="color: black;"><code
+                                                    style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">@Configuration</span><br><span style="color: black;">public</span> <span style="color: black;">class</span> <span style="color: black;">HttpClientConfig</span> {<br> <span style="color: black;">@Value(&quot;${external-service.url}&quot;)</span><br> <span style="color: black;">private</span> String externalServiceUrl;<br><br> <span style="color: black;">@Bean</span><br> <span style="color: black;">public</span> RestTemplate <span style="color: black;">restTemplate</span><span style="color: black;">()</span> {<br> <span style="color: black;">return</span> <span style="color: black;">new</span> <span style="color: black;">RestTemplateBuilder</span>()<br> .rootUri(externalServiceUrl)<br> .build();<br> }<br>}<br></code>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                    <pre style="color: black;font-size: 0.875em;"></pre>
+                                </li>
+                                <li style="color: black;">
+                                    <p style="color: black;"><strong style="color: black;">Inject HTTP Client or REST
+                                            Template:</strong></p>
+                                    <ul style="color: black;">
+                                        <li style="color: black;">Inject the HTTP client or REST template into your
+                                            service or controller using constructor-based injection.</li>
+                                        <div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+                                            <div
+                                                style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;">
+                                                <span style="color: black;">java</span><button
+                                                    style="color: black;font-size: 12px;"><svg fill="none" height="1em"
+                                                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2">
+                                                        </path>
+                                                    </svg>Copy code</button></div>
+                                            <div style="color: black;"><code
+                                                    style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">@Service</span><br><span style="color: black;">public</span> <span style="color: black;">class</span> <span style="color: black;">ExternalServiceIntegrationService</span> {<br> <span style="color: black;">private</span> <span style="color: black;">final</span> RestTemplate restTemplate;<br><br> <span style="color: black;">@Autowired</span><br> <span style="color: black;">public</span> <span style="color: black;">ExternalServiceIntegrationService</span><span style="color: black;">(RestTemplate restTemplate)</span> {<br> <span style="color: black;">this</span>.restTemplate = restTemplate;<br> }<br> <span style="color: black;">// ...</span><br>}<br></code>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                    <pre style="color: black;font-size: 0.875em;"></pre>
+                                </li>
+                            </ol>
+                            <p style="color: black;">By configuring and injecting the HTTP client or REST template as
+                                beans, Spring Boot manages the lifecycle and provides them as dependencies where needed
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

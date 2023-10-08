@@ -18,6 +18,12 @@ import { PresentPerfectTenseComponent } from './tenses/present-tense/present-per
 import { VideosComponent } from './videos/videos.component';
 import { VerbsComponent } from './verbs/verbs.component';
 import { SightWordsComponent } from './sight-words/sight-words.component';
+import { InterviewDashboardComponent } from './java-interview/interview-dashboard/interview-dashboard.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { TrickyJavaInterviewComponent } from './interview-dashboard/tricky-java-interview/tricky-java-interview.component';
+import { HtmlFileDialogComponent } from './html-file-dialog/html-file-dialog.component';
+import { DialogService } from './dialog.service';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -32,7 +38,10 @@ import { SightWordsComponent } from './sight-words/sight-words.component';
     TensesMainComponent,
     VideosComponent,
     VerbsComponent,
-    SightWordsComponent
+    SightWordsComponent,
+    InterviewDashboardComponent,
+    TrickyJavaInterviewComponent,
+    HtmlFileDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -40,9 +49,11 @@ import { SightWordsComponent } from './sight-words/sight-words.component';
     MatToolbarModule,
     MatMenuModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTabsModule,
+    MatDialogModule
   ],
-  providers: [],
+  providers: [DialogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

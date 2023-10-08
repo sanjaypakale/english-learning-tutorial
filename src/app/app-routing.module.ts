@@ -11,6 +11,7 @@ import { PastTenseComponent } from './tenses/past-tense/past-tense.component';
 import { VideosComponent } from './videos/videos.component';
 import { VerbsComponent } from './verbs/verbs.component';
 import { SightWordsComponent } from './sight-words/sight-words.component';
+import { InterviewDashboardComponent } from './java-interview/interview-dashboard/interview-dashboard.component';
 
 const routes: Routes = [
   { path: '', component: DashboardComponent },
@@ -29,12 +30,13 @@ const routes: Routes = [
         path: 'past', component: PastTenseComponent, children: [
 
         ]
-      },     
-    ]   
+      },
+    ]
   },
   { path: 'videos', component: VideosComponent },
   { path: 'verbs', component: VerbsComponent },
-  { path: 'sightWords', component: SightWordsComponent }
+  { path: 'sightWords', component: SightWordsComponent },
+  { path: 'javainterviewdashboard', component: InterviewDashboardComponent }
 ];
 
 @NgModule({

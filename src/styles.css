@@ -93,3 +93,27 @@ th, td {
 th {
   background-color: #f2f2f2;
 }
+
+.formula {
+  text-align: start;
+  color: black;
+  background-color: white;
+  font-size: 16px;
+  border: 2px solid pink;
+  border-radius: 3px;
+  padding: 1%;
+  width: 40%;
+}
+
+.formula.green{
+  border-color: rgb(82, 209, 82);
+}
+
+.formula.yellow{
+  border-color: #ffca95;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.dialog-content {
+  overflow-y: hidden; /* Hide vertical scrollbar */
+}
