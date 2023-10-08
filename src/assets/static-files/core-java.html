@@ -1,0 +1,290 @@
+<div style="text-align: start;color: rgba(32, 33, 35, 0.5);background-color: white;font-size: 14px;">
+    <div style="color: black;font-size: 1rem;">
+        <div style="color: black;font-size: 1rem;">
+            <div style="color: black;">
+                <div style="color: black;">
+                    <div style="color: black;">
+                        <div style="color: black;font-size: 1rem;">
+                            <p style="color: black;"><strong style="color: black;">Question 1: Explain the differences between <code style="color: black;font-size: 0.875em;">HashMap</code>, <code style="color: black;font-size: 0.875em;">HashTable</code>, and <code style="color: black;font-size: 0.875em;">ConcurrentHashMap</code> in Java. When would you use one over the others?</strong></p>
+                            <p style="color: black;"><em style="color: black;">Answer:</em></p>
+                            <ul style="color: black;">
+                                <li style="color: black;"><code style="color: black;font-size: 0.875em;">HashMap</code> and <code style="color: black;font-size: 0.875em;">ConcurrentHashMap</code> are not synchronized, while <code style="color: black;font-size: 0.875em;">HashTable</code> is synchronized.</li>
+                                <li style="color: black;"><code style="color: black;font-size: 0.875em;">HashMap</code> is not thread-safe, while <code style="color: black;font-size: 0.875em;">HashTable</code> and <code style="color: black;font-size: 0.875em;">ConcurrentHashMap</code> are.</li>
+                                <li style="color: black;"><code style="color: black;font-size: 0.875em;">ConcurrentHashMap</code> is designed for better concurrent performance.</li>
+                                <li style="color: black;"><code style="color: black;font-size: 0.875em;">HashMap</code> allows one null key, <code style="color: black;font-size: 0.875em;">HashTable</code> does not allow any null keys.</li>
+                                <li style="color: black;">Use <code style="color: black;font-size: 0.875em;">HashMap</code> for single-threaded scenarios or when you need to manage synchronization yourself. Use <code style="color: black;font-size: 0.875em;">HashTable</code> when you require thread safety but can tolerate performance overhead. Use <code style="color: black;font-size: 0.875em;">ConcurrentHashMap</code> when you need both thread safety and high performance in a concurrent environment.</li>
+                            </ul>
+                            <p style="color: black;"><strong style="color: black;">Question 2: What is the Java Memory Model, and why is it important for multi-threading?</strong></p>
+                            <p style="color: black;"><em style="color: black;">Answer:</em></p>
+                            <ul style="color: black;">
+                                <li style="color: black;">The Java Memory Model defines how threads interact through memory, ensuring visibility and ordering of operations in a multi-threaded environment.</li>
+                                <li style="color: black;">It&apos;s essential for multi-threading because without a well-defined memory model, threads may not see the latest values of shared variables, leading to data races and unpredictable behavior.</li>
+                                <li style="color: black;">The memory model ensures that changes made by one thread are visible to other threads in a consistent and predictable manner.</li>
+                            </ul>
+                            <p style="color: black;"><strong style="color: black;">Question 3: Explain the concept of Java Garbage Collection. How does it work, and what are some best practices for optimizing memory management in Java?</strong></p>
+                            <p style="color: black;"><em style="color: black;">Answer:</em></p>
+                            <ul style="color: black;">
+                                <li style="color: black;">Garbage Collection (GC) is the process of automatically reclaiming memory occupied by objects no longer in use.</li>
+                                <li style="color: black;">Java uses a generational GC, with young and old generations. Objects start in the young generation and, if they survive a few collections, move to the old generation.</li>
+                                <li style="color: black;">Best practices for optimizing memory management include minimizing object creation, closing resources, using object pools for frequently used objects, and profiling your application to identify memory bottlenecks.</li>
+                            </ul>
+                            <p style="color: black;"><strong style="color: black;">Question 4: What is the difference between method overloading and method overriding in Java? Can you provide examples to illustrate the differences?</strong></p>
+                            <p style="color: black;"><em style="color: black;">Answer:</em></p>
+                            <ul style="color: black;">
+                                <li style="color: black;">Method Overloading: Multiple methods in the same class with the same name but different parameter lists. The method signature is different.</li>
+                                <li style="color: black;">Method Overriding: A subclass provides a specific implementation for a method already defined in its superclass. The method signature remains the same.</li>
+                            </ul>
+                            <pre style="color: black;font-size: 0.875em;"><div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));"><div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">java</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path></svg>Copy code</button></div><div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">class</span> <span style="color: black;">Example</span> {
+    <span style="color: black;">void</span> <span style="color: black;">print</span><span style="color: black;">(<span style="color: black;">int</span> x)</span> {
+        System.out.println(x);
+    }
+
+    <span style="color: black;">void</span> <span style="color: black;">print</span><span style="color: black;">(String str)</span> {
+        System.out.println(str);
+    }
+}
+
+<span style="color: black;">class</span> <span style="color: black;">SubExample</span> <span style="color: black;">extends</span> <span style="color: black;">Example</span> {
+    <span style="color: black;">@Override</span>
+    <span style="color: black;">void</span> <span style="color: black;">print</span><span style="color: black;">(String str)</span> {
+        System.out.println(<span style="color: black;">&quot;Subclass: &quot;</span> + str);
+    }
+}
+</code></div></div></pre>
+                            <p style="color: black;"><strong style="color: black;">Question 5: Discuss the principles of Object-Oriented Programming (OOP) and how they are applied in Java. Explain concepts like encapsulation, inheritance, and polymorphism.</strong></p>
+                            <p style="color: black;"><em style="color: black;">Answer:</em></p>
+                            <ul style="color: black;">
+                                <li style="color: black;">OOP principles include encapsulation (hiding implementation details), inheritance (creating new classes from existing ones), and polymorphism (the ability of objects to take on multiple forms).</li>
+                                <li style="color: black;">In Java, encapsulation is achieved through access modifiers (private, protected, public), inheritance is facilitated by the <code style="color: black;font-size: 0.875em;">extends</code> keyword, and polymorphism is enabled through method overriding and method overloading.</li>
+                            </ul>
+                            <p style="color: black;">These answers should give you a good starting point for understanding and discussing these challenging Java concepts in an interview. Be sure to expand on these answers and provide concrete examples during the interview to demonstrate your understanding.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="text-align: start;color: rgba(32, 33, 35, 0.5);background-color: white;font-size: 14px;">
+    <div style="color: black;font-size: 1rem;">
+        <div style="color: black;font-size: 1rem;">
+            
+            <div style="color: black;">
+                <div style="color: black;">
+                    <div style="color: black;">
+                        <div style="color: black;font-size: 1rem;">
+                            <p style="color: black;">Certainly, here are more difficult Core Java interview questions along with their answers:</p>
+                            <p style="color: black;"><strong style="color: black;">Question 6: What is the <code style="color: black;font-size: 0.875em;">volatile</code> keyword in Java, and how does it relate to thread safety and memory visibility? Provide examples of when to use it.</strong></p>
+                            <p style="color: black;"><em style="color: black;">Answer:</em></p>
+                            <ul style="color: black;">
+                                <li style="color: black;">The <code style="color: black;font-size: 0.875em;">volatile</code> keyword is used to indicate that a variable&apos;s value may be changed by multiple threads simultaneously. It ensures that reads and writes to the variable are done from and to the main memory, rather than being cached in a thread&apos;s local memory.</li>
+                                <li style="color: black;"><code style="color: black;font-size: 0.875em;">volatile</code> is often used for flags or variables that are accessed by multiple threads and where changes should be immediately visible to all threads. It guarantees visibility but not atomicity.</li>
+                            </ul>
+                            <p style="color: black;">Example:</p>
+                            <pre style="color: black;font-size: 0.875em;"><div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));"><div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">java</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path></svg>Copy code</button></div><div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">class</span> <span style="color: black;">SharedResource</span> {
+    <span style="color: black;">private</span> <span style="color: black;">volatile</span> <span style="color: black;">boolean</span> <span style="color: black;">flag</span> <span style="color: black;">=</span> <span style="color: black;">false</span>;
+
+    <span style="color: black;">public</span> <span style="color: black;">void</span> <span style="color: black;">setFlagTrue</span><span style="color: black;">()</span> {
+        flag = <span style="color: black;">true</span>;
+    }
+
+    <span style="color: black;">public</span> <span style="color: black;">boolean</span> <span style="color: black;">isFlag</span><span style="color: black;">()</span> {
+        <span style="color: black;">return</span> flag;
+    }
+}
+</code></div></div></pre>
+                            <p style="color: black;"><strong style="color: black;">Question 7: What are Java annotations, and how can they be used in your code? Can you explain custom annotations and their use cases?</strong></p>
+                            <p style="color: black;"><em style="color: black;">Answer:</em></p>
+                            <ul style="color: black;">
+                                <li style="color: black;">Annotations are a form of metadata added to Java code to provide additional information to the compiler, tools, and frameworks.</li>
+                                <li style="color: black;">Annotations can be used to mark classes, methods, fields, or other program elements to affect their behavior or to provide hints to tools.</li>
+                                <li style="color: black;">Custom annotations are user-defined annotations created by developers for specific use cases. They are often used for configuration, documentation, or custom processing by frameworks.</li>
+                            </ul>
+                            <p style="color: black;">Example:</p>
+                            <pre style="color: black;font-size: 0.875em;"><div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));"><div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">java</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path></svg>Copy code</button></div><div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">@Retention(RetentionPolicy.RUNTIME)</span>
+<span style="color: black;">@Target(ElementType.METHOD)</span>
+<span style="color: black;">public</span> <span style="color: black;">@interface</span> MyCustomAnnotation {
+    String <span style="color: black;">value</span><span style="color: black;">()</span> <span style="color: black;">default</span> <span style="color: black;">&quot;default&quot;</span>;
+}
+</code></div></div></pre>
+                            <p style="color: black;"><strong style="color: black;">Question 8: Explain the Java ClassLoader hierarchy and its role in loading classes at runtime. How does class loading work in Java?</strong></p>
+                            <p style="color: black;"><em style="color: black;">Answer:</em></p>
+                            <ul style="color: black;">
+                                <li style="color: black;">The ClassLoader hierarchy in Java consists of a bootstrap class loader, extension class loader, and application class loader (also known as the system class loader).</li>
+                                <li style="color: black;">Class loading is the process of loading classes into memory as they are referenced by a Java program.</li>
+                                <li style="color: black;">When a class is referenced, the system class loader loads it first. If it depends on other classes, they are loaded recursively.</li>
+                                <li style="color: black;">Class loaders enable dynamic class loading, which is useful for loading classes at runtime, such as when using reflection or loading classes from external sources.</li>
+                            </ul>
+                            <p style="color: black;"><strong style="color: black;">Question 9: What is the Java Reflection API, and how can it be used to inspect classes, methods, and fields dynamically at runtime?</strong></p>
+                            <p style="color: black;"><em style="color: black;">Answer:</em></p>
+                            <ul style="color: black;">
+                                <li style="color: black;">The Java Reflection API allows you to inspect and manipulate class metadata, such as classes, methods, fields, annotations, and constructors, at runtime.</li>
+                                <li style="color: black;">It provides classes like <code style="color: black;font-size: 0.875em;">Class</code>, <code style="color: black;font-size: 0.875em;">Method</code>, and <code style="color: black;font-size: 0.875em;">Field</code> that allow you to access and modify class information, even for classes not known at compile time.</li>
+                                <li style="color: black;">Reflection is useful for creating generic code, serialization, dependency injection frameworks, and debugging tools.</li>
+                            </ul>
+                            <p style="color: black;"><strong style="color: black;">Question 10: Discuss the differences between <code style="color: black;font-size: 0.875em;">LinkedList</code> and <code style="color: black;font-size: 0.875em;">ArrayList</code> in Java. When would you choose one over the other for specific use cases?</strong></p>
+                            <p style="color: black;"><em style="color: black;">Answer:</em></p>
+                            <ul style="color: black;">
+                                <li style="color: black;"><code style="color: black;font-size: 0.875em;">ArrayList</code> uses a dynamic array to store elements, while <code style="color: black;font-size: 0.875em;">LinkedList</code> uses a doubly-linked list.</li>
+                                <li style="color: black;"><code style="color: black;font-size: 0.875em;">ArrayList</code> is generally faster for random access and element retrieval, whereas <code style="color: black;font-size: 0.875em;">LinkedList</code> is more efficient for frequent insertion and deletion operations, especially in the middle of the list.</li>
+                                <li style="color: black;">Choose <code style="color: black;font-size: 0.875em;">ArrayList</code> when you need fast element access and you don&apos;t perform many insertions or deletions. Choose <code style="color: black;font-size: 0.875em;">LinkedList</code> when you need fast insertions and deletions or when you&apos;re building a queue or stack.</li>
+                            </ul>
+                            <p style="color: black;">These additional answers should provide more insights into complex Java topics. Remember to be prepared to discuss these topics in detail and provide practical examples during your interview.</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="color: black;">
+                    <div style="color: black;"><button style="color: black;font-size: 0.75rem;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                            </svg></button>
+                        <div style="color: black;"><button style="color: black;font-size: 16px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                                </svg></button><button style="color: black;font-size: 16px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path>
+                                </svg></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="text-align: start;color: rgba(32, 33, 35, 0.5);background-color: white;font-size: 14px;">
+    <div style="color: black;font-size: 1rem;">
+        <div style="color: black;font-size: 1rem;">
+            
+            <div style="color: black;">
+                <div style="color: black;">
+                    <div style="color: black;">
+                        <div style="color: black;font-size: 1rem;">
+                            <p style="color: black;"><strong style="color: black;">Question 11: Explain the principles of Exception handling in Java, including checked and unchecked exceptions, and best practices for handling exceptions effectively.</strong></p>
+                            <p style="color: black;"><em style="color: black;">Answer:</em></p>
+                            <ul style="color: black;">
+                                <li style="color: black;">Java exceptions can be categorized into two types: checked exceptions (subclasses of <code style="color: black;font-size: 0.875em;">Exception</code> excluding <code style="color: black;font-size: 0.875em;">RuntimeException</code>) and unchecked exceptions (subclasses of <code style="color: black;font-size: 0.875em;">RuntimeException</code>).</li>
+                                <li style="color: black;">Checked exceptions must be either caught using a <code style="color: black;font-size: 0.875em;">try-catch</code> block or declared in the method&apos;s <code style="color: black;font-size: 0.875em;">throws</code> clause. Unchecked exceptions do not require explicit handling.</li>
+                                <li style="color: black;">Best practices for handling exceptions include catching exceptions at the appropriate level, logging exceptions for debugging, and providing meaningful error messages. Avoid catching and ignoring exceptions without appropriate action.</li>
+                            </ul>
+                            <p style="color: black;"><strong style="color: black;">Question 12: What is the <code style="color: black;font-size: 0.875em;">finalize()</code> method in Java? How does it relate to object cleanup and garbage collection?</strong></p>
+                            <p style="color: black;"><em style="color: black;">Answer:</em></p>
+                            <ul style="color: black;">
+                                <li style="color: black;">The <code style="color: black;font-size: 0.875em;">finalize()</code> method is a method defined in the <code style="color: black;font-size: 0.875em;">Object</code> class (the root class for all Java classes). It&apos;s intended for finalization activities when an object is about to be garbage collected.</li>
+                                <li style="color: black;">However, it&apos;s not recommended to rely on <code style="color: black;font-size: 0.875em;">finalize()</code> for cleanup because it&apos;s not guaranteed to be called, and it can cause delays in the garbage collection process.</li>
+                                <li style="color: black;">Modern Java recommends using the <code style="color: black;font-size: 0.875em;">AutoCloseable</code> interface and the <code style="color: black;font-size: 0.875em;">try-with-resources</code> statement for resource cleanup, which is more reliable.</li>
+                            </ul>
+                            <p style="color: black;"><strong style="color: black;">Question 13: Discuss the concept of Java Streams and how they can be used for functional-style programming and data manipulation. Provide examples of stream operations.</strong></p>
+                            <p style="color: black;"><em style="color: black;">Answer:</em></p>
+                            <ul style="color: black;">
+                                <li style="color: black;">Java Streams are a sequence of elements that can be processed in a functional style. They allow you to perform operations like <code style="color: black;font-size: 0.875em;">map</code>, <code style="color: black;font-size: 0.875em;">filter</code>, <code style="color: black;font-size: 0.875em;">reduce</code>, and <code style="color: black;font-size: 0.875em;">collect</code> on data.</li>
+                                <li style="color: black;">Streams promote declarative code, making it more concise and readable compared to traditional iterative approaches.</li>
+                            </ul>
+                            <p style="color: black;">Example:</p>
+                            <pre style="color: black;font-size: 0.875em;"><div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));"><div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">java</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path></svg>Copy code</button></div><div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;">List&lt;String&gt; names = Arrays.asList(<span style="color: black;">&quot;Alice&quot;</span>, <span style="color: black;">&quot;Bob&quot;</span>, <span style="color: black;">&quot;Charlie&quot;</span>, <span style="color: black;">&quot;David&quot;</span>, <span style="color: black;">&quot;Eve&quot;</span>);
+
+<span style="color: black;">// Filter names that start with &apos;A&apos; and collect them into a new list</span>
+List&lt;String&gt; filteredNames = names.stream()
+    .filter(name -&gt; name.startsWith(<span style="color: black;">&quot;A&quot;</span>))
+    .collect(Collectors.toList());
+
+<span style="color: black;">// Output: [&quot;Alice&quot;]</span>
+</code></div></div></pre>
+                            <p style="color: black;"><strong style="color: black;">Question 14: Explain the <code style="color: black;font-size: 0.875em;">java.util.concurrent</code> package in Java and its key classes and interfaces for concurrent programming.</strong></p>
+                            <p style="color: black;"><em style="color: black;">Answer:</em></p>
+                            <ul style="color: black;">
+                                <li style="color: black;">The <code style="color: black;font-size: 0.875em;">java.util.concurrent</code> package provides classes and interfaces to support concurrent and multithreaded programming in Java.</li>
+                                <li style="color: black;">Key classes/interfaces include <code style="color: black;font-size: 0.875em;">Executor</code>, <code style="color: black;font-size: 0.875em;">ExecutorService</code>, <code style="color: black;font-size: 0.875em;">Future</code>, <code style="color: black;font-size: 0.875em;">ThreadPoolExecutor</code>, and <code style="color: black;font-size: 0.875em;">ConcurrentHashMap</code>, among others.</li>
+                                <li style="color: black;">These classes facilitate thread pool management, asynchronous execution, synchronization, and concurrent data structures, making it easier to write efficient and thread-safe code.</li>
+                            </ul>
+                            <p style="color: black;"><strong style="color: black;">Question 15: What is the <code style="color: black;font-size: 0.875em;">synchronized</code> keyword in Java, and how does it work to achieve thread safety? Can you compare it with other synchronization mechanisms like <code style="color: black;font-size: 0.875em;">Lock</code> and <code style="color: black;font-size: 0.875em;">Semaphore</code>?</strong></p>
+                            <p style="color: black;"><em style="color: black;">Answer:</em></p>
+                            <ul style="color: black;">
+                                <li style="color: black;">The <code style="color: black;font-size: 0.875em;">synchronized</code> keyword in Java is used to create synchronized blocks or methods to ensure that only one thread can execute the synchronized code block at a time.</li>
+                                <li style="color: black;">It provides intrinsic locking, and Java manages the lock acquisition and release.</li>
+                                <li style="color: black;">Other synchronization mechanisms like <code style="color: black;font-size: 0.875em;">Lock</code> and <code style="color: black;font-size: 0.875em;">Semaphore</code> offer more fine-grained control over locking, allowing for more complex synchronization scenarios and better performance in some cases. However, they also require more careful management.</li>
+                            </ul>
+                            <p style="color: black;">These additional questions and answers should help you prepare for more challenging Core Java interviews. As always, be ready to elaborate on your answers and provide real-world examples to demonstrate your understanding.</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="color: black;">
+                    <div style="color: black;"><button style="color: black;font-size: 0.75rem;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                            </svg></button>
+                        <div style="color: black;"><button style="color: black;font-size: 16px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                                </svg></button><button style="color: black;font-size: 16px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path>
+                                </svg></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="text-align: start;color: rgba(32, 33, 35, 0.5);background-color: white;font-size: 14px;">
+    <div style="color: black;font-size: 1rem;">
+        <div style="color: black;font-size: 1rem;">
+            
+            <div style="color: black;">
+                <div style="color: black;">
+                    <div style="color: black;">
+                        <div style="color: black;font-size: 1rem;">
+                            <p style="color: black;"><strong style="color: black;">Question 16: What is the Java Native Interface (JNI), and why is it used? Can you provide an example of how to use JNI to call native code from Java?</strong></p>
+                            <p style="color: black;"><em style="color: black;">Answer:</em></p>
+                            <ul style="color: black;">
+                                <li style="color: black;">The Java Native Interface (JNI) is a framework that allows Java code to interact with code written in other languages, typically C or C++. It&apos;s used when you need to access platform-specific or low-level functionalities.</li>
+                                <li style="color: black;">JNI enables the creation of Java native methods, which are implemented in native code and can be called from Java classes.</li>
+                            </ul>
+                            <p style="color: black;">Example:</p>
+                            <pre style="color: black;font-size: 0.875em;"><div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));"><div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">java</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path></svg>Copy code</button></div><div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">// Java code</span>
+<span style="color: black;">public</span> <span style="color: black;">class</span> <span style="color: black;">NativeExample</span> {
+    <span style="color: black;">static</span> {
+        System.loadLibrary(<span style="color: black;">&quot;NativeLibrary&quot;</span>); <span style="color: black;">// Load the native library</span>
+    }
+
+    <span style="color: black;">public</span> <span style="color: black;">native</span> <span style="color: black;">void</span> <span style="color: black;">nativeMethod</span><span style="color: black;">()</span>; <span style="color: black;">// Declare a native method</span>
+
+    <span style="color: black;">public</span> <span style="color: black;">static</span> <span style="color: black;">void</span> <span style="color: black;">main</span><span style="color: black;">(String[] args)</span> {
+        <span style="color: black;">new</span> <span style="color: black;">NativeExample</span>().nativeMethod(); <span style="color: black;">// Call the native method</span>
+    }
+}
+</code></div></div></pre>
+                            <p style="color: black;"><strong style="color: black;">Question 17: Explain the concepts of immutability and thread safety in Java. How can you design classes to be immutable and thread-safe?</strong></p>
+                            <p style="color: black;"><em style="color: black;">Answer:</em></p>
+                            <ul style="color: black;">
+                                <li style="color: black;">Immutability means that an object&apos;s state cannot be changed after it is created. Immutable objects are inherently thread-safe.</li>
+                                <li style="color: black;">To design a class as immutable, make fields <code style="color: black;font-size: 0.875em;">private</code> and <code style="color: black;font-size: 0.875em;">final</code>, avoid providing setters, and ensure that methods don&apos;t modify the object&apos;s state.</li>
+                                <li style="color: black;">Thread safety involves ensuring that concurrent access to an object does not result in data corruption or unexpected behavior. This can be achieved using synchronization mechanisms like <code style="color: black;font-size: 0.875em;">synchronized</code> blocks, locks, or thread-safe collections.</li>
+                            </ul>
+                            <p style="color: black;"><strong style="color: black;">Question 18: What are the advantages and disadvantages of using Java serialization for object persistence? What alternatives are available for object serialization in Java?</strong></p>
+                            <p style="color: black;"><em style="color: black;">Answer:</em></p>
+                            <ul style="color: black;">
+                                <li style="color: black;">Advantages of Java serialization: It&apos;s easy to use and built into the Java language. It allows you to serialize and deserialize objects to/from a byte stream.</li>
+                                <li style="color: black;">Disadvantages: It can be slow, and the serialized format is not human-readable. It may also have security risks if used with untrusted data.</li>
+                                <li style="color: black;">Alternatives include JSON and XML serialization, which produce more readable formats and can be used for cross-platform communication. Additionally, third-party libraries like Protocol Buffers and Apache Avro offer efficient binary serialization formats.</li>
+                            </ul>
+                            <p style="color: black;"><strong style="color: black;">Question 19: Explain the concept of classloaders in Java and their role in dynamically loading classes at runtime. What is the Bootstrap ClassLoader, Extension ClassLoader, and Application ClassLoader?</strong></p>
+                            <p style="color: black;"><em style="color: black;">Answer:</em></p>
+                            <ul style="color: black;">
+                                <li style="color: black;">Classloaders in Java are responsible for loading classes into memory as they are needed by the program.</li>
+                                <li style="color: black;">The Bootstrap ClassLoader is responsible for loading core Java classes from the <code style="color: black;font-size: 0.875em;">rt.jar</code> file and is written in native code.</li>
+                                <li style="color: black;">The Extension ClassLoader loads classes from the Java extension directory.</li>
+                                <li style="color: black;">The Application ClassLoader (System ClassLoader) loads classes from the classpath specified when starting the JVM.</li>
+                                <li style="color: black;">Custom classloaders can be created to load classes from other sources, such as databases or network locations, enabling dynamic class loading.</li>
+                            </ul>
+                            <p style="color: black;"><strong style="color: black;">Question 20: Explain the concept of a Java annotation processor and its use cases. How can you create a custom annotation processor?</strong></p>
+                            <p style="color: black;"><em style="color: black;">Answer:</em></p>
+                            <ul style="color: black;">
+                                <li style="color: black;">A Java annotation processor is a tool that processes annotations at compile-time and generates additional code or performs validation based on the annotated elements.</li>
+                                <li style="color: black;">Use cases include code generation, validation, and automatic configuration.</li>
+                                <li style="color: black;">To create a custom annotation processor, you need to implement the <code style="color: black;font-size: 0.875em;">javax.annotation.processing.Processor</code> interface, define the supported annotations, and specify the processing logic. The processor is then configured in the <code style="color: black;font-size: 0.875em;">javac</code> compiler options.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

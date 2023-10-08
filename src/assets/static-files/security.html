@@ -1,0 +1,292 @@
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Question 1:</strong><em style="color: black;">Scenario: You are developing a Spring Boot application that requires user authentication and authorization. Explain how you would configure and use Spring Security to achieve this.</em></p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Answer:</strong>To configure user authentication and authorization using Spring Security in a Spring Boot application, follow these steps:</p>
+<ol style="text-align: start;color: black;background-color: white;font-size: 16px;">
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Add Spring Security Dependency:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">Include the Spring Security dependency in your project&apos;s <code style="color: black;font-size: 0.875em;">pom.xml</code> or <code style="color: black;font-size: 0.875em;">build.gradle</code> file.</li>
+            <div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+                <div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">xml</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        </svg>Copy code</button></div>
+                <div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">&lt;<span style="color: black;">dependency</span>&gt;</span><br> <span style="color: black;">&lt;<span style="color: black;">groupId</span>&gt;</span>org.springframework.boot<span style="color: black;">&lt;/<span style="color: black;">groupId</span>&gt;</span><br> <span style="color: black;">&lt;<span style="color: black;">artifactId</span>&gt;</span>spring-boot-starter-security<span style="color: black;">&lt;/<span style="color: black;">artifactId</span>&gt;</span><br><span style="color: black;">&lt;/<span style="color: black;">dependency</span>&gt;</span><br></code></div>
+            </div>
+        </ul>
+        <pre style="color: black;font-size: 0.875em;"></pre>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Configure Security Rules:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">Create a configuration class that extends <code style="color: black;font-size: 0.875em;">WebSecurityConfigurerAdapter</code> to configure security rules.</li>
+            <li style="color: black;">Override the <code style="color: black;font-size: 0.875em;">configure</code> method to specify access control rules, authentication providers, and custom filters.</li>
+            <div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+                <div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">java</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        </svg>Copy code</button></div>
+                <div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">import</span> org.springframework.context.annotation.Bean;<br><span style="color: black;">import</span> org.springframework.context.annotation.Configuration;<br><span style="color: black;">import</span> org.springframework.security.config.annotation.web.builders.HttpSecurity;<br><span style="color: black;">import</span> org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;<br><span style="color: black;">import</span> org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;<br><br><span style="color: black;">@Configuration</span><br><span style="color: black;">@EnableWebSecurity</span><br><span style="color: black;">public</span> <span style="color: black;">class</span> <span style="color: black;">SecurityConfig</span> <span style="color: black;">extends</span> <span style="color: black;">WebSecurityConfigurerAdapter</span> {<br><br> <span style="color: black;">@Override</span><br> <span style="color: black;">protected</span> <span style="color: black;">void</span> <span style="color: black;">configure</span><span style="color: black;">(HttpSecurity http)</span> <span style="color: black;">throws</span> Exception {<br> http<br> .authorizeRequests()<br> .antMatchers(<span style="color: black;">&quot;/public/**&quot;</span>).permitAll()<br> .antMatchers(<span style="color: black;">&quot;/admin/**&quot;</span>).hasRole(<span style="color: black;">&quot;ADMIN&quot;</span>)<br> .anyRequest().authenticated()<br> .and()<br> .formLogin()<br> .loginPage(<span style="color: black;">&quot;/login&quot;</span>)<br> .permitAll()<br> .and()<br> .logout()<br> .permitAll();<br> }<br>}<br></code></div>
+            </div>
+        </ul>
+        <pre style="color: black;font-size: 0.875em;"></pre>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Configure User Authentication:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">Define a userDetailsService to load user details from a data source (e.g., database) or use in-memory authentication.</li>
+            <div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+                <div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">java</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        </svg>Copy code</button></div>
+                <div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">import</span> org.springframework.context.annotation.Bean;<br><span style="color: black;">import</span> org.springframework.context.annotation.Configuration;<br><span style="color: black;">import</span> org.springframework.security.core.userdetails.User;<br><span style="color: black;">import</span> org.springframework.security.core.userdetails.UserDetails;<br><span style="color: black;">import</span> org.springframework.security.core.userdetails.UserDetailsService;<br><span style="color: black;">import</span> org.springframework.security.core.userdetails.UsernameNotFoundException;<br><span style="color: black;">import</span> org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;<br><br><span style="color: black;">@Configuration</span><br><span style="color: black;">public</span> <span style="color: black;">class</span> <span style="color: black;">SecurityConfig</span> {<br><br> <span style="color: black;">@Bean</span><br> <span style="color: black;">public</span> UserDetailsService <span style="color: black;">userDetailsService</span><span style="color: black;">()</span> {<br> <span style="color: black;">return</span> username -&gt; {<br> <span style="color: black;">if</span> (<span style="color: black;">&quot;user&quot;</span>.equals(username)) {<br> <span style="color: black;">UserDetails</span> <span style="color: black;">user</span> <span style="color: black;">=</span> User.builder()<br> .username(<span style="color: black;">&quot;user&quot;</span>)<br> .password(passwordEncoder().encode(<span style="color: black;">&quot;password&quot;</span>))<br> .roles(<span style="color: black;">&quot;USER&quot;</span>)<br> .build();<br> <span style="color: black;">return</span> user;<br> }<br> <span style="color: black;">throw</span> <span style="color: black;">new</span> <span style="color: black;">UsernameNotFoundException</span>(<span style="color: black;">&quot;User not found.&quot;</span>);<br> };<br> }<br><br> <span style="color: black;">@Bean</span><br> <span style="color: black;">public</span> BCryptPasswordEncoder <span style="color: black;">passwordEncoder</span><span style="color: black;">()</span> {<br> <span style="color: black;">return</span> <span style="color: black;">new</span> <span style="color: black;">BCryptPasswordEncoder</span>();<br> }<br>}<br></code></div>
+            </div>
+        </ul>
+        <pre style="color: black;font-size: 0.875em;"></pre>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Implement Login and Logout Pages:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">Create login and logout pages or endpoints in your application.</li>
+            <div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+                <div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">java</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        </svg>Copy code</button></div>
+                <div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">import</span> org.springframework.stereotype.Controller;<br><span style="color: black;">import</span> org.springframework.web.bind.annotation.GetMapping;<br><br><span style="color: black;">@Controller</span><br><span style="color: black;">public</span> <span style="color: black;">class</span> <span style="color: black;">AuthController</span> {<br><br> <span style="color: black;">@GetMapping(&quot;/login&quot;)</span><br> <span style="color: black;">public</span> String <span style="color: black;">loginPage</span><span style="color: black;">()</span> {<br> <span style="color: black;">return</span> <span style="color: black;">&quot;login&quot;</span>;<br> }<br><br> <span style="color: black;">@GetMapping(&quot;/logout&quot;)</span><br> <span style="color: black;">public</span> String <span style="color: black;">logoutPage</span><span style="color: black;">()</span> {<br> <span style="color: black;">return</span> <span style="color: black;">&quot;logout&quot;</span>;<br> }<br>}<br></code></div>
+            </div>
+        </ul>
+        <pre style="color: black;font-size: 0.875em;"></pre>
+    </li>
+</ol>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;">With these configurations, your Spring Boot application is secured using Spring Security. Users need to authenticate to access protected resources, and access control is based on roles and permissions.</p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Question 2:</strong><em style="color: black;">Scenario: You are developing a RESTful API using Spring Boot, and you want to secure it using OAuth 2.0. Explain how you would configure OAuth 2.0 security for your API.</em></p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Answer:</strong>To secure a RESTful API using OAuth 2.0 in a Spring Boot application, you can follow these steps:</p>
+<ol style="text-align: start;color: black;background-color: white;font-size: 16px;">
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Add OAuth 2.0 Dependencies:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">Include the necessary dependencies for OAuth 2.0, such as Spring Security OAuth2 and a token store (e.g., JWT or OAuth2 tokens).</li>
+            <div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+                <div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">xml</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        </svg>Copy code</button></div>
+                <div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">&lt;<span style="color: black;">dependency</span>&gt;</span><br> <span style="color: black;">&lt;<span style="color: black;">groupId</span>&gt;</span>org.springframework.boot<span style="color: black;">&lt;/<span style="color: black;">groupId</span>&gt;</span><br> <span style="color: black;">&lt;<span style="color: black;">artifactId</span>&gt;</span>spring-boot-starter-security<span style="color: black;">&lt;/<span style="color: black;">artifactId</span>&gt;</span><br><span style="color: black;">&lt;/<span style="color: black;">dependency</span>&gt;</span><br><span style="color: black;">&lt;<span style="color: black;">dependency</span>&gt;</span><br> <span style="color: black;">&lt;<span style="color: black;">groupId</span>&gt;</span>org.springframework.boot<span style="color: black;">&lt;/<span style="color: black;">groupId</span>&gt;</span><br> <span style="color: black;">&lt;<span style="color: black;">artifactId</span>&gt;</span>spring-boot-starter-oauth2-resource-server<span style="color: black;">&lt;/<span style="color: black;">artifactId</span>&gt;</span><br><span style="color: black;">&lt;/<span style="color: black;">dependency</span>&gt;</span><br></code></div>
+            </div>
+        </ul>
+        <pre style="color: black;font-size: 0.875em;"></pre>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Configure OAuth 2.0 Properties:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">Define OAuth 2.0 properties in your application properties or YAML file, specifying the token store and resource server properties.</li>
+            <div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+                <div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">yaml</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        </svg>Copy code</button></div>
+                <div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">spring:</span><br> <span style="color: black;">security:</span><br> <span style="color: black;">oauth2:</span><br> <span style="color: black;">resourceserver:</span><br> <span style="color: black;">jwt:</span><br> <span style="color: black;">issuer-uri:</span> <span style="color: black;">https://auth-server.com/oauth2/token</span><br></code></div>
+            </div>
+        </ul>
+        <pre style="color: black;font-size: 0.875em;"></pre>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Implement Resource Server Configuration:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">Create a configuration class that extends <code style="color: black;font-size: 0.875em;">ResourceServerConfigurerAdapter</code> to configure the resource server.</li>
+            <div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+                <div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">java</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        </svg>Copy code</button></div>
+                <div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">import</span> org.springframework.context.annotation.Bean;<br><span style="color: black;">import</span> org.springframework.context.annotation.Configuration;<br><span style="color: black;">import</span> org.springframework.security.config.annotation.web.builders.HttpSecurity;<br><span style="color: black;">import</span> org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationProvider;<br><br><span style="color: black;">@Configuration</span><br><span style="color: black;">public</span> <span style="color: black;">class</span> <span style="color: black;">ResourceServerConfig</span> <span style="color: black;">extends</span> <span style="color: black;">ResourceServerConfigurerAdapter</span> {<br><br> <span style="color: black;">@Override</span><br> <span style="color: black;">public</span> <span style="color: black;">void</span> <span style="color: black;">configure</span><span style="color: black;">(HttpSecurity http)</span> <span style="color: black;">throws</span> Exception {<br> http<br> .authorizeRequests()<br> .antMatchers(<span style="color: black;">&quot;/public/**&quot;</span>).permitAll()<br> .antMatchers(<span style="color: black;">&quot;/api/**&quot;</span>).authenticated();<br> }<br><br> <span style="color: black;">@Bean</span><br> <span style="color: black;">public</span> JwtAuthenticationProvider <span style="color: black;">jwtAuthenticationProvider</span><span style="color: black;">()</span> {<br> <span style="color: black;">return</span> <span style="color: black;">new</span> <span style="color: black;">JwtAuthenticationProvider</span>();<br> }<br>}<br></code></div>
+            </div>
+        </ul>
+        <pre style="color: black;font-size: 0.875em;"></pre>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Secure API Endpoints:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">Secure your API endpoints by defining access control rules based on OAuth 2.0 authentication.</li>
+        </ul>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Implement OAuth 2.0 Client Registration:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">If your API needs to access external resources as a client, configure OAuth 2.0 client registration details.</li>
+            <div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+                <div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">yaml</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        </svg>Copy code</button></div>
+                <div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">spring:</span><br> <span style="color: black;">security:</span><br> <span style="color: black;">oauth2:</span><br> <span style="color: black;">client:</span><br> <span style="color: black;">registration:</span><br> <span style="color: black;">custom-provider:</span><br> <span style="color: black;">client-id:</span> <span style="color: black;">your-client-id</span><br> <span style="color: black;">client-secret:</span> <span style="color: black;">your-client-secret</span><br> <span style="color: black;">authorization-grant-type:</span> <span style="color: black;">authorization_code</span><br> <span style="color: black;">redirect-uri:</span> <span style="color: black;">http://your-app.com/callback</span><br> <span style="color: black;">provider:</span><br> <span style="color: black;">custom-provider:</span><br> <span style="color: black;">authorization-uri:</span> <span style="color: black;">https://auth-server.com/oauth2/authorize</span><br> <span style="color: black;">token-uri:</span> <span style="color: black;">https://auth-server.com/oauth2/token</span><br> <span style="color: black;">redirect-uri-template:</span> <span style="color: black;">&apos;{baseUrl}/login/oauth2/code/{registrationId}&apos;</span><br></code></div>
+            </div>
+        </ul>
+        <pre style="color: black;font-size: 0.875em;"></pre>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Implement OAuth 2.0 Authentication Flow:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">Implement the OAuth 2.0 authentication flow in your application to obtain and manage access tokens when accessing protected resources.</li>
+        </ul>
+    </li>
+</ol>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;">With these configurations, your Spring Boot RESTful API is secured using OAuth 2.0. Clients must authenticate and provide valid access tokens to access protected endpoints.</p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Question 3:</strong><em style="color: black;">Scenario: You are developing a microservices-based application, and you want to ensure that communication between microservices is secure. Explain how you would use Spring Cloud Security to achieve this.</em></p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Answer:</strong>To ensure secure communication between microservices in a microservices-based application using Spring Boot and Spring Cloud Security, you can follow these steps:</p>
+<ol style="text-align: start;color: black;background-color: white;font-size: 16px;">
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Add Spring Cloud Security Dependency:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">Include the Spring Cloud Security dependency in your microservices projects.</li>
+            <div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+                <div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">xml</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        </svg>Copy code</button></div>
+                <div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">&lt;<span style="color: black;">dependency</span>&gt;</span><br> <span style="color: black;">&lt;<span style="color: black;">groupId</span>&gt;</span>org.springframework.cloud<span style="color: black;">&lt;/<span style="color: black;">groupId</span>&gt;</span><br> <span style="color: black;">&lt;<span style="color: black;">artifactId</span>&gt;</span>spring-cloud-starter-security<span style="color: black;">&lt;/<span style="color: black;">artifactId</span>&gt;</span><br><span style="color: black;">&lt;/<span style="color: black;">dependency</span>&gt;</span><br></code></div>
+            </div>
+        </ul>
+        <pre style="color: black;font-size: 0.875em;"></pre>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Configure Security Properties:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">Configure security properties in your application properties or YAML files. Specify authentication settings and user roles as needed.</li>
+            <div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+                <div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">yaml</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        </svg>Copy code</button></div>
+                <div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">spring:</span><br> <span style="color: black;">security:</span><br> <span style="color: black;">user:</span><br> <span style="color: black;">name:</span> <span style="color: black;">user</span><br> <span style="color: black;">password:</span> <span style="color: black;">password</span><br> <span style="color: black;">roles:</span> <span style="color: black;">USER</span><br></code></div>
+            </div>
+        </ul>
+        <pre style="color: black;font-size: 0.875em;"></pre>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Implement Secure Communication:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">Use HTTPS to encrypt communication between microservices. You can configure HTTPS by providing SSL certificates and configuring the server to use them.</li>
+            <div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+                <div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">yaml</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        </svg>Copy code</button></div>
+                <div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">server:</span><br> <span style="color: black;">port:</span> <span style="color: black;">8443</span><br> <span style="color: black;">ssl:</span><br> <span style="color: black;">key-store:</span> <span style="color: black;">classpath:keystore.p12</span><br> <span style="color: black;">key-store-password:</span> <span style="color: black;">password</span><br> <span style="color: black;">key-alias:</span> <span style="color: black;">mykey</span><br> <span style="color: black;">key-store-type:</span> <span style="color: black;">PKCS12</span><br></code></div>
+            </div>
+        </ul>
+        <pre style="color: black;font-size: 0.875em;"></pre>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Secure Endpoints:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">Secure your microservice endpoints based on user roles and permissions using Spring Security configuration.</li>
+            <div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+                <div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">java</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        </svg>Copy code</button></div>
+                <div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">import</span> org.springframework.context.annotation.Bean;<br><span style="color: black;">import</span> org.springframework.context.annotation.Configuration;<br><span style="color: black;">import</span> org.springframework.security.config.annotation.web.builders.HttpSecurity;<br><span style="color: black;">import</span> org.springframework.security.core.userdetails.User;<br><span style="color: black;">import</span> org.springframework.security.core.userdetails.UserDetails;<br><span style="color: black;">import</span> org.springframework.security.core.userdetails.UserDetailsService;<br><span style="color: black;">import</span> org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;<br><br><span style="color: black;">@Configuration</span><br><span style="color: black;">public</span> <span style="color: black;">class</span> <span style="color: black;">SecurityConfig</span> {<br><br> <span style="color: black;">@Bean</span><br> <span style="color: black;">public</span> UserDetailsService <span style="color: black;">userDetailsService</span><span style="color: black;">()</span> {<br> <span style="color: black;">UserDetails</span> <span style="color: black;">user</span> <span style="color: black;">=</span> User.builder()<br> .username(<span style="color: black;">&quot;user&quot;</span>)<br> .password(passwordEncoder().encode(<span style="color: black;">&quot;password&quot;</span>))<br> .roles(<span style="color: black;">&quot;USER&quot;</span>)<br> .build();<br> <span style="color: black;">return</span> <span style="color: black;">new</span> <span style="color: black;">InMemoryUserDetailsManager</span>(user);<br> }<br><br> <span style="color: black;">@Bean</span><br> <span style="color: black;">public</span> BCryptPasswordEncoder <span style="color: black;">passwordEncoder</span><span style="color: black;">()</span> {<br> <span style="color: black;">return</span> <span style="color: black;">new</span> <span style="color: black;">BCryptPasswordEncoder</span>();<br> }<br>}<br></code></div>
+            </div>
+        </ul>
+        <pre style="color: black;font-size: 0.875em;"></pre>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Use OAuth 2.0 for Authorization:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">If required, use OAuth 2.0 or another authorization mechanism to control access to specific resources and APIs.</li>
+        </ul>
+    </li>
+</ol>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;">With these configurations, your microservices can communicate securely over HTTPS, and access to their endpoints is controlled based on security roles and permissions. Spring Cloud Security ensures that your microservices are protected and secure within the microservices architecture.</p>
+
+
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Question 4:</strong><em style="color: black;">Scenario: You are developing a Spring Boot application that needs to prevent common security vulnerabilities, such as Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF). Explain how you would implement security measures to mitigate these vulnerabilities.</em></p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Answer:</strong>To mitigate common security vulnerabilities like XSS and CSRF in a Spring Boot application, follow these best practices:</p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Mitigating Cross-Site Scripting (XSS):</strong></p>
+<ol style="text-align: start;color: black;background-color: white;font-size: 16px;">
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Use Thymeleaf or Other Template Engines:</strong> If you&apos;re using a template engine like Thymeleaf, it automatically escapes user input by default, reducing the risk of XSS.</p>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Validate and Sanitize Input:</strong> Implement server-side input validation and sanitize user input by removing or encoding potentially harmful characters.</p>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">HTTP Security Headers:</strong> Set proper HTTP security headers, such as Content Security Policy (CSP), to control which scripts can be executed on your pages.</p>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Avoid Inline Scripts:</strong> Avoid inline JavaScript in your HTML and use external scripts instead. If inline scripts are necessary, use nonce-based CSP.</p>
+    </li>
+</ol>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Mitigating Cross-Site Request Forgery (CSRF):</strong></p>
+<ol style="text-align: start;color: black;background-color: white;font-size: 16px;">
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Use CSRF Tokens:</strong> Generate and include CSRF tokens in forms or API requests. Validate these tokens on the server to ensure requests originate from trusted sources.</p>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Leverage Spring Security:</strong> Spring Security provides built-in CSRF protection. Ensure it&apos;s enabled in your Spring Boot application&apos;s security configuration.</p>
+        <pre style="color: black;font-size: 0.875em;"><div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));"><div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">java</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path></svg>Copy code</button></div><div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;">http
+    .csrf()
+    .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse());
+</code></div></div></pre>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Restrict Cross-Origin Requests:</strong> Implement Cross-Origin Resource Sharing (CORS) policies to control which domains are allowed to make requests to your server. Only trusted domains should be permitted.</p>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Use Same-Site Cookies:</strong> Set the <code style="color: black;font-size: 0.875em;">SameSite</code> attribute for cookies to restrict their usage to the same site or disable third-party usage.</p>
+        <pre style="color: black;font-size: 0.875em;"><div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));"><div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">java</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path></svg>Copy code</button></div><div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;">server:
+  servlet:
+    session:
+      cookie:
+        same-site: strict
+</code></div></div></pre>
+    </li>
+</ol>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;">By implementing these security measures, you can significantly reduce the risk of XSS and CSRF vulnerabilities in your Spring Boot application.</p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Question 5:</strong><em style="color: black;">Scenario: You are developing a Spring Boot application that needs to authenticate users using Single Sign-On (SSO) with a third-party identity provider (IdP) like Okta or Auth0. Explain how you would configure SSO authentication in your application.</em></p>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;"><strong style="color: black;">Answer:</strong>To configure Single Sign-On (SSO) authentication in a Spring Boot application with a third-party Identity Provider (IdP), follow these steps:</p>
+<ol style="text-align: start;color: black;background-color: white;font-size: 16px;">
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Add Spring Security and SSO Dependencies:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">Include the necessary dependencies for Spring Security and the specific SSO IdP you are using.</li>
+            <div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+                <div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">xml</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        </svg>Copy code</button></div>
+                <div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">&lt;<span style="color: black;">dependency</span>&gt;</span><br> <span style="color: black;">&lt;<span style="color: black;">groupId</span>&gt;</span>org.springframework.boot<span style="color: black;">&lt;/<span style="color: black;">groupId</span>&gt;</span><br> <span style="color: black;">&lt;<span style="color: black;">artifactId</span>&gt;</span>spring-boot-starter-security<span style="color: black;">&lt;/<span style="color: black;">artifactId</span>&gt;</span><br><span style="color: black;">&lt;/<span style="color: black;">dependency</span>&gt;</span><br><span style="color: black;">&lt;<span style="color: black;">dependency</span>&gt;</span><br> <span style="color: black;">&lt;!-- Dependency for Okta --&gt;</span><br> <span style="color: black;">&lt;<span style="color: black;">groupId</span>&gt;</span>com.okta.spring<span style="color: black;">&lt;/<span style="color: black;">groupId</span>&gt;</span><br> <span style="color: black;">&lt;<span style="color: black;">artifactId</span>&gt;</span>okta-spring-boot-starter<span style="color: black;">&lt;/<span style="color: black;">artifactId</span>&gt;</span><br><span style="color: black;">&lt;/<span style="color: black;">dependency</span>&gt;</span><br></code></div>
+            </div>
+        </ul>
+        <pre style="color: black;font-size: 0.875em;"></pre>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Configure SSO Properties:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">Configure SSO properties in your <code style="color: black;font-size: 0.875em;">application.properties</code> or YAML file, including the IdP&apos;s metadata URL and client ID.</li>
+            <div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+                <div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">yaml</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        </svg>Copy code</button></div>
+                <div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">okta:</span><br> <span style="color: black;">oauth2:</span><br> <span style="color: black;">issuer:</span> <span style="color: black;">https://your-okta-domain.okta.com/oauth2/default</span><br> <span style="color: black;">client-id:</span> <span style="color: black;">your-client-id</span><br></code></div>
+            </div>
+        </ul>
+        <pre style="color: black;font-size: 0.875em;"></pre>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Create a Security Configuration:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">Create a custom security configuration class that extends <code style="color: black;font-size: 0.875em;">OAuth2LoginSecurityConfig</code> or <code style="color: black;font-size: 0.875em;">SecurityConfigurerAdapter</code>.</li>
+            <li style="color: black;">Configure authentication with the IdP by specifying the IdP&apos;s URL and issuer.</li>
+            <div style="color: black;background-color: rgba(0,0,0,var(--tw-bg-opacity));">
+                <div style="color: black;background-color: rgba(52,53,65,var(--tw-bg-opacity));font-size: 0.75rem;"><span style="color: black;">java</span><button style="color: black;font-size: 12px;"><svg fill="none" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        </svg>Copy code</button></div>
+                <div style="color: black;"><code style="text-align: left;color: black;font-size: inherit;"><span style="color: black;">import</span> org.springframework.context.annotation.Bean;<br><span style="color: black;">import</span> org.springframework.context.annotation.Configuration;<br><span style="color: black;">import</span> org.springframework.security.config.annotation.web.builders.HttpSecurity;<br><span style="color: black;">import</span> org.springframework.security.oauth2.client.registration.ClientRegistration;<br><span style="color: black;">import</span> org.springframework.security.oauth2.client.registration.ClientRegistrationRepository;<br><span style="color: black;">import</span> org.springframework.security.oauth2.client.registration.InMemoryClientRegistrationRepository;<br><span style="color: black;">import</span> org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;<br><span style="color: black;">import</span> org.springframework.security.oauth2.client.userinfo.OAuth2UserService;<br><span style="color: black;">import</span> org.springframework.security.oauth2.client.userinfo.OAuth2UserService;<br><span style="color: black;">import</span> org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizationRequestResolver;<br><span style="color: black;">import</span> org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizationRequestResolver;<br><span style="color: black;">import</span> org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestResolver;<br><span style="color: black;">import</span> org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestResolver;<br><span style="color: black;">import</span> org.springframework.security.oauth2.core.user.DefaultOAuth2User;<br><span style="color: black;">import</span> org.springframework.security.oauth2.core.user.OAuth2User;<br><span style="color: black;">import</span> org.springframework.security.oauth2.core.user.OAuth2User;<br><span style="color: black;">import</span> org.springframework.security.oauth2.core.user.OAuth2UserAuthority;<br><span style="color: black;">import</span> org.springframework.security.oauth2.core.user.OAuth2UserAuthority;<br><span style="color: black;">import</span> org.springframework.security.oauth2.core.user.OAuth2UserAuthority;<br><span style="color: black;">import</span> org.springframework.security.oauth2.core.user.OAuth2UserAuthority;<br><span style="color: black;">import</span> org.springframework.security.oauth2.core.user.OAuth2UserAuthority;<br><span style="color: black;">import</span> org.springframework.security.oauth2.core.user.OAuth2UserAuthority;<br><span style="color: black;">import</span> org.springframework.security.oauth2.core.user.OAuth2UserAuthority;<br><span style="color: black;">import</span> org.springframework.security.oauth2.core.user.OAuth2UserAuthority;<br><span style="color: black;">import</span> org.springframework.security.oauth2.core.user.OAuth2UserAuthority;<br><br><span style="color: black;">@Configuration</span><br><span style="color: black;">public</span> <span style="color: black;">class</span> <span style="color: black;">SecurityConfig</span> {<br> <span style="color: black;">@Bean</span><br> <span style="color: black;">public</span> OAuth2AuthorizationRequestResolver <span style="color: black;">authorizationRequestResolver</span><span style="color: black;">()</span> {<br> <span style="color: black;">return</span> <span style="color: black;">new</span> <span style="color: black;">DefaultOAuth2AuthorizationRequestResolver</span>(<br> clientRegistrationRepository(), <span style="color: black;">&quot;/login/oauth2/code&quot;</span>);<br> }<br><br> <span style="color: black;">@Bean</span><br> <span style="color: black;">public</span> ClientRegistrationRepository <span style="color: black;">clientRegistrationRepository</span><span style="color: black;">()</span> {<br> <span style="color: black;">ClientRegistration</span> <span style="color: black;">registration</span> <span style="color: black;">=</span> ClientRegistration.withRegistrationId(<span style="color: black;">&quot;okta&quot;</span>)<br> .clientId(<span style="color: black;">&quot;your-client-id&quot;</span>)<br> .clientSecret(<span style="color: black;">&quot;your-client-secret&quot;</span>)<br> .redirectUriTemplate(<span style="color: black;">&quot;{baseUrl}/login/oauth2/code/{registrationId}&quot;</span>)<br> .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)<br> .authorizationUri(<span style="color: black;">&quot;https://your-okta-domain.okta.com/oauth2/default/v1/authorize&quot;</span>)<br> .tokenUri(<span style="color: black;">&quot;https://your-okta-domain.okta.com/oauth2/default/v1/token&quot;</span>)<br> .userInfoUri(<span style="color: black;">&quot;https://your-okta-domain.okta.com/oauth2/default/v1/userinfo&quot;</span>)<br> .userNameAttributeName(IdTokenClaimNames.SUB)<br> .jwkSetUri(<span style="color: black;">&quot;https://your-okta-domain.okta.com/oauth2/default/v1/keys&quot;</span>)<br> .clientName(<span style="color: black;">&quot;Okta&quot;</span>)<br> .build();<br> <span style="color: black;">return</span> <span style="color: black;">new</span> <span style="color: black;">InMemoryClientRegistrationRepository</span>(registration);<br> }<br><br> <span style="color: black;">@Bean</span><br> <span style="color: black;">public</span> OAuth2UserService&lt;OAuth2UserRequest, OAuth2User&gt; <span style="color: black;">oAuth2UserService</span><span style="color: black;">()</span> {<br> <span style="color: black;">return</span> <span style="color: black;">new</span> <span style="color: black;">DefaultOAuth2UserService</span>();<br> }<br><br> <span style="color: black;">@Configuration</span><br> <span style="color: black;">public</span> <span style="color: black;">static</span> <span style="color: black;">class</span> <span style="color: black;">OktaSecurityConfigurer</span> <span style="color: black;">extends</span> <span style="color: black;">SecurityConfigurerAdapter</span>&lt;DefaultSecurityFilterChain, HttpSecurity&gt; {<br> <span style="color: black;">private</span> <span style="color: black;">final</span> OAuth2UserService&lt;OAuth2UserRequest, OAuth2User&gt; oAuth2UserService;<br><br> <span style="color: black;">public</span> <span style="color: black;">OktaSecurityConfigurer</span><span style="color: black;">(OAuth2UserService&lt;OAuth2UserRequest, OAuth2User&gt; oAuth2UserService)</span> {<br> <span style="color: black;">this</span>.oAuth2UserService = oAuth2UserService;<br> }<br><br> <span style="color: black;">@Override</span><br> <span style="color: black;">public</span> <span style="color: black;">void</span> <span style="color: black;">configure</span><span style="color: black;">(HttpSecurity http)</span> {<br> http<br> .authorizeRequests(authorizeRequests -&gt;<br> authorizeRequests<br> .antMatchers(<span style="color: black;">&quot;/login&quot;</span>, <span style="color: black;">&quot;/error&quot;</span>)<br> .permitAll()<br> .anyRequest()<br> .authenticated()<br> )<br> .oauth2Login(oauth2Login -&gt;<br> oauth2Login<br> .authorizationEndpoint(authorizationEndpoint -&gt;<br> authorizationEndpoint<br> .authorizationRequestResolver(authorizationRequestResolver())<br> )<br> .userInfoEndpoint(userInfoEndpoint -&gt;<br> userInfoEndpoint<br> .userService(oAuth2UserService)<br> )<br> );<br> }<br> }<br>}<br></code></div>
+            </div>
+        </ul>
+        <pre style="color: black;font-size: 0.875em;"></pre>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Implement Login Page:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">Create a login page where users can initiate the SSO authentication flow. This page will redirect users to the IdP for login.</li>
+        </ul>
+    </li>
+    <li style="color: black;">
+        <p style="color: black;"><strong style="color: black;">Secure Endpoints:</strong></p>
+        <ul style="color: black;">
+            <li style="color: black;">Secure your application endpoints based on user roles and permissions as needed.</li>
+        </ul>
+    </li>
+</ol>
+<p style="text-align: start;color: black;background-color: white;font-size: 16px;">With these configurations, your Spring Boot application will authenticate users using Single Sign-On (SSO) with the specified Identity Provider (IdP). Users will be redirected to the IdP for authentication, and upon successful authentication, they will be redirected back to your application.</p>
