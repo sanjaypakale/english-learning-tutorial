@@ -24,6 +24,7 @@ import { TrickyJavaInterviewComponent } from './interview-dashboard/tricky-java-
 import { HtmlFileDialogComponent } from './html-file-dialog/html-file-dialog.component';
 import { DialogService } from './dialog.service';
 import {MatDialogModule} from '@angular/material/dialog';
+import { CoreJavaComponent } from './java-interview/core-java/core-java.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     SightWordsComponent,
     InterviewDashboardComponent,
     TrickyJavaInterviewComponent,
-    HtmlFileDialogComponent
+    HtmlFileDialogComponent,
+    CoreJavaComponent
   ],
   imports: [
     BrowserModule,
